@@ -1,0 +1,10 @@
+# TODO comment this action
+name: Runs Using Node
+description: Example of JavaScript action
+runs:
+  using: 'node16'
+  main: 'main.js'
+  pre: 'setup.js'
+  pre-if: runner.os == 'Windows'
+  post: 'cleanup.js'
+  post-if: failure()

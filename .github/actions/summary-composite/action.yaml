@@ -1,0 +1,16 @@
+# TODO comment this action
+name: Summary in composite
+description: Example of summary in a composite action
+runs:
+  using: 'composite'
+  steps:
+    - uses: actions/github-script@v6
+      with:
+        script: |
+          await core.summary
+            .addRaw('## Summary from composite action using github script')
+            .write()
+
+    - run: |
+        echo "## Summary from composite action using echo" >> $GITHUB_STEP_SUMMARY
+      shell: bash

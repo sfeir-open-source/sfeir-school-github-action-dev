@@ -1,0 +1,24 @@
+# TODO comment this action
+name: Runs Using Composite
+description: Example of composite action
+runs:
+  using: 'composite'
+  steps:
+    - run: $GITHUB_ACTION_PATH/setup.sh
+      shell: bash
+      if: runner.os == 'windows'
+    - id: slug-action
+      name: Use another action
+      uses: rlespinasse/github-slug-action@v4
+      with:
+        prefix: CI_
+    - run: $GITHUB_ACTION_PATH/main.sh
+      shell: bash
+      env:
+        SLUG_REF: $CI_GITHUB_REF_SLUG
+    - run: ls
+      shell: bash
+      working-directory: .
+    - run: $GITHUB_ACTION_PATH/cleanup.sh
+      shell: bash
+      if: failure()
