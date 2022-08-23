@@ -1,8 +1,11 @@
-name: Runs actions / Reuse section
+name: Run Actions / Reuse section
 on: push
 jobs:
   runs-code-workflow:
     uses: sfeir-open-source/sfeir-school-github-action-dev/.github/workflows/code.yaml@v1
+
+  runs-nested-reusable-workflow:
+    uses: sfeir-open-source/sfeir-school-github-action-dev/.github/workflows/nested.yaml@v1
 
   # A reusable workflow can't be run from an action
   runs-reusable-workflow-from-action:

@@ -1,0 +1,5 @@
+name: Nested reusable workflow
+on: workflow_call
+jobs:
+  code:
+    uses: sfeir-open-source/sfeir-school-github-action-dev/.github/workflows/code.yaml@v1

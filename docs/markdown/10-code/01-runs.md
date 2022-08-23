@@ -10,12 +10,12 @@
 name: Action name
 description: Short description of the action
 runs:
-  using: 'node16'                               # or node12
-  main: 'main.js'                               # your entrypoint file
+  using: 'node16'                       # or node12
+  main: 'main.js'                       # your entrypoint file
   # Optional configurations
-  pre: 'setup.js'
+  pre: 'setup.js'                       # will not run if used as the action is locally run
   pre-if: runner.os == 'windows'
-  post: 'cleanup.js'
+  post: 'cleanup.js'                    # will not run if used as the action is locally run
   post-if: failure()
 ```
 
@@ -35,11 +35,11 @@ name: Action name
 description: Short description of the action
 runs:
   using: 'docker'
-  image: 'Dockerfile'                          # can also be a existing docker image => docker://debian:stretch
+  image: 'Dockerfile'                 # can also be a existing docker image => docker://debian:stretch
   # Optional configurations
-  pre-entrypoint: 'setup.sh'
+  pre-entrypoint: 'setup.sh'          # will not run if used as the action is locally run
   entrypoint: 'main.sh'
-  post-entrypoint: 'cleanup.sh'
+  post-entrypoint: 'cleanup.sh'       # will not run if used as the action is locally run
   env:
     KEY: 'Value'
   args:
