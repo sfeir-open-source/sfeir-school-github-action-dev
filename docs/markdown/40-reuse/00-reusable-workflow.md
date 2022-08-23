@@ -89,3 +89,7 @@ runs:
 - Secrets are treated as inputs on composite action
 - Environment variable from the caller workflow can't be access from the reusable workflow
 - Inputs have type only on reusable workflow
+- Composite action act as one step in the caller workflow
+- Reusable workflow act as sub-step in the caller workflow
+- Composite action need action.yaml
+- Reusable workflow is store inside one file and can have multiple jobs
