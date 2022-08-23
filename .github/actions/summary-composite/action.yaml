@@ -1,9 +1,9 @@
-# TODO comment this action
 name: Summary in composite
 description: Example of summary in a composite action
 runs:
   using: 'composite'
   steps:
+    # the summary can be fill using the actions toolkit
     - uses: actions/github-script@v6
       with:
         script: |
@@ -11,6 +11,12 @@ runs:
             .addRaw('## Summary from composite action using github script')
             .write()
 
+    # or fill using $GITHUB_STEP_SUMMARY environment variable
     - run: |
         echo "## Summary from composite action using echo" >> $GITHUB_STEP_SUMMARY
       shell: bash
+
+    # Composite action is call from one step, and contains multiple steps.
+    # Due to limitation, you will not see the '## Summary from composite action using github script' part,
+    # The composite steps override previous defined summary.
+    # This will not impacted the other steps of a job from the caller workflow

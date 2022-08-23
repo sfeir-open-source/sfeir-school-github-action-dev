@@ -1,8 +1,8 @@
-# TODO comment this action
 name: Runs Reusable Workflow
 description: Example of composite action calling a reusable workflow
 runs:
   using: 'composite'
   steps:
     - uses: actions/checkout@v3
-    - uses: ./.github/workflows/runs-actions.yaml
+    # This should failed due to system limitation
+    - uses: ./.github/workflows/code.yaml

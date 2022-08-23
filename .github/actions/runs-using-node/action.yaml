@@ -1,9 +1,9 @@
-# TODO comment this action
 name: Runs Using Node
 description: Example of JavaScript action
 runs:
   using: 'node16'
   main: 'main.js'
+  # pre/post features can't be used on actions run locally
   pre: 'setup.js'
   pre-if: runner.os == 'Windows'
   post: 'cleanup.js'

@@ -4,6 +4,7 @@ description: Example of Dockerfile action
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  # pre/post features can't be used on actions run locally
   pre-entrypoint: 'setup.sh'
   entrypoint: 'main.sh'
   post-entrypoint: 'cleanup.sh'

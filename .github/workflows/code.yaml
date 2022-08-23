@@ -1,0 +1,33 @@
+name: Run Actions / Code section
+on:
+  push:
+  workflow_call: # this trigger enable the workflow to be reusable from another workflow, see reuse.yaml file
+jobs:
+  runs-using-actions:
+    runs-on: ubuntu-latest
+    steps:
+      # Run action using the public access {repo}/{path}@{ref}
+      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-node@v1
+      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-docker@v1
+      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-composite@v1
+
+  runs-using-actions-local:
+    runs-on: ubuntu-latest
+    steps:
+      # Run local action by checkout the source and uses it
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/runs-using-composite
+
+      # Since thoses examples for node and docker use the pre/post features, we can't run them as local action
+      - id: runs-using-node
+        uses: ./.github/actions/runs-using-node
+        continue-on-error: true
+      - id: runs-using-docker
+        uses: ./.github/actions/runs-using-docker
+        continue-on-error: true
+      - run: | # Validate that the node and docker actions failed if run locally
+          [[ "${{ steps.runs-using-node.outcome }}" == "failure" ]]
+          [[ "${{ steps.runs-using-node.conclusion }}" == "success" ]]
+          [[ "${{ steps.runs-using-docker.outcome }}" == "failure" ]]
+          [[ "${{ steps.runs-using-docker.conclusion }}" == "success" ]]
+        shell: bash

@@ -1,20 +1,15 @@
-# TODO comment this workflow
-name: Run Actions
+name: Run Actions / Interactions section
 on:
   push:
-  workflow_call:
 jobs:
-  runs-using-actions:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-node@v1
-      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-docker@v1
-      - uses: ./.github/actions/runs-using-composite
-
   summary-actions:
     runs-on: ubuntu-latest
     steps:
+      # The summary is fill per step
+      - run: echo "## Summary from a simple run step" >> $GITHUB_STEP_SUMMARY
+        shell: bash
+
+      # An action can contribute to its own step summary
       - uses: actions/checkout@v3
       - uses: ./.github/actions/summary-composite
 

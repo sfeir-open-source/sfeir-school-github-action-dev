@@ -1,0 +1,17 @@
+name: Runs actions / Reuse section
+on: push
+jobs:
+  runs-code-workflow:
+    uses: sfeir-open-source/sfeir-school-github-action-dev/.github/workflows/code.yaml@v1
+
+  # A reusable workflow can't be run from an action
+  runs-reusable-workflow-from-action:
+    runs-on: ubuntu-latest
+    steps:
+      - id: runs-reusable-workflow-from-action
+        uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-reusable-workflow@v1
+        continue-on-error: true
+      - run: |
+          [[ "${{ steps.runs-reusable-workflow-from-action.outcome }}" == "failure" ]]
+          [[ "${{ steps.runs-reusable-workflow-from-action.conclusion }}" == "success" ]]
+        shell: bash
