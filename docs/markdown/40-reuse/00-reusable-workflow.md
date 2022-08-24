@@ -87,8 +87,8 @@ runs:
 
 # TODO Reusable Workflows
 
-- Only actions can be call from both
-  - a reusable workflow can't be called from a reusable workflow
+- Caller rules
+  - a reusable workflow can be called from a reusable workflow
   - a reusable workflow can't be called from a composite action
 - Secrets are treated as inputs on composite action
 - Environment variable from the caller workflow can't be access from the reusable workflow
