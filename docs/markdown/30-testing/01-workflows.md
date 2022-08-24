@@ -1,4 +1,4 @@
-<!-- .slide: -->
+<!-- .slide: class="with-code" -->
 
 # Testing Workflows
 
@@ -24,14 +24,14 @@ One test from [**rlespinasse/slugify-value** 🔗](https://github.com/rlespinass
 
 ##--##
 
+<!-- .slide: class="with-code" -->
+
 # Testing Workflows
 
-In the testing workflow,
+## In the testing workflow
 
-- a test suite can be seen as a job with the same workspace to work with
-- a test is composed of
-  - the run of the action
-  - the step to test the output of the action
+- a test suite can be seen as a job with the same workspace to work with.
+- a test is composed of the **run of the action**, and the **step to test the output of the action**.
 
 ```yaml
 jobs:
@@ -57,9 +57,11 @@ jobs:
 
 ##--##
 
+<!-- .slide: class="with-code" -->
+
 # Testing Workflows
 
-What to do when you need to test the error cases?
+## What to do when you need to test the error cases?
 
 Use
 
@@ -83,6 +85,8 @@ Use
 ```
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # Testing Workflows
 

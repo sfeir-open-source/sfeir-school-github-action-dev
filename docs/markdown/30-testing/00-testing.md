@@ -1,28 +1,26 @@
-<!-- .slide: -->
+<!-- .slide: class="full-center" -->
 
-# Testing
+# Testing Ecosystem
 
-## Ecosystem
-
-![Osman Rana / Unsplash](./assets/images/osman-rana-swACMn-yCn8-unsplash.jpg)
+![](./assets/images/osman-rana-swACMn-yCn8-unsplash.jpg)
 
 Author : [**Osman Rana / Unsplash** 🔗](https://unsplash.com/photos/swACMn-yCn8)
+<!-- .element: class="credits" -->
 
 ##--##
 
-# Testing
+# Testing Application
 
 [**Act** 🔗](https://github.com/nektos/act) provides some **local testing capabilities** to your GitHub Actions workflows.
 
-🌴 So you can design some workflows to test your action locally.
-
-🏜️ Otherwise, you will need to run thoses workflows like any others.
-
-⚠️ But **Act** have limitations (some steps need the GitHub Actions ecosystem to run)
+- 🌴 So you can design some workflows to test your action locally.
+- 🏜️ Otherwise, you will need to run thoses workflows like any others.
+- ⚠️ But **Act** have limitations (some steps need the GitHub Actions ecosystem to run)
+<!-- .element: class="list-fragment" -->
 
 ##--##
 
-# Testing
+# Testing possibilities
 
 You **can unit test** your code depending of your language of choice.
 But this will **not test the integration within the GitHub Action system**.
