@@ -9,7 +9,7 @@ Before start a new action, the question you may ask youself is
 
 > This will do a defined task?
 
-Using Separation of Concerns (SoC) principle, you can separate the orchestration of tasks (Workflow) from the tasks (Action or step in a workflow).
+Using Separation of Concerns (SoC) principle, you can separate the orchestration of tasks (Workflow) from the underlying tasks (Action or step in a workflow).
 
 ##--##
 
