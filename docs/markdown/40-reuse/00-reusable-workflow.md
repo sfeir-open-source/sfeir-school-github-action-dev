@@ -10,6 +10,8 @@ What the difference between them?
 
 ##--##
 
+<!-- .slide: class="with-code" -->
+
 # Reusable Workflows
 
 ## Example Workflow
@@ -50,6 +52,8 @@ jobs:
 ```
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # Reusable Workflows
 
