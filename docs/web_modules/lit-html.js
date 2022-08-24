@@ -38,7 +38,7 @@ class g{constructor(t,e,s){this.__parts=[],this.template=t,this.processor=e,this
  * Code distributed by Google as part of the polymer project is also
  * subject to an additional IP rights grant found at
  * http://polymer.github.io/PATENTS.txt
- */const v=window.trustedTypes&&trustedTypes.createPolicy("lit-html",{createHTML:t=>t}),f=` ${a} `;class x{constructor(t,e,s,n){this.strings=t,this.values=e,this.type=s,this.processor=n}getHTML(){const t=this.strings.length-1;let e="",s=!1;for(let n=0;n<t;n++){const t=this.strings[n],i=t.lastIndexOf("\x3c!--");s=(i>-1||s)&&-1===t.indexOf("--\x3e",i+1);const o=_.exec(t);e+=null===o?t+(s?f:h):t.substr(0,o.index)+o[1]+o[2]+"$lit$"+o[3]+a}return e+=this.strings[t],e}getTemplateElement(){const t=document.createElement("template");let e=this.getHTML();return void 0!==v&&(e=v.createHTML(e)),t.innerHTML=e,t}}class N extends x{getHTML(){return`<svg>${super.getHTML()}</svg>`}getTemplateElement(){const t=super.getTemplateElement(),e=t.content,s=e.firstChild;return e.removeChild(s),i(e,s.firstChild),t}}
+ */const f=window.trustedTypes&&trustedTypes.createPolicy("lit-html",{createHTML:t=>t}),v=` ${a} `;class x{constructor(t,e,s,n){this.strings=t,this.values=e,this.type=s,this.processor=n}getHTML(){const t=this.strings.length-1;let e="",s=!1;for(let n=0;n<t;n++){const t=this.strings[n],i=t.lastIndexOf("\x3c!--");s=(i>-1||s)&&-1===t.indexOf("--\x3e",i+1);const o=_.exec(t);e+=null===o?t+(s?v:h):t.substr(0,o.index)+o[1]+o[2]+"$lit$"+o[3]+a}return e+=this.strings[t],e}getTemplateElement(){const t=document.createElement("template");let e=this.getHTML();return void 0!==f&&(e=f.createHTML(e)),t.innerHTML=e,t}}class N extends x{getHTML(){return`<svg>${super.getHTML()}</svg>`}getTemplateElement(){const t=super.getTemplateElement(),e=t.content,s=e.firstChild;return e.removeChild(s),i(e,s.firstChild),t}}
 /**
  * @license
  * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -64,7 +64,7 @@ class g{constructor(t,e,s){this.__parts=[],this.template=t,this.processor=e,this
  * Code distributed by Google as part of the polymer project is also
  * subject to an additional IP rights grant found at
  * http://polymer.github.io/PATENTS.txt
- */;class L{handleAttributeExpressions(t,e,s,n){const i=e[0];if("."===i){return new A(t,e.slice(1),s).parts}return"@"===i?[new M(t,e.slice(1),n.eventContext)]:"?"===i?[new E(t,e.slice(1),s)]:new V(t,e,s).parts}handleTextExpression(t){return new b(t)}}const H=new L;
+ */;class L{handleAttributeExpressions(t,e,s,n){const i=e[0];if("."===i){return new A(t,e.slice(1),s).parts}if("@"===i)return[new M(t,e.slice(1),n.eventContext)];if("?"===i)return[new E(t,e.slice(1),s)];return new V(t,e,s).parts}handleTextExpression(t){return new b(t)}}const H=new L;
 /**
  * @license
  * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
