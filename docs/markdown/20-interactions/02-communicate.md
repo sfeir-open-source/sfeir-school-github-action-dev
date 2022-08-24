@@ -30,13 +30,13 @@ An annotation will be attach to the summary of the workflow.
 
 ## Log debug message
 
-### In shell
+In shell
 
 ```bash
 echo '::debug::{message}'
 ```
 
-### In JavaScript
+In JavaScript
 
 ```js
 const core = require('@actions/core');
@@ -49,13 +49,13 @@ core.debug('{message}');
 
 ## Setting a message (notice, warning, error)
 
-### In shell
+In shell
 
 ```bash
 echo '::notice file={name},line={line},endLine={endLine},col={col},endColumn={endColumn},title={title}::{message}'
 ```
 
-### In JavaScript
+In JavaScript
 
 ```js
 const core = require('@actions/core');
@@ -69,7 +69,7 @@ core.notice('{message}', {
 });
 ```
 
-## On Job Summary
+On Job Summary
 
 ![message file](./assets/images/interactions-communicate-message-file.png)
 
@@ -79,13 +79,13 @@ core.notice('{message}', {
 
 ## Contribute to the job summary
 
-### In shell
+In shell
 
 ```bash
 echo "{markdown content}" >> $GITHUB_STEP_SUMMARY
 ```
 
-### In JavaScript
+In JavaScript
 
 ```js
 const core = require('@actions/core');

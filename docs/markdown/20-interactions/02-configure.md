@@ -4,13 +4,13 @@
 
 ## [**Set an environment variable** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-environment-variable)
 
-### In shell
+In shell
 
 ```bash
 echo '{environment_variable_name}={value}' >> $GITHUB_ENV
 ```
 
-### In JavaScript
+In JavaScript
 
 ```js
 const core = require('@actions/core');
@@ -23,7 +23,7 @@ core.exportVariable('{environment_variable_name}', '{value}');
 
 ## [**Set a multiline environment variable** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#multiline-strings)
 
-### In shell
+In shell
 
 ```bash
 echo '{environment_variable_name}<<EOF' >> $GITHUB_ENV
@@ -31,7 +31,7 @@ your-command-that-generate-multiline-output >> $GITHUB_ENV
 echo '<<EOF' >> $GITHUB_ENV
 ```
 
-### In JavaScript
+In JavaScript
 
 ```js
 const core = require('@actions/core');
@@ -44,13 +44,13 @@ core.exportVariable('{environment_variable_name}', var_with_multiline_content);
 
 ## [**Add a directory to the path** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#adding-a-system-path)
 
-### In shell
+In shell
 
 ```bash
 echo "{path}" >> $GITHUB_PATH
 ```
 
-### In JavaScript
+In JavaScript
 
 ```js
 const core = require('@actions/core');

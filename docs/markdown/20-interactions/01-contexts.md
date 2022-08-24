@@ -31,13 +31,13 @@ inputs:
 
 In order to improve [**security** 🔗](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#understanding-the-risk-of-script-injections) and to enable customisation from your user, you must only use the contexts throught action input (as defaut value)
 
-### ⚠️ Risky practice
+⚠️ Risky practice
 
 ```yaml
 - uses: you/action-at-risk@v1 # which use 'github.event.pull_request.title' directly
 ```
 
-### 👍 Preferred practice
+👍 Preferred practice
 
 ```yaml
 inputs:
