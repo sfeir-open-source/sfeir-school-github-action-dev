@@ -8,13 +8,16 @@
 
 ##--##
 
-# TODO What kind of actions?
+# What kind of actions?
 
-- transformation
-- export
-- setup
-- analyse
-- set of tasks
+- Transform the existing file
+  - Update documentation
+  - Generate complied files
+- Expose new environment variables
+- Setup packages/application into the workspace
+- Analyse existing files
+  - Code coverage
+  - Security scan
 - ...
 
 ##--##
