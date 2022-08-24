@@ -1,4 +1,3 @@
-# TODO comment this action
 name: Runs Using Docker
 description: Example of Dockerfile action
 runs:

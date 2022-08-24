@@ -1,4 +1,3 @@
-# TODO comment this action
 name: Runs Using Composite
 description: Example of composite action
 runs:
