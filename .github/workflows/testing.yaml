@@ -1,0 +1,37 @@
+name: Run Actions / Testing section
+on: push
+jobs:
+  test-an-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # Test 1
+      - name: Default usecase
+        id: test-1
+        uses: ./.github/actions/testable-action
+        with:
+          value: 'SOME'
+      - name: Validate // Default usecase
+        run: |
+          [[ "${{ env.OUTPUT_VALUE }}" == "output-SOME" ]]
+          [[ "${{ steps.test-1.outputs.value }}" == "output-SOME" ]]
+        shell: bash
+      - name: Cleanup Test 1
+        run: echo "OUTPUT_VALUE=" >> $GITHUB_ENV
+        shell: bash
+
+      # Test 2
+      - name: Error usecase
+        id: test-2
+        uses: ./.github/actions/testable-action
+        with:
+          value: ''
+        continue-on-error: true
+      - name: Validate // Error usecase
+        run: |
+          [[ "${{ steps.test-2.outcome }}" == "failure" ]]
+          [[ "${{ steps.test-2.conclusion }}" == "success" ]]
+          [[ "${{ env.OUTPUT_VALUE }}" == "" ]]
+          [[ "${{ steps.test-2.outputs.value }}" == "" ]]
+        shell: bash

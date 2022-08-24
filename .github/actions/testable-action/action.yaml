@@ -1,0 +1,27 @@
+name: Testable action
+description: Example of a testable action
+inputs:
+  value:
+    description: value to affect to the output
+    required: true
+outputs:
+  value:
+    description: output value
+    value: '${{ steps.final-output-value.outputs.outputValue }}'
+runs:
+  using: 'composite'
+  steps:
+    - run: |
+        echo "OUTPUT_VALUE=output-${{ inputs.value }}" >> $GITHUB_ENV
+      shell: bash
+      if: ${{ inputs.value != '' }}
+
+    - run: |
+        echo "::error ::Value need to be fill"
+        exit 1
+      shell: bash
+      if: ${{ inputs.value == '' }}
+
+    - id: final-output-value
+      run: echo "::set-output name=outputValue::${{ env.OUTPUT_VALUE }}"
+      shell: bash
