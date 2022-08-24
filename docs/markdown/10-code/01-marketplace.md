@@ -2,7 +2,7 @@
 
 # Marketplace
 
-## **action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#branding)
+**action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#branding)
 
 ```yaml
 name: Action name                               # Must be unique on Marketplace
@@ -12,4 +12,4 @@ branding:                                       # Mandatory to be plublish on th
   color: 'green'
 ```
 
-[**GitHub Marketplace** 🔗](https://github.com/marketplace?type=actions)
+The action will be available on [**GitHub Marketplace** 🔗](https://github.com/marketplace?type=actions)

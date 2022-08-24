@@ -2,9 +2,9 @@
 
 # Minimal Setup
 
-## **action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
+## JavaScript-based action
 
-### JavaScript-based action
+**action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
 
 ```yaml
 name: Action name
@@ -14,7 +14,7 @@ runs:
   main: 'dist/main.js'
 ```
 
-## **main.js**
+**main.js**
 
 ```js
 console.log(`Doing stuff...`);
@@ -26,9 +26,9 @@ console.log(`Doing stuff...`);
 
 # Minimal Setup
 
-## **action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
+## Dockerfile-based action
 
-### Dockerfile-based action
+**action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
 
 ```yaml
 name: Action name
@@ -38,29 +38,27 @@ runs:
   image: 'Dockerfile'
 ```
 
-## **Dockerfile**
+[**Dockerfile** 🔗](https://docs.github.com/en/actions/creating-actions/dockerfile-support-for-github-actions)
 
 ```Dockefile
 FROM debian
 ADD main.sh /usr/local/bin/main.sh
 ```
 
-## **main.sh**
+**main.sh**
 
 ```bash
 #!/usr/bin/env sh
 echo "Doing stuff..."
 ```
 
-[**Dockefile support reference** 🔗](https://docs.github.com/en/actions/creating-actions/dockerfile-support-for-github-actions#entrypoint)
-
 ##--##
 
 # Minimal Setup
 
-## **action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
+## Composite action
 
-### Composite action
+**action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
 
 ```yaml
 name: Action name

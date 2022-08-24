@@ -2,9 +2,9 @@
 
 # Inputs
 
-## **action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
+## JavaScript-based action
 
-### JavaScript-based action
+**action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
 
 ```yaml
 name: Action name
@@ -19,7 +19,7 @@ inputs:
     default: "Default value"
 ```
 
-## **main.js**
+**main.js**
 
 ```js
 const core = require('@actions/core');
@@ -30,9 +30,9 @@ const value = core.getInput('firstInput');
 
 # Inputs
 
-## **action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
+## Dockerfile-based action
 
-### Dockerfile-based action
+**action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
 
 ```yaml
 name: Action name
@@ -57,9 +57,9 @@ $INPUT_FIRSTINPUT
 
 # Inputs
 
-## **action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
+## Composite action
 
-### Composite action
+**action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
 
 ```yaml
 name: Action name
@@ -82,4 +82,4 @@ inputs:
 $INPUT_FIRSTINPUT
 ```
 
-You need to use the `inputs` context to access it.
+And you need to use the `inputs` context to access it.
