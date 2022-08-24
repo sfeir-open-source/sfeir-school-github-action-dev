@@ -15,7 +15,7 @@
 
 # What kind of actions?
 
-- Transform the existing file
+- Transform existing files
   - Update documentation
   - Generate complied files
 - Expose new environment variables

@@ -9,14 +9,14 @@
 ```yaml
 name: Action name
 description: Short description of the action
-runs:
-  using: 'node16'
-  main: 'dist/main.js'
 inputs:
   firstInput:
     description: First Input
     required: true
     default: "Default value"
+runs:
+  using: 'node16'
+  main: 'dist/main.js'
 ```
 
 **main.js**
@@ -39,14 +39,14 @@ const value = core.getInput('firstInput');
 ```yaml
 name: Action name
 description: Short description of the action
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
 inputs:
   firstInput:
     description: First Input
     required: true
     default: "Default value"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
 ```
 
 `firstInput` is available under environment variable `$INPUT_FIRSTINPUT`
@@ -64,18 +64,18 @@ inputs:
 ```yaml
 name: Action name
 description: Short description of the action
-runs:
-  using: 'composite'
-  steps:
-  - run: echo "${{ inputs.firstInput }}"
-    shell: bash
 inputs:
   firstInput:
     description: First Input
     required: true
     default: "Default value"
+runs:
+  using: 'composite'
+  steps:
+  - run: echo "${{ inputs.firstInput }}"
+    shell: bash
 ```
 
 `firstInput` is **NOT** available under environment variable `$INPUT_FIRSTINPUT`
 
-And you need to use the `inputs` context to access it.
+And you need to use the `inputs` context field to access it : `${{ inputs.firstInput }}`.

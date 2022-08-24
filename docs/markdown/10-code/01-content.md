@@ -1,6 +1,6 @@
 <!-- .slide: -->
 
-# Anatomy of an action repository
+# Structure of an action repository
 
 Must contains
 
@@ -9,7 +9,7 @@ Must contains
 
 ##--##
 
-# Anatomy of an action repository
+# Structure of an action repository
 
 Can contains
 

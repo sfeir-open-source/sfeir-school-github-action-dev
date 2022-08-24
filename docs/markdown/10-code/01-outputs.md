@@ -9,12 +9,12 @@
 ```yaml
 name: Action name
 description: Short description of the action
-runs:
-  using: 'node16'
-  main: 'dist/main.js'
 outputs:
   someOutput:
     description: "Some Output"
+runs:
+  using: 'node16'
+  main: 'dist/main.js'
 ```
 
 **main.js**
@@ -37,12 +37,12 @@ core.setOutput('someOutput', 'Some Value');
 ```yaml
 name: Action name
 description: Short description of the action
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
 outputs:
   someOutput:
     description: "Some Output"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
 ```
 
 To define an output value, you need to print the `set-output` command
@@ -64,16 +64,16 @@ To define an output value, you need to print the `set-output` command
 ```yaml
 name: Action name
 description: Short description of the action
+outputs:
+  someOutput:
+    description: "Some Output"
+    value: ${{ steps.some-output-step.outputs.someOutput }}
 runs:
   using: 'composite'
   steps:
   - id: some-output-step
     run: echo "::set-output name=someOutput::Some Value"
     shell: bash
-outputs:
-  someOutput:
-    description: "Some Output"
-    value: ${{ steps.some-output-step.outputs.someOutput }}
 ```
 
 To define an output value, a step need to print the `set-output` command and you need to map it as value of the output.
