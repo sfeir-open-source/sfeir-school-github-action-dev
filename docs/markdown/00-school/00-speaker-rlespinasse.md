@@ -1,9 +1,11 @@
-<!-- .slide: class="speaker-slide blue" -->
+<!-- .slide: class="speaker-slide" -->
 
 # Formateur
 
-![speaker blue](./assets/images/rlespinasse.jpg)
-![badge](./assets/images/gcp-rlespinasse.png)
+![speaker](./assets/images/rlespinasse.jpg)
+![badge first-badge](./assets/images/gcp-devops-engineer.png)
+![badge second-badge](./assets/images/gcp-cloud-architect.png)
+![badge third-badge](./assets/images/gcp-data-engineer.png)
 ![company](./assets/images/logo-SFEIR-blanc.png)
 
 <h2>Romain <span>LESPINASSE</span></h2>
