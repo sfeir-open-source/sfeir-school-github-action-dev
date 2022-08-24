@@ -4,7 +4,7 @@
 
 GitHub provides a set of packages to make creating actions easier with [**@actions/toolkit** 🔗](https://github.com/actions/toolkit)
 
-And it's can be used by any action type
+And it can be used by any action type
 
 - directly in JavaScript action
 - using node-based dockerfile in Docker action

@@ -28,7 +28,7 @@ See runner pre-install softwares to have an idea of what you can use in your act
 - [**windows-lastest** 🔗](https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md)
 - [**macos-lastest** 🔗](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md)
 
-Your action must take in account the environment upon which its can run.
+Your action must take in account the environment upon which it can run.
 
 ⚠️ The runner can also be a **custom one**.
 
