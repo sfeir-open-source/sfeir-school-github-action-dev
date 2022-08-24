@@ -1,4 +1,4 @@
-<!-- .slide: -->
+<!-- .slide: class="with-code" -->
 
 # Minimal Setup
 
@@ -23,6 +23,8 @@ console.log(`Doing stuff...`);
 ℹ️ Use the library [@actions/toolkit 🔗](https://github.com/actions/toolkit) to develop your action.
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # Minimal Setup
 
@@ -53,6 +55,8 @@ echo "Doing stuff..."
 ```
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # Minimal Setup
 

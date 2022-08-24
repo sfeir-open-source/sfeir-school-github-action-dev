@@ -1,4 +1,4 @@
-<!-- .slide: -->
+<!-- .slide: class="with-code" -->
 
 # Runs
 
@@ -24,6 +24,8 @@ runs:
 
 ##--##
 
+<!-- .slide: class="with-code" -->
+
 # Runs
 
 ## Dockerfile-based action
@@ -47,13 +49,11 @@ runs:
     - 'secondArg'
 ```
 
-`env` and `args` value are available on
-
-- pre-entrypoint
-- entrypoint
-- post-entrypoint
+`env` and `args` value are available on `pre-entrypoint`, `entrypoint`, and `post-entrypoint`.
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # Runs
 

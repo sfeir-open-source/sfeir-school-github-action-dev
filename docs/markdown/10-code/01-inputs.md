@@ -1,4 +1,4 @@
-<!-- .slide: -->
+<!-- .slide: class="with-code" -->
 
 # Inputs
 
@@ -28,6 +28,8 @@ const value = core.getInput('firstInput');
 
 ##--##
 
+<!-- .slide: class="with-code" -->
+
 # Inputs
 
 ## Dockerfile-based action
@@ -47,13 +49,11 @@ inputs:
     default: "Default value"
 ```
 
-`firstInput` is available under environment variable
-
-```bash
-$INPUT_FIRSTINPUT
-```
+`firstInput` is available under environment variable `$INPUT_FIRSTINPUT`
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # Inputs
 
@@ -76,10 +76,6 @@ inputs:
     default: "Default value"
 ```
 
-`firstInput` is **NOT** available under environment variable
-
-```bash
-$INPUT_FIRSTINPUT
-```
+`firstInput` is **NOT** available under environment variable `$INPUT_FIRSTINPUT`
 
 And you need to use the `inputs` context to access it.

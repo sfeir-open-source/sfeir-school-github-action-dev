@@ -5,6 +5,7 @@
 Must contains
 
 - action.yaml
+<!-- .element: class="list-fragment" -->
 
 ##--##
 
@@ -12,8 +13,8 @@ Must contains
 
 Can contains
 
+- JS/TS files
+- Dockerfile
+- Shell scripts
 - any relevant file
-  - JS/TS files
-  - Dockerfile
-  - Shell scripts
-  - ...
+<!-- .element: class="list-fragment" -->

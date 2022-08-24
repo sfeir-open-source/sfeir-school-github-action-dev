@@ -1,4 +1,4 @@
-<!-- .slide: -->
+<!-- .slide: class="with-code" -->
 
 # Outputs
 
@@ -26,6 +26,8 @@ core.setOutput('someOutput', 'Some Value');
 
 ##--##
 
+<!-- .slide: class="with-code" -->
+
 # Outputs
 
 ## Dockerfile-based action
@@ -50,6 +52,8 @@ To define an output value, you need to print the `set-output` command
 ```
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # Outputs
 

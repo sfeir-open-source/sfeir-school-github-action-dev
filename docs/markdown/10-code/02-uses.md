@@ -13,15 +13,15 @@
 
 ##--##
 
+<!-- .slide: class="with-code" -->
+
 # Uses
 
 ## Workflow Example
 
 ```yaml
 name: Run Actions
-
 on: push
-
 jobs:
   runs-actions:
     runs-on: ubuntu-latest

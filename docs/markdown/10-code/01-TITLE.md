@@ -1,3 +1,3 @@
-<!-- .slide: class="transition bg-white" -->
+<!-- .slide: class="transition underline bg-white" -->
 
 # Action anatomy
