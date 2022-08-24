@@ -10,6 +10,8 @@ From your action, you can interact with the GitHub API using
 
 ##--##
 
+<!-- .slide: class="with-code" -->
+
 # GitHub API
 
 ## Oktokit
@@ -47,6 +49,8 @@ With this library, you can manipulate the GitHub API like
 ```
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # GitHub API
 

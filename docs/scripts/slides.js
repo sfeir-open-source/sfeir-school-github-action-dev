@@ -31,6 +31,7 @@ function interactionsSlides() {
   return [
     '20-interactions/00-TITLE.md',
     '20-interactions/00-interactions.md',
+    '20-interactions/00-access-write.md',
     '20-interactions/00-toolkit.md',
     '20-interactions/01-TITLE.md',
     '20-interactions/01-contexts.md',
@@ -47,7 +48,7 @@ function interactionsSlides() {
 function testingSlides() {
   return [
     '30-testing/00-TITLE.md',
-    '30-testing/00-ecosystem.md',
+    '30-testing/00-testing.md',
     '30-testing/01-TITLE.md',
     '30-testing/01-javascript.md',
     '30-testing/01-others.md',

@@ -1,4 +1,4 @@
-<!-- .slide: -->
+<!-- .slide: class="with-code" -->
 
 # Configure
 
@@ -18,6 +18,8 @@ core.exportVariable('{environment_variable_name}', '{value}');
 ```
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # Configure
 
@@ -39,6 +41,8 @@ core.exportVariable('{environment_variable_name}', var_with_multiline_content);
 ```
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # Configure
 

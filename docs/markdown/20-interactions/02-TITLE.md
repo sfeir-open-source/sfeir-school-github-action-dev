@@ -1,3 +1,3 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition underline bg-blue" -->
 
 # Write

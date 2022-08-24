@@ -45,3 +45,4 @@ Your action must take in account the environment upon which its can run.
 | Composite        | use shell **bash** to have the same behavior across OS |
 
 [**Available Shells** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsshell)
+<!-- .element: class="credits" -->

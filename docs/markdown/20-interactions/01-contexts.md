@@ -11,6 +11,8 @@ Your action will be run inside a workflow and having access to its contexts.
 
 ##--##
 
+<!-- .slide: class="with-code" -->
+
 # Contexts
 
 ## Use as input
@@ -24,6 +26,8 @@ inputs:
 ```
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # Contexts
 
@@ -51,8 +55,6 @@ inputs:
 - uses: you/action-at-peace@v1
   with:
     title: 'some title'
-
 # Or
-
 - uses: you/action-at-peace@v1 # Input with default value to ${{ github.event.pull_request.title }}
 ```

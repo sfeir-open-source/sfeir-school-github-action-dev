@@ -26,6 +26,8 @@ An annotation will be attach to the summary of the workflow.
 
 ##--##
 
+<!-- .slide: class="with-code" -->
+
 # Communicate
 
 ## Log debug message
@@ -44,6 +46,8 @@ core.debug('{message}');
 ```
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # Communicate
 
@@ -74,6 +78,8 @@ On Job Summary
 ![message file](./assets/images/interactions-communicate-message-file.png)
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # Communicate
 
