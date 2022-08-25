@@ -6,7 +6,7 @@
 
 **Access**
 
-- Input value
+- Value inputs
 - Workflow contexts
 - Virtual environments
 
@@ -14,7 +14,7 @@
 
 **Write**
 
-- Output value
-- Setup
+- Output values
+- Files/Toolchain
 - Logs
-- GitHub API
+- Using GitHub API

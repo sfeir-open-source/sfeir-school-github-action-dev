@@ -4,10 +4,12 @@
 
 Your action will be run inside a workflow and having access to its contexts.
 
-- `github.*`
+- `inputs.*`
 - `env.*`
-- ...
+- `github.*`
 - [**more contexts** 🔗](https://docs.github.com/en/actions/learn-github-actions/contexts)
+
+⚠️ Avoid using all contexts, sometimes it's better to ask the data as input with a default value from the context.
 
 ##--##
 
