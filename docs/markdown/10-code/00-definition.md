@@ -19,7 +19,10 @@
   - Update documentation
   - Generate complied files
 - Expose new environment variables
-- Setup packages/application into the workspace
+- Setup toolchain into the workspace
+  - packages
+  - application
+  - cli
 - Analyse existing files
   - Code coverage
   - Security scan

@@ -10,6 +10,7 @@
 * As an action inside a different private repository than the workflow
 
 [**Reference** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
+<!-- .element: class="credits" -->
 
 ##--##
 

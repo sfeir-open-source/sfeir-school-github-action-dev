@@ -98,8 +98,8 @@ To access any file in the action, you must use `$GITHUB_ACTION_PATH`.
 
 | Actions          | Limitations                                                                                                |
 | ---------------- | ---------------------------------------------------------------------------------------------------------- |
-| JavaScript       | pre/post **not** available on local actions                                                                |
-| Docker container | \*entrypoint **not** available on local actions                                                            |
+| JavaScript       | pre/post **not** available on local actions, warning will be log                                           |
+| Docker container | \*-entrypoint **not** available on local actions, warning will be log                                      |
 | Docker container | can't use condition to run nor the pre and post entrypoint                                                 |
 | Composite        | No pre or post features, need to be implemented as step                                                    |
 | Composite        | the pre/post-like step will be executed during the action execution, not before or after any other actions |
