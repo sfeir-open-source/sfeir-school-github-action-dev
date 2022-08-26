@@ -7,9 +7,23 @@ Your action will be run inside a workflow and having access to its contexts.
 - `inputs.*`
 - `env.*`
 - `github.*`
-- [**more contexts** 🔗](https://docs.github.com/en/actions/learn-github-actions/contexts)
+- `job.*`
+- `runner.*`
+- `strategy.*` and `matrix.*` (Only if a matrix strategy is used in the caller job)
+- `steps.*` (Only for `composite` actions)
 
-⚠️ Avoid using all contexts, sometimes it's better to ask the data as input with a default value from the context.
+⚠️ Avoid using contexts directly, sometimes it's better to ask the data as input with a default value from the context itself.
+
+[**Contexts Reference** 🔗](https://docs.github.com/en/actions/learn-github-actions/contexts)
+<!-- .element: class="credits" -->
+
+Notes:
+
+Some contexts are inaccessibles inside an action
+
+- jobs
+- needs
+- secrets
 
 ##--##
 
