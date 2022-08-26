@@ -2,6 +2,19 @@ name: Run Actions / Interactions section
 on:
   push:
 jobs:
+  contexts-access-from-action:
+    strategy:
+      matrix:
+        value:
+          - some
+      fail-fast: true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/contexts-access
+        with:
+          value: ${{ matrix.value }}
+
   summary-actions:
     runs-on: ubuntu-latest
     steps:

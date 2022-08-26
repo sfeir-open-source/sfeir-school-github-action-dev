@@ -1,0 +1,27 @@
+name: Contexts Access
+description: Show contexts accessible inside an Action
+inputs:
+  value:
+    description: value
+    required: false
+    default: some
+runs:
+  using: composite
+  steps:
+    - id: some-step
+      run: echo "Some step stuff"
+      shell: bash
+    - run: |
+        echo "${{ github.sha }}"
+        echo "${{ env.ANYTHING }}"
+        echo "${{ job.container }}"
+        echo "${{ steps.some-step.conclusion }}"
+        echo "${{ runner.os }}"
+        echo "${{ strategy.fail-fast }}"
+        echo "${{ matrix.value }}"
+        echo "${{ inputs.value }}"
+      shell: bash
+      # Inaccessible contexts
+      #   - jobs
+      #   - secrets
+      #   - needs
