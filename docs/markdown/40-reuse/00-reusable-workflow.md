@@ -1,6 +1,6 @@
 <!-- .slide: -->
 
-# Reusable Workflows
+# Reusable Workflow or Action
 
 The same thinking can be apply when creating reusable workflows.
 We are creating them to extract orchestration patterns to be usable to others like we extract tasks to be usable to others when creating actions.
@@ -12,7 +12,7 @@ What the difference between them?
 
 <!-- .slide: class="with-code" -->
 
-# Reusable Workflows
+# Reusable Workflow or Action
 
 ## Example Workflow
 
@@ -55,7 +55,7 @@ jobs:
 
 <!-- .slide: class="with-code" -->
 
-# Reusable Workflows
+# Reusable Workflow or Action
 
 ## Example Action
 
@@ -85,15 +85,46 @@ runs:
 
 ##--##
 
-# TODO Reusable Workflows
+# Reusable Workflow or Action
 
-- Caller rules
-  - a reusable workflow can be called from a reusable workflow
-  - a reusable workflow can't be called from a composite action
+## Syntax
+
 - Secrets are treated as inputs on composite action
-- Environment variable from the caller workflow can't be access from the reusable workflow
 - Inputs have type only on reusable workflow
-- Composite action act as one step in the caller workflow
-- Reusable workflow act as sub-step in the caller workflow
-- Composite action need action.yaml
+- Job can only use one reusable workflow
+<!-- .element: class="list-fragment" -->
+
+##--##
+
+# Reusable Workflow or Action
+
+## Behavior
+
+- Composite action act **as one step** in the caller workflow
+  
+  ![](./assets/images/reuse-job-steps.png)
+
+- Reusable workflow act **as sub-step** in the caller workflow
+
+  ![](./assets/images/reuse-jobs.png)
+<!-- .element: class="list-fragment" -->
+
+##--##
+
+# Reusable Workflow or Action
+
+## Strucuture
+
+- Composite action need the file `action.yaml`
 - Reusable workflow is store inside one file and can have multiple jobs
+<!-- .element: class="list-fragment" -->
+
+##--##
+
+# Reusable Workflow or Action
+
+- A reusable workflow **CAN** be called from a reusable workflow
+- A reusable workflow **CAN'T** be called from a composite action
+- An action **CAN** be called from a reusable workflow
+- An action **CAN** be called from a composite action
+<!-- .element: class="list-fragment" -->
