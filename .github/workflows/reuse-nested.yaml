@@ -1,4 +1,4 @@
-name: Nested reusable workflow
+name: Run Actions / Reuse section / Nested reusable workflow
 on: workflow_call
 jobs:
   code:
