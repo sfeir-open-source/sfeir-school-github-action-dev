@@ -1,7 +1,23 @@
 {
-  "name": "sfeirschoolxxx",
+  "name": "sfeir-school-github-action-dev",
   "version": "1.0.0",
-  "description": "Sfeir School XXX with revealJS",
+  "description": "Sfeir School GitHub Action Dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfeir-open-source/sfeir-school-github-action-dev.git"
+  },
+  "keywords": [
+    "github",
+    "github-actions",
+    "development",
+    "sfeir"
+  ],
+  "author": "sfeiriens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sfeir-open-source/sfeir-school-github-action-dev/issues"
+  },
+  "homepage": "https://github.com/sfeir-open-source/sfeir-school-github-action-dev",
   "scripts": {
     "sass": "node-sass ./scss/slides.scss -o ./css/ --source-map=true --watch=\"scss\" --recursive=\"scss\"",
     "sass-once": "node-sass ./scss/slides.scss -o ./css/ --source-map=true ",
@@ -11,20 +27,6 @@
     "copy-reveal": "cpx \"node_modules/reveal.js/**/*\" \"web_modules/reveal.js\" ",
     "prepare": "rm -rf web_modules && parallelshell \"npm run copy-reveal\"   \"snowpack --optimize\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sfeir-open-source/sfeir-school-template.git"
-  },
-  "keywords": [
-    "xxx",
-    "sfeir"
-  ],
-  "author": "jefbinomed",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sfeir-open-source/sfeir-school-template/issues"
-  },
-  "homepage": "https://github.com/sfeir-open-source/sfeir-school-template",
   "dependencies": {
     "highlight.js": "^9.18.5",
     "lit-html": "^1.4.1",
