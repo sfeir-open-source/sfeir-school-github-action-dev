@@ -4,22 +4,13 @@
 
 ## **GitHub Actions Dev**
 
-##==##
+##--##
 
-<!-- .slide: class="school-presentation" -->
+# Planning
 
-<div class="wifi">
-    <span class="key">wifi:</span><span>SSID</span><br>
-    <span class="key">mdp:</span><span>PWD_WIFI</span>
-</div>
+* When are the breaks ?
+* When do we lunch ?
 
-##==##
-
-# Déroulement de la formation
-
-* C'est quand la pause ?
-* Quand est-ce qu'on mange ?
-
-**Feuille de présence (obligatoire)** <!-- .element: class="center" -->
+**Timesheet (Mandatory)** <!-- .element: class="center" -->
 
 https://bit.ly/sfeir-xxx <!-- .element: class="center" -->

@@ -1,3 +1,3 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition-bg-sfeir-3" -->
 
 # For the road

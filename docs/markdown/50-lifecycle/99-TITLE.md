@@ -1,3 +1,5 @@
-<!-- .slide: class="transition underline bg-green" -->
+<!-- .slide: class="transition-bg-sfeir-2" -->
 
 # Exercices
+
+## Action Lifecycle
