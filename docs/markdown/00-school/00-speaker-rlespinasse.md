@@ -1,6 +1,6 @@
 <!-- .slide: class="speaker-slide" -->
 
-# Formateur
+# Trainer
 
 ![speaker](./assets/images/rlespinasse.jpg)
 ![badge first-badge](./assets/images/gcp-devops-engineer.png)
@@ -13,5 +13,8 @@
 ### Developer
 <!-- .element: class="icon-rule icon-first" -->
 
-### @rlespinasse
-<!-- .element: class="icon-twitter icon-second" -->
+### [@rlespinasse](https://twitter.com/rlespinasse)
+<!-- .element: class="icon-second" -->
+
+### lespinasse.r@sfeir.com
+<!-- .element: class="icon-third" -->
