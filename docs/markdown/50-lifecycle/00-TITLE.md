@@ -1,3 +1,3 @@
-<!-- .slide: class="transition bg-green" -->
+<!-- .slide: class="transition-bg-sfeir-2" -->
 
 # Action Lifecycle
