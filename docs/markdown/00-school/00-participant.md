@@ -1,5 +1,10 @@
 <!-- .slide: class="speaker-slide" -->
 
-# Et vous ?
+# And you ?
 
-![speaker](./assets/images/User_icon_2.svg)
+![speaker](./assets/images/learn-icon.svg)
+
+<h2>Firstname <span>LASTNAME</span></h2>
+
+### Your job
+<!-- .element: class="icon-rule icon-first" -->
