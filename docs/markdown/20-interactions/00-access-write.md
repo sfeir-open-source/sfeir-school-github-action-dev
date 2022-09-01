@@ -1,10 +1,8 @@
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="two-column" -->
 
-# Interactions
+## Interactions
 
-##--##
-
-**Access**
+### Access
 
 - Value inputs
 - Workflow contexts
@@ -12,7 +10,7 @@
 
 ##--##
 
-**Write**
+### Write
 
 - Output values
 - Files/Toolchain
