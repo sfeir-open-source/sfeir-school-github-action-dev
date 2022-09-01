@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-# TODO Exercice 1
+## TODO Lab 1
 
 Create a new repository and release it, and publish it to the marketplace
 
@@ -8,7 +8,7 @@ Create a new repository and release it, and publish it to the marketplace
 
 <!-- .slide: class="exercice" -->
 
-# TODO Exercice 2
+## TODO Lab 2
 
 Manage JS action with dist files
 
@@ -16,6 +16,6 @@ Manage JS action with dist files
 
 <!-- .slide: class="exercice" -->
 
-# TODO Exercice 3
+## TODO Lab 3
 
 Deprecate input and manage 2 branches
