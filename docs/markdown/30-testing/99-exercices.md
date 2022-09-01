@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-# TODO Exercice 1
+## TODO Lab 1
 
 Test a shell script
 
@@ -8,7 +8,7 @@ Test a shell script
 
 <!-- .slide: class="exercice" -->
 
-# TODO Exercice 2
+## TODO Lab 2
 
 Test a JS file with mock
 
@@ -16,6 +16,6 @@ Test a JS file with mock
 
 <!-- .slide: class="exercice" -->
 
-# TODO Exercice 3
+## TODO Lab 3
 
 Test using workflow

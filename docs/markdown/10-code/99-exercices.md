@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-# TODO Exercice 1
+## TODO Lab 1
 
 Create an JS action type Hello world (input, output)
 
@@ -8,7 +8,7 @@ Create an JS action type Hello world (input, output)
 
 <!-- .slide: class="exercice" -->
 
-# TODO Exercice 2
+## TODO Lab 2
 
 Create Dockerfile action based on a docker image specific
 
@@ -16,6 +16,6 @@ Create Dockerfile action based on a docker image specific
 
 <!-- .slide: class="exercice" -->
 
-# TODO Exercice 3
+## TODO Lab 3
 
 Create a composite action to manipulate another action

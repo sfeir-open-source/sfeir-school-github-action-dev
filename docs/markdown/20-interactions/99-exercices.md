@@ -1,15 +1,15 @@
  <!-- .slide: class="exercice" -->
 
-# TODO Exercice 1
+## TODO Lab 1
 
 ##--##
 
 <!-- .slide: class="exercice" -->
 
-# TODO Exercice 2
+## TODO Lab 2
 
 ##--##
 
 <!-- .slide: class="exercice" -->
 
-# TODO Exercice 3
+## TODO Lab 3
