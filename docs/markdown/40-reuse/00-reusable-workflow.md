@@ -100,13 +100,8 @@ runs:
 
 ## Behavior
 
-- Composite action act **as one step** in the caller workflow
-  
-  ![](./assets/images/reuse-job-steps.png)
-
-- Reusable workflow act **as sub-step** in the caller workflow
-
-  ![](./assets/images/reuse-jobs.png)
+- Composite action act **as one step** in the caller workflow ![](./assets/images/reuse-job-steps.png)
+- Reusable workflow act **as sub-step** in the caller workflow ![](./assets/images/reuse-jobs.png)
 <!-- .element: class="list-fragment" -->
 
 ##--##
