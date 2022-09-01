@@ -16,6 +16,8 @@ function codeSlides() {
   return [
     '10-code/00-TITLE.md',
     '10-code/00-definition.md',
+    '10-code/00-where.md',
+    '10-code/00-kind-type.md',
     '10-code/01-TITLE.md',
     '10-code/01-content.md',
     '10-code/01-minimal.md',
