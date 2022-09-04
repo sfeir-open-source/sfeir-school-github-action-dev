@@ -79,3 +79,26 @@ runs:
 `firstInput` is **NOT** available under environment variable `$INPUT_FIRSTINPUT`
 
 And you need to use the `inputs` context field to access it : `${{ inputs.firstInput }}`.
+
+##--##
+
+# Deprecation of an input
+
+During the development of your action, you may want to abandon an input released on a previous version.
+
+[**deprecationMessage**](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputsinput_iddeprecationmessage]) help you achieve this before removing it in the next version.
+
+```yaml
+name: Action name
+description: Short description of the action
+inputs:
+  firstInput:
+    description: First Input
+    required: true
+    default: "Default value"
+    deprecationMessage: "Use secondInput instead"
+  secondInput:
+    description: Second Input
+    required: true
+    default: "Default value"
+```

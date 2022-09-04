@@ -19,7 +19,6 @@ function codeSlides() {
     '10-code/01-inputs.md',
     '10-code/01-outputs.md',
     '10-code/01-runs.md',
-    '10-code/01-marketplace.md',
     '10-code/02-TITLE.md',
     '10-code/02-uses.md',
     '10-code/99-TITLE.md',
@@ -74,7 +73,7 @@ function lifecycleSlides() {
     '50-lifecycle/00-birth.md',
     '50-lifecycle/00-release.md',
     '50-lifecycle/00-marketplace.md',
-    '50-lifecycle/00-life-and-death.md',
+    '50-lifecycle/00-maintainer.md',
     '50-lifecycle/99-TITLE.md',
     '50-lifecycle/99-exercices.md'
   ];

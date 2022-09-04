@@ -11,6 +11,7 @@ Your action will be run inside a workflow and having access to its contexts.
 - `runner.*`
 - `strategy.*` and `matrix.*` (Only if a matrix strategy is used in the caller job)
 - `steps.*` (Only for `composite` actions)
+- `secrets.*` (Except for `composite` actions)
 
 ⚠️ Avoid using contexts directly, sometimes it's better to ask the data as input with a default value from the context itself.
 
@@ -23,7 +24,7 @@ Some contexts are inaccessibles inside an action
 
 - jobs
 - needs
-- secrets
+- secrets (for Composite actions)
 
 ##--##
 
