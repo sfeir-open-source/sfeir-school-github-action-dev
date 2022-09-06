@@ -50,8 +50,8 @@ function testingSlides() {
     '30-testing/00-TITLE.md',
     '30-testing/00-testing.md',
     '30-testing/01-TITLE.md',
-    '30-testing/01-javascript.md',
     '30-testing/01-others.md',
+    '30-testing/01-javascript.md',
     '30-testing/01-workflows.md',
     '30-testing/99-TITLE.md',
     '30-testing/99-exercices.md'
