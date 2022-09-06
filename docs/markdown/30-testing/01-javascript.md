@@ -12,6 +12,8 @@ For example, you can use [**Jest** 🔗](https://jestjs.io/).
 
 ## Input test 
 
+- Unit test
+
 ```js
   it('sets sha to empty when explicit ref', async () => {
     inputs.ref = 'refs/heads/some-other-ref'
@@ -21,10 +23,20 @@ For example, you can use [**Jest** 🔗](https://jestjs.io/).
   })
 ```
 
-- Test can be : 
+- Mock 
 
+```js
+test("mock return value", () => {
+  const mock = jest.fn();
+  mock.mockReturnValue("bar");
+
+  expect(mock("foo")).toBe("bar");
+  expect(mock).toHaveBeenCalledWith("foo");
+});
+```
+
+- Test in a GitHub Action can be : 
   - Mock 
-  - End to end (e2e) 
   - Unit test 
 
 Test can be made with multiple node version using the matrix strategy
