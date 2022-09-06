@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: recursive
 
       # Test 1
       - name: Default usecase
@@ -35,3 +37,12 @@ jobs:
           [[ "${{ env.OUTPUT_VALUE }}" == "" ]]
           [[ "${{ steps.test-2.outputs.value }}" == "" ]]
         shell: bash
+
+      # Test 3
+      - name: bats usecase
+        id: test-3
+        run: |
+          ${GITHUB_WORKSPACE}/test/bats/bin/bats ${GITHUB_WORKSPACE}/test/test.bats
+        shell: bash
+
+
