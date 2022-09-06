@@ -3,6 +3,7 @@ function schoolSlides() {
   return [
     '00-school/00-TITLE.md',
     '00-school/00-speaker-rlespinasse.md',
+    '00-school/00-speaker-thibauld.md',
     '00-school/00-participant.md',
     '00-school/00-prerequisites.md',
     '00-school/00-plan.md'
