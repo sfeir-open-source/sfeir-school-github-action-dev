@@ -13,14 +13,14 @@ If both cases, you can use **bats** to help you write a test suite for your acti
 
 # Testing Shell script with Bats
 
-## Test folder
+Setup your repository by adding bats and utilities as submodules
 
-```yaml
-.github/
-    actions/
-        runs-using-docker/
-            cleanup.sh
-            main.sh
+```text
+action.yaml
+src/
+    cleanup.sh
+    main.sh
+    setup.sh
             ...
 test/
     bats/               <- submodule
@@ -29,15 +29,26 @@ test/
         bats-assert/    <- submodule
     test.bats
     ...
-
 ```
 
+- Required github submodule to work : 
+    - `test/bats` 👉 [**Go to reference** 🔗](https://github.com/bats-core/bats-core.git)
+    - `test/test_helper/bats-support` 👉 [**Go to reference** 🔗](https://github.com/bats-core/bats-support.git)
+    - `test/test_helper/bats-assert` 👉 [**Go to reference** 🔗](https://github.com/bats-core/bats-assert.git)
 
 ##--##
 
 # Testing Shell script with Bats
 
-## **test.bats** 
+- Easy way to write action following the [**Test-driven development method** 🔗](https://en.wikipedia.org/wiki/Test-driven_development)
+
+- `setup` step can be made to prepare the test environment to run specific use case
+  - export ENV variable
+  - load library eg. bats-support and bats-assert that provide error reporting, test assertions etc.
+  - ...
+- `teardown` step can be used to clean up things eg. created files
+
+**test.bats** 
 
 ```
 setup() {
@@ -45,31 +56,25 @@ setup() {
     load 'test_helper/bats-assert/load'
 
     DIR="$( cd "$( dirname "$BATS_TEST_FILENAME" )" >/dev/null 2>&1 && pwd )"
-    export KEY=tata
+    export KEY=bar
     PATH="$DIR/../.github/actions/runs-using-docker:$PATH"
 }
 
 @test "check main.sh is working" {
-    run main.sh toto
-    assert_output 'Doing stuff... toto (tata)'
+    run main.sh foo
+    assert_output 'Doing stuff... foo (bar)'
 }
 
 @test "check cleanup.sh is working" {
-    run cleanup.sh toto
-    assert_output 'Cleaning up... toto (tata)'
+    run cleanup.sh foo
+    assert_output 'Cleaning up... foo (bar)'
 }
 
 @test "check setup.sh is working" {
-    run setup.sh toto
-    assert_output 'Setting up... toto (tata)'
+    run setup.sh foo
+    assert_output 'Setting up... foo (bar)'
 }
 ```
-
-- Easy way to writte action fgollowing the TDD method
-- Required github submodule to work : 
-    - `test/bats` 👉 [**Go to reference** 🔗](https://github.com/bats-core/bats-core.git)
-    - `test/test_helper/bats-support` 👉 [**Go to reference** 🔗](https://github.com/bats-core/bats-support.git)
-    - `test/test_helper/bats-assert` 👉 [**Go to reference** 🔗](https://github.com/bats-core/bats-assert.git)
 
 ##--##
 

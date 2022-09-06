@@ -3,21 +3,21 @@ setup() {
     load 'test_helper/bats-assert/load'
 
     DIR="$( cd "$( dirname "$BATS_TEST_FILENAME" )" >/dev/null 2>&1 && pwd )"
-    export KEY=tata
+    export KEY=bar
     PATH="$DIR/../.github/actions/runs-using-docker:$PATH"
 }
 
 @test "check main.sh is working" {
-    run main.sh toto
-    assert_output 'Doing stuff... toto (tata)'
+    run main.sh foo
+    assert_output 'Doing stuff... foo (bar)'
 }
 
 @test "check cleanup.sh is working" {
-    run cleanup.sh toto
-    assert_output 'Cleaning up... toto (tata)'
+    run cleanup.sh foo
+    assert_output 'Cleaning up... foo (bar)'
 }
 
 @test "check setup.sh is working" {
-    run setup.sh toto
-    assert_output 'Setting up... toto (tata)'
+    run setup.sh foo
+    assert_output 'Setting up... foo (bar)'
 }

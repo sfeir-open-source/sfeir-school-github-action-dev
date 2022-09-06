@@ -2,7 +2,7 @@
 
 # Testing JavaScript based code
 
-Every testing farmework can be used to make javascript's test.
+Every testing framework can be used to make JavaScript tests.
 
 For example, you can use [**Jest** 🔗](https://jestjs.io/).
 

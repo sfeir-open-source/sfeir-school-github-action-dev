@@ -44,5 +44,3 @@ jobs:
         run: |
           ${GITHUB_WORKSPACE}/test/bats/bin/bats ${GITHUB_WORKSPACE}/test/test.bats
         shell: bash
-
-
