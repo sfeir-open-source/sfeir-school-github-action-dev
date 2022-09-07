@@ -83,7 +83,8 @@ function lifecycleSlides() {
 function conclusionSlides() {
   return [
     '60-conclusion/00-TITLE.md',
-    '60-conclusion/00-for-the-road.md'
+    '60-conclusion/00-for-the-road.md',
+    '60-conclusion/01-TITLE.md'
   ];
 }
 
