@@ -1,0 +1,28 @@
+name: Labs
+on:
+  push:
+  workflow_call:
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # Lab1 => steps/10-code-lab1-action-input/testing-workflow.yml
+      - name: Lab1 - default run
+        uses: ./steps/10-code-lab1-action-input-solution
+      - name: Lab1 - custom run
+        uses: ./steps/10-code-lab1-action-input-solution
+        with:
+          say: GitHub Action Rocks
+          eyes: oo
+
+      # Lab2 => steps/10-code-lab2-action-output/testing-workflow.yml
+      - name: Lab2 - run
+        id: upper_action
+        uses: ./steps/10-code-lab2-action-output-solution
+        with:
+          text: GitHub Action Rocks
+      - name: Lab2 - output usage
+        run: |
+          echo "::notice ::${{ steps.upper_action.outputs.upper_text }}"

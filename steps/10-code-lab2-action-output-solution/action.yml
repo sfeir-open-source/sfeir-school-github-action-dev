@@ -1,0 +1,19 @@
+name: 'Code:Lab2'
+description: 'Action of Lab2 in Code section'
+inputs:
+  text:
+    description: text
+    required: true
+outputs:
+  upper_text:
+    description: text in UPPER CASE
+    value: ${{ steps.upper_step.outputs.upper_text }}
+runs:
+  using: 'composite'
+  steps:
+    - id: upper_step
+      run: |
+        echo "::set-output name=upper_text::${INPUT_TEXT^^}"
+      env:
+        INPUT_TEXT: ${{ inputs.text }}
+      shell: bash

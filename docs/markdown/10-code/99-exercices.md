@@ -1,21 +1,22 @@
 <!-- .slide: class="exercice" -->
+# Cowsay
 
-## TODO Lab 1
+## Lab 1
 
-Create an JS action type Hello world (input, output)
+![float-left](./assets/images/code-lab1-cowsay.png)
 
-##--##
-
-<!-- .slide: class="exercice" -->
-
-## TODO Lab 2
-
-Create Dockerfile action based on a docker image specific
+Create an Action using Docker container taking inputs to serve as **cowsay** arguments
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/10-code-lab1-action-input)
 
 ##--##
 
 <!-- .slide: class="exercice" -->
 
-## TODO Lab 3
+# Uppercase
+## Lab 2
 
-Create a composite action to manipulate another action
+![float-left](./assets/images/code-lab2-uppercase.jpeg)
+
+Create a Composite Action to output the input text as **Uppercase** value
+
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/10-code-lab2-action-output)

@@ -1,0 +1,17 @@
+name: 'Code:Lab1'
+description: 'Action of Lab1 in Code section'
+inputs:
+  say:
+    description: say
+    required: true
+  eyes:
+    description: eyes
+    required: false
+    default: oo
+runs:
+  using: 'docker'
+  image: 'docker://rancher/cowsay:latest'
+  args:
+    - -e
+    - ${{ inputs.eyes }}
+    - ${{ inputs.say }}
