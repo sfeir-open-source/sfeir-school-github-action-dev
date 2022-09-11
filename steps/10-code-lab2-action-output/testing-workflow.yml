@@ -1,0 +1,16 @@
+name: Test the Lab 2 of Code
+on: push
+jobs:
+  test-code-lab2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - id: upper_action
+        uses: ./.
+        with:
+          text: GitHub Action Rocks
+
+      # See the action summary to see the notice message
+      - run: |
+          echo "::notice ::${{ steps.upper_action.outputs.upper_text }}"

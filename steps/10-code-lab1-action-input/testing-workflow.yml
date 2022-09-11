@@ -1,0 +1,16 @@
+name: Test the Lab 1 of Code
+on: push
+jobs:
+  test-code-lab1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: default run
+        uses: ./.
+
+      - name: custom run
+        uses: ./.
+        with:
+          say: GitHub Action Rocks
+          eyes: oo
