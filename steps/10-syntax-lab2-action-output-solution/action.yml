@@ -1,5 +1,5 @@
-name: 'Code:Lab2'
-description: 'Action of Lab2 in Code section'
+name: 'Syntax:Lab2'
+description: 'Action of Lab2 in Syntax section'
 inputs:
   text:
     description: text
