@@ -6,13 +6,12 @@ You have your Idea for an Action, time to create it
 
 1. Create a repository GitHub
 2. Add the `action.yaml` file and any relevant file
-  - [template JS](https://github.com/actions/javascript-action)
-  - [template TS](https://github.com/actions/typescript-action)
-  - [template Dockerfile](https://github.com/actions/container-action)
 3. That it, you have your GitHub Action available to by used
 <!-- .element: class="list-fragment" -->
 
 ##--##
+
+<!-- .slide: -->
 
 # Your Action is Open source or Inner source
 

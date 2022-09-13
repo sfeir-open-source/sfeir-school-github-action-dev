@@ -1,2 +1,10 @@
 
 /*# sourceMappingURL=slides.css.map */
+
+.reveal .hljs-ln-numbers{
+  background-color: white;
+}
+
+.reveal .hljs-ln-code {
+  background-color: white;
+}

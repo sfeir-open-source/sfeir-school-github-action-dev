@@ -34,7 +34,7 @@ Some contexts are inaccessibles inside an action
 
 ## Use as input
 
-```yaml
+```yaml [5]
 inputs:
   sha:
     description: Reference to the commit

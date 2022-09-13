@@ -6,7 +6,7 @@
 
 **action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#outputs-for-docker-container-and-javascript-actions)
 
-```yaml
+```yaml [3-5]
 name: Action name
 description: Short description of the action
 outputs:
@@ -19,7 +19,7 @@ runs:
 
 **main.js**
 
-```js
+```js [2]
 const core = require('@actions/core');
 core.setOutput('someOutput', 'Some Value');
 ```
@@ -34,7 +34,7 @@ core.setOutput('someOutput', 'Some Value');
 
 **action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#outputs-for-docker-container-and-javascript-actions)
 
-```yaml
+```yaml [3-5]
 name: Action name
 description: Short description of the action
 outputs:
@@ -61,7 +61,7 @@ To define an output value, you need to print the `set-output` command
 
 **action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#outputs-for-composite-actions)
 
-```yaml
+```yaml [10-11|3-6]
 name: Action name
 description: Short description of the action
 outputs:
