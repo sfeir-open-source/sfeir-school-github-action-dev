@@ -1,0 +1,12 @@
+{
+  "name": "interactions-lab1",
+  "version": "1.0.0",
+  "description": "Action of Lab1 in Interactions section",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "ncc build index.js -o dist --source-map"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.31.1"
+  }
+}
