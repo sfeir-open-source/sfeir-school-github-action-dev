@@ -6,7 +6,7 @@ In addition of testing the code, you can test the whole action from the user poi
 
 One test from [rlespinasse/slugify-value](https://github.com/rlespinasse/slugify-value/blob/v1.x/.github/workflows/slugify-value.yaml) action tests
 
-```yaml
+```yaml [1-5|6-13]
 - name: Slugify key/value
   uses: ./
   with:
@@ -30,10 +30,10 @@ One test from [rlespinasse/slugify-value](https://github.com/rlespinasse/slugify
 
 ## In the testing workflow
 
-- a test suite can be seen as a job with the same workspace to work with.
-- a test is composed of the **run of the action**, and the **step to test the output of the action**.
+- A test suite can be seen as a job with the same workspace to work with.
+- A test is composed of the **run of the action**, and the **step to test the output of the action**.
 
-```yaml
+```yaml [7-19]
 jobs:
   test-suite:
     runs-on: ubuntu-latest
@@ -68,7 +68,7 @@ Use
 - `continue-on-error: true` on the action
 - `outcome` and `conclusion` come from the [steps](https://docs.github.com/en/actions/learn-github-actions/contexts#steps-context) context
 
-```yaml
+```yaml [8,11-12]
 # Test X
 - name: Test name
   id: test-id
@@ -92,7 +92,7 @@ Use
 
 Your action is valid for multiple OS runners, run your tests suite on all OS
 
-```yaml
+```yaml [3-7]
 jobs:
   test-suite:
     strategy:

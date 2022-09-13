@@ -6,7 +6,7 @@
 
 **action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
 
-```yaml
+```yaml [3-7]
 name: Action name
 description: Short description of the action
 inputs:
@@ -21,7 +21,7 @@ runs:
 
 **main.js**
 
-```js
+```js [2]
 const core = require('@actions/core');
 const value = core.getInput('firstInput');
 ```
@@ -36,7 +36,7 @@ const value = core.getInput('firstInput');
 
 **action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
 
-```yaml
+```yaml [3-7]
 name: Action name
 description: Short description of the action
 inputs:
@@ -61,7 +61,7 @@ runs:
 
 **action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
 
-```yaml
+```yaml [3-7|11]
 name: Action name
 description: Short description of the action
 inputs:
@@ -82,13 +82,15 @@ And you need to use the `inputs` context field to access it : `${{ inputs.firstI
 
 ##--##
 
+<!-- .slide: class="with-code" -->
+
 # Deprecation of an input
 
 During the development of your action, you may want to abandon an input released on a previous version.
 
 [**deprecationMessage**](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputsinput_iddeprecationmessage]) help you achieve this before removing it in the next version.
 
-```yaml
+```yaml [9-12|8]
 name: Action name
 description: Short description of the action
 inputs:

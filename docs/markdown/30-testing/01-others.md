@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code" --> 
+<!-- .slide: class="with-code" -->
 
 # Testing any other programming language based code
 
@@ -10,6 +10,8 @@ In practice, Shell scripts are easly used on Docker container action and Composi
 If both cases, you can use **bats** to help you write a test suite for your action.
 
 ##--##
+
+<!-- .slide: class="with-code" -->
 
 # Testing Shell script with Bats
 
@@ -31,10 +33,10 @@ test/
     ...
 ```
 
-- Required github submodule to work : 
-    - `test/bats` 👉 [Go to reference](https://github.com/bats-core/bats-core.git)
-    - `test/test_helper/bats-support` 👉 [Go to reference](https://github.com/bats-core/bats-support.git)
-    - `test/test_helper/bats-assert` 👉 [Go to reference](https://github.com/bats-core/bats-assert.git)
+- Required github submodule to work
+  - `test/bats` 👉 [Go to reference](https://github.com/bats-core/bats-core.git)
+  - `test/test_helper/bats-support` 👉 [Go to reference](https://github.com/bats-core/bats-support.git)
+  - `test/test_helper/bats-assert` 👉 [Go to reference](https://github.com/bats-core/bats-assert.git)
 
 ##--##
 
@@ -48,9 +50,15 @@ test/
   - ...
 - `teardown` step can be used to clean up things eg. created files
 
-**test.bats** 
+##--##
 
-```
+<!-- .slide: class="with-code" -->
+
+# Testing Shell script with Bats
+
+## test.bats
+
+```sh
 setup() {
     load 'test_helper/bats-support/load'
     load 'test_helper/bats-assert/load'
@@ -78,6 +86,8 @@ setup() {
 
 ##--##
 
+<!-- .slide: class="with-code" -->
+
 # Testing Shell script with Bats
 
 ## In the testing workflow
@@ -93,7 +103,7 @@ setup() {
         shell: bash
 ```
 
-**output** 
+**output**
 
 ```shell
 test.bats
