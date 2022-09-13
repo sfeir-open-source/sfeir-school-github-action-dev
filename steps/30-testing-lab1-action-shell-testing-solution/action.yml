@@ -5,5 +5,5 @@ runs:
   steps: 
       - name: bats usecase
         run: |
-          ${GITHUB_WORKSPACE}/test/bats/bin/bats ${GITHUB_WORKSPACE}/test-lab.bats
+          ${GITHUB_WORKSPACE}/test/bats/bin/bats ${GITHUB_WORKSPACE}/steps/30-testing-lab1-action-shell-testing-solution/test-labs.bats
         shell: bash
