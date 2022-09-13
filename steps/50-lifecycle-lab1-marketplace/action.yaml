@@ -1,0 +1,5 @@
+name: Lifecycle Lab1
+description: Action for lab1 of Lifecycle section
+runs:
+  using: node16
+  main: index.js

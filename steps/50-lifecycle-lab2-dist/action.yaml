@@ -1,0 +1,12 @@
+name: Lifecycle Lab2
+description: Action for lab2 of Lifecycle section
+branding:
+  icon: circle
+  color: blue
+inputs:
+  who:
+    description: with who
+    required: true
+runs:
+  using: node16
+  main: dist/index.js

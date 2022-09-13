@@ -71,6 +71,8 @@ we recommand you [Semantic Release](https://github.com/semantic-release/semantic
     extra_plugins: |
       @semantic-release/changelog
       @semantic-release/git
+  env:
+    GITHUB_TOKEN: ${{ github.token }}
 ```
 
 A wrapper around that : [rlespinasse/release-that](https://github.com/rlespinasse/release-that)
@@ -109,11 +111,14 @@ Since this kind of action generate dist files, we need to take the produced file
 
 ```yaml [2|7]
 - uses: actions/checkout@v3
-- run: npm run build
+- run: npm run install
+- run: npm run prepare
 - uses: cycjimmy/semantic-release-action@v3
   with:
     extra_plugins: |
       @semantic-release/changelog
       @semantic-release/exec
       @semantic-release/git
+  env:
+    GITHUB_TOKEN: ${{ github.token }}
 ```
