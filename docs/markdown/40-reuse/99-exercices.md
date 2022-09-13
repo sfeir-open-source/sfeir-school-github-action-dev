@@ -1,13 +1,25 @@
-<!-- .slide: class="exercice" -->
+ <!-- .slide: class="exercice" -->
 
-## TODO Lab 1
+# Lab 1 Name
 
-Extract reusable workflow from a workflow
+## Lab 1
+
+![float-left](./assets/images/reuse-lab1-key.jpeg)
+
+Description
+
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/40-reuse-lab1-key)
 
 ##--##
 
 <!-- .slide: class="exercice" -->
 
-## TODO Lab 2
+# Lab 2 Name
 
-Extract actions from reusable workflows
+## Lab 2
+
+![float-left](./assets/images/reuse-lab2-key.png)
+
+Description
+
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/40-reuse-lab2-key)

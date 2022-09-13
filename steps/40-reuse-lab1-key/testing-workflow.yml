@@ -1,0 +1,7 @@
+name: Test the Lab 1 of Interactions
+on: push
+jobs:
+  test-interactions-lab1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
