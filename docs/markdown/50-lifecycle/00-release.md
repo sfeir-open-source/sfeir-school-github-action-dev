@@ -7,9 +7,9 @@ Without it, the use of your action will only be throught branches.
 
 Release cycle
 
-- Use Semantic Versionning : [**MAJOR.MINOR.PATCH** 🔗](https://semver.org/spec/v2.0.0.html#summary)
-  - Use the [**v* prefix** 🔗](https://semver.org/spec/v2.0.0.html#is-v123-a-semantic-version) for your git tag (`v1.0.1` instead of `1.0.1`)
-- Keep a [**git tag based on MAJOR version** 🔗](https://docs.github.com/en/actions/creating-actions/releasing-and-maintaining-actions#example-developer-process) up-to-date
+- Use Semantic Versionning : [MAJOR.MINOR.PATCH](https://semver.org/spec/v2.0.0.html#summary)
+  - Use the [v* prefix](https://semver.org/spec/v2.0.0.html#is-v123-a-semantic-version) for your git tag (`v1.0.1` instead of `1.0.1`)
+- Keep a [git tag based on MAJOR version](https://docs.github.com/en/actions/creating-actions/releasing-and-maintaining-actions#example-developer-process) up-to-date
   - You can also do the same for **MINOR** version
 - Keep maximum 2 major versions in parallel to ease the maintenance
 <!-- .element: class="list-fragment" -->
@@ -22,7 +22,7 @@ As you keep a maximum of 2 major versions up-to-date, you need to document it.
 
 This fall on the **Security** part (Advisories, Vulnerabilities Alerts) of your repository.
 
-See [**Security Policy** 🔗](https://github.com/rlespinasse/github-slug-action/blob/v4.x/SECURITY.md) example
+See [Security Policy](https://github.com/rlespinasse/github-slug-action/blob/v4.x/SECURITY.md) example
 
 - Tell when the branch **will not be maintained anymore for security issues**
 - Tell when the branch **will be deleted forever**
@@ -37,7 +37,7 @@ See [**Security Policy** 🔗](https://github.com/rlespinasse/github-slug-action
 ## Semantic Release
 
 You can manage semantic versionning by a lot of tools or manually,
-we recommand you [**Semantic Release** 🔗](https://github.com/semantic-release/semantic-release) toolchain which come with an Action.
+we recommand you [Semantic Release](https://github.com/semantic-release/semantic-release) toolchain which come with an Action.
 
 **.releaserc**
 
@@ -66,7 +66,7 @@ we recommand you [**Semantic Release** 🔗](https://github.com/semantic-release
       @semantic-release/git
 ```
 
-A wrapper around that : [**rlespinasse/release-that** 🔗](https://github.com/rlespinasse/release-that)
+A wrapper around that : [rlespinasse/release-that](https://github.com/rlespinasse/release-that)
 <!-- .element: class="credits" -->
 
 ##--##

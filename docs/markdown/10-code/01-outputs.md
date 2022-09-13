@@ -4,7 +4,7 @@
 
 ## JavaScript-based action
 
-**action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#outputs-for-docker-container-and-javascript-actions)
+**action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#outputs-for-docker-container-and-javascript-actions)
 
 ```yaml
 name: Action name
@@ -32,7 +32,7 @@ core.setOutput('someOutput', 'Some Value');
 
 ## Dockerfile-based action
 
-**action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#outputs-for-docker-container-and-javascript-actions)
+**action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#outputs-for-docker-container-and-javascript-actions)
 
 ```yaml
 name: Action name
@@ -59,7 +59,7 @@ To define an output value, you need to print the `set-output` command
 
 ## Composite action
 
-**action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#outputs-for-composite-actions)
+**action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#outputs-for-composite-actions)
 
 ```yaml
 name: Action name

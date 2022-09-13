@@ -4,7 +4,7 @@
 
 In addition of testing the code, you can test the whole action from the user point of view in a GitHub Action workflow.
 
-One test from [**rlespinasse/slugify-value** 🔗](https://github.com/rlespinasse/slugify-value/blob/v1.x/.github/workflows/slugify-value.yaml) action tests
+One test from [rlespinasse/slugify-value](https://github.com/rlespinasse/slugify-value/blob/v1.x/.github/workflows/slugify-value.yaml) action tests
 
 ```yaml
 - name: Slugify key/value
@@ -66,7 +66,7 @@ jobs:
 Use
 
 - `continue-on-error: true` on the action
-- `outcome` and `conclusion` come from the [**steps** 🔗](https://docs.github.com/en/actions/learn-github-actions/contexts#steps-context) context
+- `outcome` and `conclusion` come from the [steps](https://docs.github.com/en/actions/learn-github-actions/contexts#steps-context) context
 
 ```yaml
 # Test X
