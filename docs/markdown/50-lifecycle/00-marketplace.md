@@ -2,7 +2,7 @@
 
 # Marketplace setup
 
-**action.yaml** (or **action.yml**) 👉 [**Go to reference** 🔗](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#branding)
+**action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#branding)
 
 ```yaml
 name: Action name                               # Must be unique on Marketplace
@@ -12,7 +12,7 @@ branding:                                       # Mandatory to be plublish on th
   color: 'green'
 ```
 
-The action will be available on [**GitHub Marketplace** 🔗](https://github.com/marketplace?type=actions)
+The action will be available on [GitHub Marketplace](https://github.com/marketplace?type=actions)
 
 ##--##
 
@@ -20,7 +20,7 @@ The action will be available on [**GitHub Marketplace** 🔗](https://github.com
 
 For an action, the README file will be used as marketplace page.
 
-GitHub recommand to [**have a README file containing** 🔗](https://docs.github.com/en/actions/creating-actions/about-custom-actions#creating-a-readme-file-for-your-action)
+GitHub recommand to [have a README file containing](https://docs.github.com/en/actions/creating-actions/about-custom-actions#creating-a-readme-file-for-your-action)
 
 - A detailed description of what the action does
 - Required input and output arguments
@@ -51,9 +51,9 @@ For that GitHub expose a the repositories which use your action
 
 > **Insights** > **Dependency graph** > **Dependents**
 
-- [**actions/checkout** 🔗](https://github.com/actions/checkout/network/dependents?package_id=UGFja2FnZS0yOTQwNzE5ODM0)
-- [**rlespinasse/github-slug-action** 🔗](https://github.com/rlespinasse/github-slug-action/network/dependents)
-- [**rlespinasse/drawio-export-action** 🔗](https://github.com/rlespinasse/drawio-export-action/network/dependents)
+- [actions/checkout](https://github.com/actions/checkout/network/dependents?package_id=UGFja2FnZS0yOTQwNzE5ODM0)
+- [rlespinasse/github-slug-action](https://github.com/rlespinasse/github-slug-action/network/dependents)
+- [rlespinasse/drawio-export-action](https://github.com/rlespinasse/drawio-export-action/network/dependents)
 
 ⚠️ Only for public actions
 <!-- .element: class="credits" -->

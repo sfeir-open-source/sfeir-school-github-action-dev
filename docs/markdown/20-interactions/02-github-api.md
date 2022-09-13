@@ -4,9 +4,9 @@
 
 From your action, you can interact with the GitHub API using
 
-- The [**@actions/github** 🔗](https://github.com/actions/toolkit) package from `@actions/toolkit`
-  - expose the official [**GitHub Oktokit library** 🔗](https://octokit.github.io/rest.js/v18) in JavaScript
-- Any other [**GitHub Oktokit libraries** 🔗](https://docs.github.com/en/rest/overview/libraries)
+- The [@actions/github](https://github.com/actions/toolkit) package from `@actions/toolkit`
+  - expose the official [GitHub Oktokit library](https://octokit.github.io/rest.js/v18) in JavaScript
+- Any other [GitHub Oktokit libraries](https://docs.github.com/en/rest/overview/libraries)
 
 ##--##
 

@@ -4,7 +4,7 @@
 
 **You will have nothing** except the programming language testing tools itself.
 
-For example, if your code rely on Shell scripts, you can use [**bats** 🔗](https://github.com/bats-core/bats-core).
+For example, if your code rely on Shell scripts, you can use [bats](https://github.com/bats-core/bats-core).
 
 In practice, Shell scripts are easly used on Docker container action and Composite action to serve as wrapper or to do the all works.
 If both cases, you can use **bats** to help you write a test suite for your action.
@@ -32,15 +32,15 @@ test/
 ```
 
 - Required github submodule to work : 
-    - `test/bats` 👉 [**Go to reference** 🔗](https://github.com/bats-core/bats-core.git)
-    - `test/test_helper/bats-support` 👉 [**Go to reference** 🔗](https://github.com/bats-core/bats-support.git)
-    - `test/test_helper/bats-assert` 👉 [**Go to reference** 🔗](https://github.com/bats-core/bats-assert.git)
+    - `test/bats` 👉 [Go to reference](https://github.com/bats-core/bats-core.git)
+    - `test/test_helper/bats-support` 👉 [Go to reference](https://github.com/bats-core/bats-support.git)
+    - `test/test_helper/bats-assert` 👉 [Go to reference](https://github.com/bats-core/bats-assert.git)
 
 ##--##
 
 # Testing Shell script with Bats
 
-- Easy way to write action following the [**Test-driven development method** 🔗](https://en.wikipedia.org/wiki/Test-driven_development)
+- Easy way to write action following the [Test-driven development method](https://en.wikipedia.org/wiki/Test-driven_development)
 
 - `setup` step can be made to prepare the test environment to run specific use case
   - export ENV variable

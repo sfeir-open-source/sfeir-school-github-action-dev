@@ -6,10 +6,10 @@
 
 Your action can display logs and set annotations using the `message` commands
 
-- [**debug** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-a-debug-message) (log only when debugging is activated)
-- [**notice** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-a-notice-message)
-- [**warning** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-a-warning-message)
-- [**error** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-error-message)
+- [debug](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-a-debug-message) (log only when debugging is activated)
+- [notice](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-a-notice-message)
+- [warning](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-a-warning-message)
+- [error](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-error-message)
 
 ##--##
 # Communicate
@@ -108,4 +108,4 @@ await core.summary
 
 ## Other communications
 
-- Grouping log lines ([**Reference** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#grouping-log-lines))
+- Grouping log lines ([Reference](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#grouping-log-lines))

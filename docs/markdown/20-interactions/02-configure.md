@@ -2,7 +2,7 @@
 
 # Configure
 
-## [**Set an environment variable** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-environment-variable)
+## [Set an environment variable](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-environment-variable)
 
 In shell
 
@@ -23,7 +23,7 @@ core.exportVariable('{environment_variable_name}', '{value}');
 
 # Configure
 
-## [**Set a multiline environment variable** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#multiline-strings)
+## [Set a multiline environment variable](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#multiline-strings)
 
 In shell
 
@@ -46,7 +46,7 @@ core.exportVariable('{environment_variable_name}', var_with_multiline_content);
 
 # Configure
 
-## [**Add a directory to the path** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#adding-a-system-path)
+## [Add a directory to the path](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#adding-a-system-path)
 
 In shell
 
@@ -67,7 +67,7 @@ core.addPath('{path}');
 
 ## Other configuration
 
-- Sending values to the pre and post actions ([**Reference** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#sending-values-to-the-pre-and-post-actions))
-- Stopping and starting workflow commands ([**Reference** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#stopping-and-starting-workflow-commands))
-- Masking a value in log ([**Reference** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#masking-a-value-in-log))
-- Echoing command outputs ([**Reference** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#echoing-command-outputs))
+- Sending values to the pre and post actions ([Reference](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#sending-values-to-the-pre-and-post-actions))
+- Stopping and starting workflow commands ([Reference](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#stopping-and-starting-workflow-commands))
+- Masking a value in log ([Reference](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#masking-a-value-in-log))
+- Echoing command outputs ([Reference](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#echoing-command-outputs))
