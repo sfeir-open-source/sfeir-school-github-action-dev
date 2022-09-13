@@ -12,11 +12,9 @@ What the difference between them?
 
 <!-- .slide: class="with-code" -->
 
-# Reusable Workflow or Action
+# Reusable Workflow
 
-## Example Workflow
-
-```yaml
+```yaml [3-7|29|16-18|19,21,23-24,26-27|12-15|30|3,8-11|32]
 on:
   workflow_call:
     inputs:
@@ -51,15 +49,22 @@ jobs:
             ACTION_ENV: ${{ inputs.workflow_env }}
 ```
 
+Notes:
+
+Declaration and use of
+
+- Input (type)
+- Output
+- Secret
+- Env variable
+
 ##--##
 
 <!-- .slide: class="with-code" -->
 
-# Reusable Workflow or Action
+# or Action
 
-## Example Action
-
-```yaml
+```yaml [1-4|18|8-10|11,15-16|1,5-7|19|20-21]
 inputs:
   action_input:
     description: 'action_input'
@@ -70,7 +75,7 @@ inputs:
 outputs:
   action_output:
     description: 'action_output'
-    value: ${{ jobs.workflow_job.outputs.job_output }}
+    value: ${{ steps.step1.outputs.action_output }}
 runs:
   using: composite
   steps:
@@ -82,6 +87,15 @@ runs:
       env:
         ACTION_ENV: ${{ env.WORKFLOW_ENV }}
 ```
+
+Notes:
+
+Declaration and use of
+
+- Input
+- Output
+- Secret
+- Env variable
 
 ##--##
 

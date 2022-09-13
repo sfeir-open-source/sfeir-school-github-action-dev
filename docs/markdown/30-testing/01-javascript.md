@@ -8,9 +8,9 @@ For example, you can use [Jest](https://jestjs.io/).
 
 ##--##
 
-# Testing Shell script with Jest
+<!-- .slide: class="with-code" -->
 
-## Input test 
+# Testing Shell script with Jest
 
 - Unit test
 
@@ -23,7 +23,7 @@ For example, you can use [Jest](https://jestjs.io/).
   })
 ```
 
-- Mock 
+- Mock
 
 ```js
 test("mock return value", () => {
@@ -34,9 +34,5 @@ test("mock return value", () => {
   expect(mock).toHaveBeenCalledWith("foo");
 });
 ```
-
-- Test in a GitHub Action can be : 
-  - Mock 
-  - Unit test 
 
 Test can be made with multiple node version using the matrix strategy

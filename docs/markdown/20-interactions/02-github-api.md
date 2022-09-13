@@ -20,7 +20,7 @@ With this library, you can manipulate the GitHub API like
 
 - welcoming a new contributor
 
-```yaml
+```yaml [1|5,19]
 - uses: actions/github-script@v6
   with:
     script: |
@@ -60,7 +60,7 @@ With this library, you can manipulate the GitHub API like
 
 - add a label `Triage` on new issue
 
-```yaml
+```yaml [1|4]
 - uses: actions/github-script@v6
   with:
     script: |

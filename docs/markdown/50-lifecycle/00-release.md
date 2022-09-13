@@ -28,6 +28,7 @@ See [Security Policy](https://github.com/rlespinasse/github-slug-action/blob/v4.
 - Tell when the branch **will be deleted forever**
 
 ⚠️ This kind of documentation is important since a branch reference can be used to run an Action.
+
 ⚠️ Avoid classic branch naming `master` or `main`
 
 ##--##
@@ -53,9 +54,15 @@ we recommand you [Semantic Release](https://github.com/semantic-release/semantic
 }
 ```
 
+##--##
+
+<!-- .slide: class="with-code" -->
+
+## Semantic Release
+
 **release-workflow.yaml**
 
-```yaml
+```yaml [3-8]
 - name: Checkout sources
   uses: actions/checkout@v3
 - name: Semantic Release
@@ -79,7 +86,7 @@ Since this kind of action generate dist files, we need to take the produced file
 
 **.releaserc**
 
-```json
+```json [6]
 {
   "plugins": [
     "@semantic-release/commit-analyzer",
@@ -92,9 +99,15 @@ Since this kind of action generate dist files, we need to take the produced file
 }
 ```
 
+##--##
+
+<!-- .slide: class="with-code" -->
+
+## JavaScript action
+
 **release-workflow.yaml**
 
-```yaml
+```yaml [2|7]
 - uses: actions/checkout@v3
 - run: npm run build
 - uses: cycjimmy/semantic-release-action@v3

@@ -14,13 +14,13 @@
 
 ##--##
 
-<!-- .slide: class="with-code max-height" -->
+<!-- .slide: class="with-code" -->
 
 # Uses
 
 ## Workflow Example
 
-```yaml
+```yaml [7-8|10-12|14-16|18-25]
 name: Run Actions
 on: push
 jobs:
