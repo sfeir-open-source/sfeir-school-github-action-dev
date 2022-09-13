@@ -1,0 +1,9 @@
+name: 'Testing:Lab1'
+description: 'Action of Lab1 in Testing section'
+runs:
+  using: "composite"
+  steps: 
+      - name: bats usecase
+        run: |
+          ${GITHUB_WORKSPACE}/test/bats/bin/bats ${GITHUB_WORKSPACE}/lab.bats
+        shell: bash

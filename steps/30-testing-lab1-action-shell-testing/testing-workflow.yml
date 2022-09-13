@@ -1,0 +1,10 @@
+name: Test the Lab 1 of Testing
+on: push
+jobs:
+  test-testing-lab1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: run test
+        uses: ./.
