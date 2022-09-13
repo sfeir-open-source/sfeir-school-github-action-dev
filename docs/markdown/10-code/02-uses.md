@@ -9,12 +9,12 @@
 * As an action in the same repository as the workflow
 * As an action inside a different private repository than the workflow
 
-[**Reference** 🔗](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
+[Reference](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
 <!-- .element: class="credits" -->
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" -->
 
 # Uses
 

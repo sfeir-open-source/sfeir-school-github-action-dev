@@ -8,5 +8,5 @@
 >
 >You can write your own actions, or you can find actions to use in your workflows in the GitHub Marketplace.
 
-[**Definition** 🔗](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#actions)
+[Definition](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#actions)
 <!-- .element: class="credits" -->

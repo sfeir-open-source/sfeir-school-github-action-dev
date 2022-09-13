@@ -6,9 +6,9 @@ You have your Idea for an Action, time to create it
 
 1. Create a repository GitHub
 2. Add the `action.yaml` file and any relevant file
-  - [**template JS** 🔗](https://github.com/actions/javascript-action)
-  - [**template TS** 🔗](https://github.com/actions/typescript-action)
-  - [**template Dockerfile** 🔗](https://github.com/actions/container-action)
+  - [template JS](https://github.com/actions/javascript-action)
+  - [template TS](https://github.com/actions/typescript-action)
+  - [template Dockerfile](https://github.com/actions/container-action)
 3. That it, you have your GitHub Action available to by used
 <!-- .element: class="list-fragment" -->
 
@@ -16,7 +16,7 @@ You have your Idea for an Action, time to create it
 
 # Your Action is Open source or Inner source
 
-GitHub provides you some recommandations and help to improve the community side of your projet : [**https://github.com/you/your-action/community** 🔗](https://github.com/rlespinasse/github-slug-action/community)
+GitHub provides you some recommandations and help to improve the community side of your projet : [https://github.com/you/your-action/community](https://github.com/rlespinasse/github-slug-action/community)
 
 Not mandatory but recommanded
 

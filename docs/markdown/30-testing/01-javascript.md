@@ -4,7 +4,7 @@
 
 Every testing framework can be used to make JavaScript tests.
 
-For example, you can use [**Jest** 🔗](https://jestjs.io/).
+For example, you can use [Jest](https://jestjs.io/).
 
 ##--##
 
