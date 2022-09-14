@@ -7,9 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          submodules: recursive
-
 
       # Lab1 => steps/10-code-lab1-action-input/testing-workflow.yml
       - name: Lab1 - default run
@@ -29,6 +26,13 @@ jobs:
       - name: Lab2 - output usage
         run: |
           echo "::notice ::${{ steps.upper_action.outputs.upper_text }}"
+
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
 
       # Lab1 => steps/30-testing-lab1-action-shell-testing/testing-workflow.yml
       - name: Lab1 - test
