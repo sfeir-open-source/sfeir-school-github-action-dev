@@ -7,3 +7,5 @@ runs:
         run: |
           ${GITHUB_WORKSPACE}/test/bats/bin/bats ${GITHUB_WORKSPACE}/steps/30-testing-lab1-action-shell-testing-solution/test-labs.bats
         shell: bash
+
+## TODO Transfert into testing-workflow
