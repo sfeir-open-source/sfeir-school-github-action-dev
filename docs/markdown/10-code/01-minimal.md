@@ -11,7 +11,7 @@ name: Action name
 description: Short description of the action
 runs:
   using: 'node16'
-  main: 'dist/main.js'
+  main: 'main.js'
 ```
 
 **main.js**

@@ -65,6 +65,7 @@ function reuseSlides() {
     '40-reuse/00-TITLE.md',
     '40-reuse/00-create.md',
     '40-reuse/00-reusable-workflow.md',
+    '40-reuse/00-reusable-workflow-behavior.md',
     '40-reuse/99-TITLE.md',
     '40-reuse/99-exercices.md'
   ];

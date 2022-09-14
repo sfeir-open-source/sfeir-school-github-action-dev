@@ -38,11 +38,11 @@ Your action must take in account the environment upon which it can run.
 
 ## Limitations
 
-| Actions          | Limitations                                            |
-| ---------------- | ------------------------------------------------------ |
-| JavaScript       | run on Node **12 or 16**                               |
-| Docker container | run only on **Linux**                                  |
-| Composite        | use shell **bash** to have the same behavior across OS |
+| Actions          | Limitations                                                            |
+| ---------------- | ---------------------------------------------------------------------- |
+| JavaScript       | run on Node **12 or 16**                                               |
+| Docker container | run only on **Linux**                                                  |
+| Composite        | use shell **bash** (or **python**) to have the same behavior across OS |
 
 [Available Shells](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsshell)
 <!-- .element: class="credits" -->

@@ -2,14 +2,15 @@
 
 # Create an action
 
-You can create an action from scratch based on an idea or you can extract some steps from a workflow and turn it into an action.
-Not everything should be an action but anything could became an action.
+You may ask youself the following questions
 
-Before start a new action, the question you may ask youself is
+- The action can be generic enought to be use in more than one context ?
+- The action have a dedicated goal (simple or not) achieved by one or multiple features ?
 
-> This will do a defined task?
+Notes:
 
-Using Separation of Concerns (SoC) principle, you can separate the orchestration of tasks (Workflow) from the underlying tasks (Action or step in a workflow).
+- A job is a series of unitary steps (Action or shell commands)
+- An Action is a series of tasks to achieve unitary steps or linked steps
 
 ##--##
 
@@ -17,7 +18,13 @@ Using Separation of Concerns (SoC) principle, you can separate the orchestration
 
 ## Workflow or Action
 
-TODO Add examples
+| Question                                                | Preferred choice |
+| ------------------------------------------------------- | ---------------- |
+| Is the step is simple enougth ?                         | Workflow         |
+| Is the step is already an action ?                      | Workflow         |
+| Is the series of steps is dedicated to one goal ?       | Action           |
+| Is the extraction of steps improve the readability ?    | Action           |
+| Is the extraction of steps improve the maintenability ? | Action           |
 
 ##--##
 
@@ -25,4 +32,7 @@ TODO Add examples
 
 ## Action in the same repository or not
 
-TODO Add examples
+| Action goal                        | Preferred repository |
+| ---------------------------------- | -------------------- |
+| strictly related to the repository | local                |
+| generic and usable by others       | global               |

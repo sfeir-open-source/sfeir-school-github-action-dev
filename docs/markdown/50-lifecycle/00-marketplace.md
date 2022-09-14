@@ -7,7 +7,7 @@
 ```yaml [1|2|3-5]
 name: Action name                               # Must be unique on Marketplace
 description: Short description of the action    # Used on the marketplace
-branding:                                       # Mandatory to be plublish on the Marketplace
+branding:                                       # Mandatory to be publish on the Marketplace
   icon: 'award'  
   color: 'green'
 ```
@@ -47,7 +47,7 @@ You can create the GitHub release automatically, but this will not publish it on
 
 You are curious by nature, and when to know if anybody already use your Action
 
-For that GitHub expose a the repositories which use your action
+For that GitHub expose all the repositories which use your action
 
 > **Insights** > **Dependency graph** > **Dependents**
 

@@ -62,7 +62,7 @@ we recommand you [Semantic Release](https://github.com/semantic-release/semantic
 
 **release-workflow.yaml**
 
-```yaml [3-8]
+```yaml [3-10]
 - name: Checkout sources
   uses: actions/checkout@v3
 - name: Semantic Release
@@ -109,9 +109,9 @@ Since this kind of action generate dist files, we need to take the produced file
 
 **release-workflow.yaml**
 
-```yaml [2|7]
+```yaml [2-3|8]
 - uses: actions/checkout@v3
-- run: npm run install
+- run: npm install
 - run: npm run prepare
 - uses: cycjimmy/semantic-release-action@v3
   with:

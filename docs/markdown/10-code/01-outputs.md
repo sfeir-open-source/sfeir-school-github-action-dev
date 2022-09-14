@@ -47,8 +47,10 @@ runs:
 
 To define an output value, you need to print the `set-output` command
 
-```text
-::set-output name=someOutput::Some Value
+**main.sh**
+
+```sh
+echo "::set-output name=someOutput::Some Value"
 ```
 
 ##--##
