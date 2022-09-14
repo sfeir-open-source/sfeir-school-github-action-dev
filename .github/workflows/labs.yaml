@@ -27,6 +27,18 @@ jobs:
         run: |
           echo "::notice ::${{ steps.upper_action.outputs.upper_text }}"
 
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      # Lab1 => steps/30-testing-lab1-action-shell-testing/testing-workflow.yml
+      - name: Lab1 - test
+        id: bats_action
+        uses: ./steps/30-testing-lab1-action-shell-testing-solution
+
   lifecycle:
     runs-on: ubuntu-latest
     steps:
