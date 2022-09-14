@@ -1,0 +1,9 @@
+name: Lifecycle Lab2
+description: Action for lab2 of Lifecycle section
+inputs:
+  who:
+    description: with who
+    required: true
+runs:
+  using: node16
+  main: dist/index.js
