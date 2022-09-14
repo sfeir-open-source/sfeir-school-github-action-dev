@@ -4,7 +4,7 @@ Create a new repository and **release it**, then **publish it** to the marketpla
 
 ## Tips
 
-- Semantic Release [exec plugin](https://github.com/semantic-release/exec)
+- [Semantic Release Action](https://github.com/cycjimmy/semantic-release-action)
 - GitHub Action workflow syntax : [needs](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idneeds)
 - [Publishing to the marketplace](https://docs.github.com/en/actions/creating-actions/publishing-actions-in-github-marketplace)
 

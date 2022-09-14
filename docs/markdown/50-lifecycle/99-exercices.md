@@ -10,6 +10,10 @@ Create a new repository and **release it**, then **publish it** to the marketpla
 
 ### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/50-lifecycle-lab1-marketplace)
 
+Notes:
+
+**Unpublish the test action** to avoid garbage in the Marketplace
+
 ##--##
 
 <!-- .slide: class="exercice" -->

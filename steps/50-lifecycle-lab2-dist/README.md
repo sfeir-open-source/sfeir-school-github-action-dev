@@ -4,7 +4,7 @@ Manage the **compiled files** on an JavaScript Action
 
 ## Tips
 
-- [Semantic Release Action](https://github.com/cycjimmy/semantic-release-action)
+- Semantic Release [exec plugin](https://github.com/semantic-release/exec)
 - [Run npm command](https://docs.npmjs.com/cli/v8/commands/npm-run-script)
 - [Install package dependencies](https://docs.npmjs.com/cli/v8/commands/npm-install)
 

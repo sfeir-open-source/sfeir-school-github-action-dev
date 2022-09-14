@@ -1,8 +1,5 @@
 name: Lifecycle Lab2
 description: Action for lab2 of Lifecycle section
-branding:
-  icon: circle
-  color: blue
 inputs:
   who:
     description: with who
