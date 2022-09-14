@@ -38,3 +38,27 @@ jobs:
       - name: Lab1 - test
         id: bats_action
         uses: ./steps/30-testing-lab1-action-shell-testing-solution
+
+  lifecycle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # Lab1 => steps/50-lifecycle-lab1-marketplace/release-workflow.yml
+      - name: Lab1 - default run
+        uses: ./steps/50-lifecycle-lab1-marketplace
+
+      # Lab1 solution => steps/50-lifecycle-lab1-marketplace-solution/release-workflow.yml
+      - name: Lab1 - default run
+        uses: ./steps/50-lifecycle-lab1-marketplace-solution
+
+      # Lab1 => steps/50-lifecycle-lab2-dist/release-workflow.yml
+      - run: |
+          npm install
+          npm run prepare
+        shell: bash
+        working-directory: ./steps/50-lifecycle-lab2-dist
+      - name: Lab2 - default run
+        uses: ./steps/50-lifecycle-lab2-dist
+        with:
+          who: Somebody

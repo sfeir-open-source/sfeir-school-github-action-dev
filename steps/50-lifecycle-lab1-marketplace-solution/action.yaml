@@ -1,0 +1,8 @@
+name: Lifecycle Lab1
+description: Action for lab1 of Lifecycle section
+branding:
+  icon: circle
+  color: blue
+runs:
+  using: node16
+  main: index.js
