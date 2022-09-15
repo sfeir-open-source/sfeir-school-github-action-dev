@@ -106,3 +106,10 @@ jobs:
       # Test X
       ...
 ```
+
+[Billing](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
+<!-- .element: class="credits" -->
+
+Notes:
+
+Windows and MacOS cost more than Linux. If Open-source, it's free.
