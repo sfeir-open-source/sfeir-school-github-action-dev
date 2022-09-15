@@ -47,3 +47,28 @@ jobs:
           path: ./.github/actions/my-private-repo
       - uses: ./.github/actions/my-private-repo/my-action
 ```
+
+##--##
+
+<!-- .slide: class="with-code" -->
+
+# Uses
+
+## From most to least prefered Action reference
+
+```yaml [7-8|9-10|11-12|13-14]
+name: Run Actions
+on: push
+jobs:
+  runs-actions:
+    runs-on: ubuntu-latest
+    steps:
+      # Reference a specific commit
+      - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675
+      # Reference the major version of a release
+      - uses: actions/checkout@v3
+      # Reference a specific version
+      - uses: actions/checkout@v3.2.0
+      # Reference a branch
+      - uses: actions/checkout@main
+```
