@@ -37,7 +37,7 @@ function interactionsSlides() {
     '20-interactions/00-toolkit.md',
     '20-interactions/01-TITLE.md',
     '20-interactions/01-contexts.md',
-    '20-interactions/01-environments.md',
+    '20-interactions/01-runners.md',
     '20-interactions/02-TITLE.md',
     '20-interactions/02-configure.md',
     '20-interactions/02-communicate.md',
