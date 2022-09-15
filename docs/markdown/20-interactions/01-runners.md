@@ -1,10 +1,8 @@
 <!-- .slide: -->
 
-# Virtual Environments
+# Runners
 
-## Runners
-
-To run GitHub Actions workflows, GitHub have a [serie of runners](https://github.com/actions/runner-images) availables
+To run GitHub Actions workflows, GitHub have a [serie of shared runners](https://github.com/actions/runner-images) availables
 
 - Linux
   - ubuntu-lastest
@@ -18,7 +16,7 @@ To run GitHub Actions workflows, GitHub have a [serie of runners](https://github
 
 ##--##
 
-# Virtual Environments
+# Runners
 
 ## Pre-install softwares
 
@@ -30,11 +28,11 @@ See runner pre-install softwares to have an idea of what you can use in your act
 
 Your action must take in account the environment upon which it can run.
 
-⚠️ The runner can also be a **custom one**.
+⚠️ The used runner can also be a **custom one**.
 
 ##--##
 
-# Virtual Environments
+# Runners
 
 ## Limitations
 
