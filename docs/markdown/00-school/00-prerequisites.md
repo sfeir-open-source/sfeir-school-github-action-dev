@@ -2,9 +2,7 @@
 
 # Prerequisites
 
-* GitHub Account
-* github.dev or your favorite IDE
-* Initialize your exercice repository
-  * Create a new repository
-  * Download the source code
-  * Commit the exercice [template](https://github.com/sfeir-open-source/sfeir-school-github-actions-creation/tree/main/steps/prerequisites)
+* Have a GitHub Account
+* Use github.dev or your favorite IDE
+* Access School [slides](https://sfeir-open-source.github.io/sfeir-school-github-action-dev/#/)
+* Access Labs [content](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps)
