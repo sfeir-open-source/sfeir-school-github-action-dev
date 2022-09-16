@@ -8,7 +8,7 @@ For example, you can use [Jest](https://jestjs.io/).
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Testing Shell script with Jest
 

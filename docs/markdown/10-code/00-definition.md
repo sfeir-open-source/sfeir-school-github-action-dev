@@ -13,7 +13,7 @@
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # GitHub Actions Workflow
 

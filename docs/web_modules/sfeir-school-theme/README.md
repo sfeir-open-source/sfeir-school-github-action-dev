@@ -503,7 +503,7 @@ You should use triple **\`** sufix by the langage. Code slides in Reveal are bas
 
 ```md
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 ## Some Code (with monospace font)
 
@@ -553,7 +553,7 @@ there is a minor varient of `big-code`, add the class `alone` if there is only o
 
 
 ```md
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 ## Some Code (with highlighting of individual lines)
 

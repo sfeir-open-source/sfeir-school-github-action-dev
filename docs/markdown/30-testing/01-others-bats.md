@@ -1,4 +1,4 @@
-<!-- .slide: class="two-column with-code" -->
+<!-- .slide: class="two-column with-code-bg-dark" -->
 
 # Testing Shell script with Bats
 
@@ -11,7 +11,7 @@ setup() {
 
     DIR="$( cd "$( dirname "$BATS_TEST_FILENAME" )" >/dev/null 2>&1 && pwd )"
     export KEY=bar
-    PATH="$DIR/../.github/actions/runs-using-docker:$PATH"
+    PATH="$DIR/../.:$PATH"
 }
 
 @test "check main.sh is working" {
@@ -32,8 +32,6 @@ setup() {
 
 ##--##
 
-<!-- .slide: class="with-code" -->
-
 # Testing Shell script with Bats
 
 ## In the testing workflow
@@ -41,12 +39,9 @@ setup() {
 **testing.yaml**
 
 ```yaml
-      # Test 3
-      - name: bats usecase
-        id: test-3
-        run: |
-          ${GITHUB_WORKSPACE}/test/bats/bin/bats ${GITHUB_WORKSPACE}/test/test.bats
-        shell: bash
+- name: bats usecase
+  run: test/bats/bin/bats test/test.bats
+  shell: bash
 ```
 
 **output**
