@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Testing any other programming language based code
 
@@ -11,7 +11,7 @@ If both cases, you can use **bats** to help you write a test suite for your acti
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Testing Shell script with Bats
 

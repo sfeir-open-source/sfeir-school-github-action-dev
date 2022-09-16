@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Minimal Setup
 
@@ -24,7 +24,7 @@ console.log(`Doing stuff...`);
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Minimal Setup
 
@@ -56,7 +56,7 @@ echo "Doing stuff..."
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Minimal Setup
 

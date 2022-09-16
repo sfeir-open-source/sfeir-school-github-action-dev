@@ -33,7 +33,7 @@ See [Security Policy](https://github.com/rlespinasse/github-slug-action/blob/v4.
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 ## Semantic Release
 
@@ -56,7 +56,7 @@ we recommand you [Semantic Release](https://github.com/semantic-release/semantic
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 ## Semantic Release
 
@@ -80,7 +80,7 @@ A wrapper around that : [rlespinasse/release-that](https://github.com/rlespinass
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 ## JavaScript action
 
@@ -103,7 +103,7 @@ Since this kind of action generate dist files, we need to take the produced file
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 ## JavaScript action
 

@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Inputs
 
@@ -28,7 +28,7 @@ const value = core.getInput('firstInput');
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Inputs
 
@@ -53,7 +53,7 @@ runs:
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Inputs
 
@@ -82,7 +82,7 @@ And you need to use the `inputs` context field to access it : `${{ inputs.firstI
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Deprecation of an input
 

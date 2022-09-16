@@ -10,7 +10,7 @@ From your action, you can interact with the GitHub API using
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # GitHub API
 
@@ -50,7 +50,7 @@ With this library, you can manipulate the GitHub API like
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # GitHub API
 
