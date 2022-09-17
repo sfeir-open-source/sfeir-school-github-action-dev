@@ -12,20 +12,20 @@ function schoolSlides() {
   ];
 }
 
-function codeSlides() {
+function syntaxSlides() {
   return [
-    '10-code/00-TITLE.md',
-    '10-code/00-definition.md',
-    '10-code/01-TITLE.md',
-    '10-code/01-content.md',
-    '10-code/01-minimal.md',
-    '10-code/01-inputs.md',
-    '10-code/01-outputs.md',
-    '10-code/01-runs.md',
-    '10-code/02-TITLE.md',
-    '10-code/02-uses.md',
-    '10-code/99-TITLE.md',
-    '10-code/99-exercices.md'
+    '10-syntax/00-TITLE.md',
+    '10-syntax/00-definition.md',
+    '10-syntax/01-TITLE.md',
+    '10-syntax/01-content.md',
+    '10-syntax/01-minimal.md',
+    '10-syntax/01-inputs.md',
+    '10-syntax/01-outputs.md',
+    '10-syntax/01-runs.md',
+    '10-syntax/02-TITLE.md',
+    '10-syntax/02-uses.md',
+    '10-syntax/99-TITLE.md',
+    '10-syntax/99-exercices.md'
   ];
 }
 
@@ -96,7 +96,7 @@ function formation() {
   return [
     //
     ...schoolSlides(), //
-    ...codeSlides(), //
+    ...syntaxSlides(), //
     ...interactionsSlides(), //
     ...testingSlides(), //
     ...reuseSlides(), //

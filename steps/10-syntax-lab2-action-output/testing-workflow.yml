@@ -1,7 +1,7 @@
 name: Test the Lab 2 of Code
 on: push
 jobs:
-  test-code-lab2:
+  test-syntax-lab2:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
