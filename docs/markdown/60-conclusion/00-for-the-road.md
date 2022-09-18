@@ -13,3 +13,12 @@ To keep you inform
 
 - [GitHub Changelog blog](https://github.blog/changelog/)
 - [GitHub Roadmap](https://github.com/orgs/github/projects/4247) (use label filter)
+
+##--##
+
+# What's next
+
+- [Variables and Secrets](https://github.com/github/roadmap/issues/575)
+- [Visual Studio Code extension for linting](https://github.com/github/roadmap/issues/564)
+- [Build Performance Insights](https://github.com/github/roadmap/issues/561)
+- [Reusable workflows work with private repositories](https://github.com/github/roadmap/issues/51)

@@ -26,7 +26,7 @@ An annotation will be attach to the summary of the workflow.
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Communicate
 
@@ -47,7 +47,7 @@ core.debug('{message}');
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Communicate
 
@@ -79,7 +79,7 @@ On Job Summary
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Communicate
 

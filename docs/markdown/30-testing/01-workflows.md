@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Testing Workflows
 
@@ -24,7 +24,7 @@ One test from [rlespinasse/slugify-value](https://github.com/rlespinasse/slugify
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Testing Workflows
 
@@ -57,7 +57,7 @@ jobs:
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Testing Workflows
 
@@ -86,7 +86,7 @@ Use
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Testing Workflows
 
@@ -106,3 +106,10 @@ jobs:
       # Test X
       ...
 ```
+
+[Billing](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
+<!-- .element: class="credits" -->
+
+Notes:
+
+Windows and MacOS cost more than Linux. If Open-source, it's free.

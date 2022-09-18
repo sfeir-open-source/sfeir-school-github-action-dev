@@ -28,7 +28,7 @@ Some contexts are inaccessibles inside an action
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Contexts
 
@@ -44,7 +44,7 @@ inputs:
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Contexts
 

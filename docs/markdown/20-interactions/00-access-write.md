@@ -4,7 +4,7 @@
 
 - Value inputs
 - Workflow contexts
-- Virtual environments
+- Runner filesystem
 
 ##--##
 

@@ -1,10 +1,13 @@
 
 /*# sourceMappingURL=slides.css.map */
 
-.reveal .hljs-ln-numbers{
-  background-color: white;
+.reveal .slides section.with-code-bg-dark:not(.sfeir-specific-slide):not(.stack):not([class*=transition]) table.hljs-ln{
+  background-color: inherit;
+  border: thin solid;
+  border-color: transparent;
 }
 
-.reveal .hljs-ln-code {
-  background-color: white;
+.reveal .slides section.with-code-bg-dark:not(.sfeir-specific-slide):not(.stack):not([class*=transition]) table.hljs-ln td {
+  border: thin solid;
+  border-color: inherit;
 }

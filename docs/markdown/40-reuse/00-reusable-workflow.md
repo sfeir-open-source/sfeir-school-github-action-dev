@@ -10,7 +10,7 @@ The **composite actions** extract **orchestration patterns** to be used by workf
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Action
 
@@ -49,7 +49,7 @@ Declaration and use of
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # or Reusable Workflow
 
