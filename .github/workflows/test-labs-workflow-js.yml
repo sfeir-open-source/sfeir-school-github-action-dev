@@ -1,0 +1,24 @@
+name: test with jests
+on:
+  push:
+  workflow_call:
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+
+      # Install required deps for action
+      - name: Install Dependencies
+        working-directory: ./steps/30-testing-lab2-action-js-testing-solution
+        run: npm install
+
+      # Finally, run our tests
+      - name: Run the tests
+        working-directory: ./steps/30-testing-lab2-action-js-testing-solution
+        run: npm test
