@@ -13,7 +13,7 @@ jobs:
         id: test-1
         uses: ./.github/actions/testable-action
         with:
-          value: 'SOME'
+          value: "SOME"
       - name: Validate // Default usecase
         run: |
           [[ "${{ env.OUTPUT_VALUE }}" == "output-SOME" ]]
@@ -28,7 +28,7 @@ jobs:
         id: test-2
         uses: ./.github/actions/testable-action
         with:
-          value: ''
+          value: ""
         continue-on-error: true
       - name: Validate // Error usecase
         run: |

@@ -3,11 +3,10 @@ on:
   pull_request:
 
 jobs:
- 
   call-workflow:
     strategy:
       matrix:
-        dir: 
+        dir:
           - docs/markdown/00-school
           - docs/markdown/10-syntax
           - docs/markdown/20-interactions
@@ -15,7 +14,7 @@ jobs:
           - docs/markdown/40-reuse
           - docs/markdown/50-lifecycle
           - docs/markdown/60-conclusion
- 
+
     uses: ./.github/workflows/reuse-lab-reusableworkflow.yaml
     with:
       directory: ${{ matrix.dir }}

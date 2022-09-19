@@ -2,9 +2,9 @@ name: reusable lab reusable workflow
 on:
   workflow_call:
     inputs:
-          directory:
-            required: true
-            type: string
+      directory:
+        required: true
+        type: string
 
 jobs:
   reusable_workflow_job:
@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-  
+
       - name: call linter
         id: lint
         uses: ./steps/40-reuse-lab1-solution
@@ -24,9 +24,9 @@ jobs:
         id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}
-          comment-author: 'github-actions[bot]'
+          comment-author: "github-actions[bot]"
           body-includes: ${{ env.DIRECTORY }}
-            
+
       - name: Create comment
         if: steps.fc.outputs.comment-id == ''
         uses: peter-evans/create-or-update-comment@v2
@@ -35,7 +35,7 @@ jobs:
           body: |
             ${{ inputs.DIRECTORY }}
             ${{ steps.lint.outputs.summary }}
- 
+
       - name: Update comment
         if: steps.fc.outputs.comment-id != ''
         uses: peter-evans/create-or-update-comment@v2
