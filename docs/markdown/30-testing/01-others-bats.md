@@ -40,7 +40,8 @@ setup() {
 
 ```yaml
 - name: bats usecase
-  run: test/bats/bin/bats test/test.bats
+  run: |
+    ${GITHUB_WORKSPACE}/test/bats/bin/bats ${GITHUB_WORKSPACE}/test/test.bats
   shell: bash
 ```
 

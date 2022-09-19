@@ -1,0 +1,10 @@
+name: Test the Lab 2 of Interactions
+on: push
+jobs:
+  test-interactions-lab2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install
+      - run: npm run prepare
+      - uses: ./.

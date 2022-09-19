@@ -27,17 +27,11 @@ jobs:
         run: |
           echo "::notice ::${{ steps.upper_action.outputs.upper_text }}"
 
-  testing:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: recursive
+  testing-lab1:
+    uses: ./.github/workflows/testing-workflow-lab1.yaml
 
-      # Lab1 => steps/30-testing-lab1-action-shell-testing/testing-workflow.yml
-      - name: Lab1 - test
-        id: bats_action
-        uses: ./steps/30-testing-lab1-action-shell-testing-solution
+  testing-lab3:
+    uses: ./.github/workflows/testing-workflow-lab3.yaml
 
   lifecycle:
     runs-on: ubuntu-latest
@@ -58,6 +52,7 @@ jobs:
           npm run prepare
         shell: bash
         working-directory: ./steps/50-lifecycle-lab2-dist
+
       - name: Lab2 - default run
         uses: ./steps/50-lifecycle-lab2-dist
         with:

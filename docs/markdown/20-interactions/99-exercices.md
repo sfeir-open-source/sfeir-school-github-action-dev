@@ -1,15 +1,25 @@
- <!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" -->
 
-## TODO Lab 1
+# Missing lock
+
+## Lab 1
+
+![float-left](./assets/images/interactions-lab1-missing-lock.png)
+
+**Declare a warning** if a package-lock.json is missing
+
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/20-interactions-lab1-warning)
 
 ##--##
 
 <!-- .slide: class="exercice" -->
 
-## TODO Lab 2
+# Change Summary
 
-##--##
+## Lab 2
 
-<!-- .slide: class="exercice" -->
+![float-left](./assets/images/interactions-lab2-summary.jpeg)
 
-## TODO Lab 3
+Set **Job summary** with the stats about missing package-lock.json analysis (based on Lab 1)
+
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/20-interactions-lab2-summary)

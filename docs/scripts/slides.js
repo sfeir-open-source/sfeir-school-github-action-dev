@@ -65,8 +65,9 @@ function reuseSlides() {
   return [
     '40-reuse/00-TITLE.md',
     '40-reuse/00-create.md',
-    '40-reuse/00-reusable-workflow.md',
-    '40-reuse/00-reusable-workflow-behavior.md',
+    '40-reuse/00-comparaison.md',
+    '40-reuse/00-difference.md',
+    '40-reuse/00-behavior.md',
     '40-reuse/99-TITLE.md',
     '40-reuse/99-exercices.md'
   ];
@@ -78,7 +79,10 @@ function lifecycleSlides() {
     '50-lifecycle/00-birth.md',
     '50-lifecycle/00-release.md',
     '50-lifecycle/00-marketplace.md',
-    '50-lifecycle/00-maintainer.md',
+    '50-lifecycle/01-TITLE.md',
+    '50-lifecycle/01-community.md',
+    '50-lifecycle/01-maintainer.md',
+    '50-lifecycle/01-used-by-who.md',
     '50-lifecycle/99-TITLE.md',
     '50-lifecycle/99-exercices.md'
   ];

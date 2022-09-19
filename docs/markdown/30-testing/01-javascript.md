@@ -8,6 +8,15 @@ For example, you can use [Jest](https://jestjs.io/).
 
 ##--##
 
+# Why using a javascript test framework ?
+
+- Zero config
+- Isolated tests
+- Run with `npm run test`
+- Easy mocking
+
+##--##
+
 <!-- .slide: class="with-code-bg-dark" -->
 
 # Testing Shell script with Jest

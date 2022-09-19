@@ -1,0 +1,47 @@
+name: Test the Lab 3 of Testing
+on: 
+  push:
+  workflow_call:
+jobs:
+  test-testing-lab3:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Addition test
+        id: working
+        uses: ./steps/30-testing-lab3-action-workflow-testing-solution/
+        with:
+          addition-input-1: 4
+          addition-input-2: 5
+          palindrome-input: "kayak"
+
+      - name: Addition test
+        id: not-working
+        uses: ./steps/30-testing-lab3-action-workflow-testing-solution/
+        with:
+          addition-input-1: ab
+          addition-input-2: cd
+          palindrome-input: "foo"
+          
+      - name: Validate // addition test
+        run: |
+          [[ "${{ steps.working.outputs.addition }}" -eq 9 ]]
+          
+      - name: Validate // hello world test
+        run: |
+          [[ "${{ steps.working.outputs.helloWorld }}" == "Hello World!" ]]
+          
+      - name: Validate // addition test
+        run: |
+          [[ "${{ steps.not-working.outputs.addition }}" -eq 0 ]]
+   
+      - name: Validate // palindrome test
+        run: |
+          [[ "${{ steps.working.outputs.palindrome }}" == "kayak is a palindrome" ]]
+
+      - name: Validate // palindrome test
+        run: |
+          [[ "${{ steps.not-working.outputs.palindrome }}" == "foo is not a palindrome" ]]

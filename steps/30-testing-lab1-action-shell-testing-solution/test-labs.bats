@@ -1,5 +1,5 @@
 setup() {
-    # TODO local bats_directory="../.."
+    # local bats_directory="../.." where "." is the directory representing the pwd that run the script
     load '../../test/test_helper/bats-support/load'
     load '../../test/test_helper/bats-assert/load'
 

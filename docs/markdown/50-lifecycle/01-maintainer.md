@@ -7,12 +7,11 @@
 - You can choose any name for your project, sometimes a descriptive name, sometimes a play of words,
   - but for the action publish on the Marketplace, **prefer a descriptive name**.
 - **Learn to say no** as Maintainer or to choose your own way to deal with a situation.
-- Don't support all releases of your project all the time, **you can depreciate version series**.
 - **Don't be afraid to archived a project** if you unmaintained it,
   - May not apply in your entreprise without proper migration guide.
 - **Don't put yourself under pressure** to respond quickly as possible to issues or pull-requests submissions,
   - May not apply in your entreprise if this action is central to a number of projects.
-- ...
+- Don't support all releases of your project all the time, **you can depreciate version series**.
 <!-- .element: class="list-fragment" -->
 
 ##--##
