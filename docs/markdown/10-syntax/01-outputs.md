@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Outputs
 
@@ -26,7 +26,7 @@ core.setOutput('someOutput', 'Some Value');
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Outputs
 
@@ -55,7 +55,7 @@ echo "::set-output name=someOutput::Some Value"
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code-bg-dark" -->
 
 # Outputs
 
