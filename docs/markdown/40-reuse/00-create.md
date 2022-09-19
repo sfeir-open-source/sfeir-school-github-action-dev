@@ -34,5 +34,5 @@ Notes:
 
 | Action goal                        | Preferred repository |
 | ---------------------------------- | -------------------- |
-| strictly related to the repository | local                |
-| generic and usable by others       | global               |
+| strictly related to the repository | Local                |
+| generic and usable by others       | Global               |

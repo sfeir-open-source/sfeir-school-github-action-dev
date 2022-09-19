@@ -4,14 +4,14 @@
 
 ## test.bats
 
-```sh [2-3|5|6|7|10-13,15-18,20-23]
+```sh [1-8|2-3|5-6|7|10-13,15-18,20-23|25-27]
 setup() {
     load 'test_helper/bats-support/load'
     load 'test_helper/bats-assert/load'
 
     DIR="$( cd "$( dirname "$BATS_TEST_FILENAME" )" >/dev/null 2>&1 && pwd )"
-    export KEY=bar
     PATH="$DIR/../.:$PATH"
+    export KEY=bar
 }
 
 @test "check main.sh is working" {
@@ -28,7 +28,20 @@ setup() {
     run setup.sh foo
     assert_output 'Setting up... foo (bar)'
 }
+
+teardown() {
+    # eg. Cleanup created files
+}
 ```
+
+Notes:
+
+- `setup` step that prepare the test environment to run specific use case
+  - load library eg. bats-support and bats-assert that provide error reporting, test assertions etc.
+  - setup path
+  - export environment variable
+- Execute tests
+- `teardown` step that can be used to clean up things eg. created files
 
 ##--##
 
