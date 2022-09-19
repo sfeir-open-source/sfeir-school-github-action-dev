@@ -77,7 +77,7 @@ jobs:
 - Analyse existing files
   - Code coverage
   - Security scan
-- ...
+- **your pick**
 <!-- .element: class="list-fragment" -->
 
 ##--##
