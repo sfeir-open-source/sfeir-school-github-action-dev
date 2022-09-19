@@ -54,7 +54,8 @@ function testingSlides() {
     '30-testing/01-TITLE.md',
     '30-testing/01-javascript.md',
     '30-testing/01-others.md',
-    '30-testing/01-others-bats.md',
+    '30-testing/01-bats-setup.md',
+    '30-testing/01-bats-test.md',
     '30-testing/01-workflows.md',
     '30-testing/99-TITLE.md',
     '30-testing/99-exercices.md'
@@ -65,7 +66,7 @@ function reuseSlides() {
   return [
     '40-reuse/00-TITLE.md',
     '40-reuse/00-create.md',
-    '40-reuse/00-comparaison.md',
+    '40-reuse/00-comparison.md',
     '40-reuse/00-difference.md',
     '40-reuse/00-behavior.md',
     '40-reuse/99-TITLE.md',

@@ -18,34 +18,26 @@ From your action, you can interact with the GitHub API using
 
 With this library, you can manipulate the GitHub API like
 
-- welcoming a new contributor
+- Add comment to an issue
 
-```yaml [1|5,19]
-- uses: actions/github-script@v6
-  with:
-    script: |
-      const creator = context.payload.sender.login
-      const opts = github.rest.issues.listForRepo.endpoint.merge({
-        ...context.issue,
-        creator,
-        state: 'all'
-      })
-      const issues = await github.paginate(opts)
-      for (const issue of issues) {
-        if (issue.number === context.issue.number) {
-          continue
-        }
-        if (issue.pull_request) {
-          return // Creator is already a contributor.
-        }
-      }
-      await github.rest.issues.createComment({
-        issue_number: context.issue.number,
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        body: `**Welcome**, new contributor!
-          Please make sure you're read our [contributing guide](CONTRIBUTING.md) and we look forward to reviewing your Pull request shortly ✨`
-      })
+```yaml [9|12-17]
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '👋 Thanks for reporting!'
+            })
 ```
 
 ##--##
@@ -58,16 +50,24 @@ With this library, you can manipulate the GitHub API like
 
 With this library, you can manipulate the GitHub API like
 
-- add a label `Triage` on new issue
+- Apply a label to an issue
 
-```yaml [1|4]
-- uses: actions/github-script@v6
-  with:
-    script: |
-      github.rest.issues.addLabels({
-        issue_number: context.issue.number,
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        labels: ['Triage']
-      })
+```yaml [9|12-17]
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  apply-label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['Triage']
+            })
 ```

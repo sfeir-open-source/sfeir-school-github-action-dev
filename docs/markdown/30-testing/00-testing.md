@@ -25,5 +25,5 @@ Author : [Osman Rana / Unsplash](https://unsplash.com/photos/swACMn-yCn8)
 You **can unit test** your code depending of your language of choice.
 But this will **not test the integration within the GitHub Action system**.
 
-For that you need to see a workflow as Integration Tests suite
-or to mock action/toolkit function with a JS testing library.
+For that you need to see a **Workflow as Integration Tests suite**
+or to mock **action/toolkit** function with a JavaScript testing library.

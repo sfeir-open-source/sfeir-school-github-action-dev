@@ -12,8 +12,7 @@ Your action will be run inside a workflow and having access to its contexts.
 - `strategy.*` and `matrix.*` (Only if a matrix strategy is used in the caller job)
 - `steps.*` (Only for `composite` actions)
 - `secrets.*` (Except for `composite` actions)
-
-⚠️ Avoid using contexts directly, sometimes it's better to ask the data as input with a default value from the context itself.
+<!-- .element: class="list-fragment" -->
 
 [Contexts Reference](https://docs.github.com/en/actions/learn-github-actions/contexts)
 <!-- .element: class="credits" -->
@@ -32,7 +31,9 @@ Some contexts are inaccessibles inside an action
 
 # Contexts
 
-## Use as input
+## Access it using input
+
+⚠️ Avoid using contexts directly, sometimes it's better to ask the data as input with a default value from the context itself.
 
 ```yaml [5]
 inputs:

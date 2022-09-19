@@ -2,14 +2,14 @@
 
 # Release of an action
 
-Once your action is created, we recommand you to start de release cycle to better manage bugfixes or new features.
+Once your action is created, we recommand you to **start a release cycle** to better manage new features or bugfixes.
 Without it, the use of your action will only be throught branches.
 
-Release cycle
+## Release cycle practices
 
 - Use Semantic Versionning : [MAJOR.MINOR.PATCH](https://semver.org/spec/v2.0.0.html#summary)
   - Use the [v* prefix](https://semver.org/spec/v2.0.0.html#is-v123-a-semantic-version) for your git tag (`v1.0.1` instead of `1.0.1`)
-- Keep a [git tag based on MAJOR version](https://docs.github.com/en/actions/creating-actions/releasing-and-maintaining-actions#example-developer-process) up-to-date
+- Keep a git tag [based on MAJOR version](https://docs.github.com/en/actions/creating-actions/releasing-and-maintaining-actions#example-developer-process) up-to-date
   - You can also do the same for **MINOR** version
 - Keep maximum 2 major versions in parallel to ease the maintenance
 <!-- .element: class="list-fragment" -->
@@ -67,7 +67,7 @@ A wrapper around that : [rlespinasse/release-that](https://github.com/rlespinass
 
 ## JavaScript action
 
-Since this kind of action generate dist files, we need to take the produced files in account during the release
+When action **generate dist files**, we need to take the produced files in account during the release
 
 **.releaserc**
 

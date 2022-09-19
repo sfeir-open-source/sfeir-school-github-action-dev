@@ -20,6 +20,6 @@
 
 ![float-left](./assets/images/interactions-lab2-summary.jpeg)
 
-Set **Job summary** with the stats about missing package-lock.json analysis (based on Lab 1)
+Set **Job summary** with the stats about missing package-lock.json analysis
 
 ### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/20-interactions-lab2-summary)
