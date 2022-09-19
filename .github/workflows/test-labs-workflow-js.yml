@@ -1,4 +1,4 @@
-name: test with jests
+name: test with jest
 on:
   push:
   workflow_call:

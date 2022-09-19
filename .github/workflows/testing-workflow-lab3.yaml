@@ -1,5 +1,5 @@
 name: Test the Lab 3 of Testing
-on: 
+on:
   push:
   workflow_call:
 jobs:
@@ -25,19 +25,19 @@ jobs:
           addition-input-1: ab
           addition-input-2: cd
           palindrome-input: "foo"
-          
+
       - name: Validate // addition test
         run: |
           [[ "${{ steps.working.outputs.addition }}" -eq 9 ]]
-          
+
       - name: Validate // hello world test
         run: |
           [[ "${{ steps.working.outputs.helloWorld }}" == "Hello World!" ]]
-          
+
       - name: Validate // addition test
         run: |
           [[ "${{ steps.not-working.outputs.addition }}" -eq 0 ]]
-   
+
       - name: Validate // palindrome test
         run: |
           [[ "${{ steps.working.outputs.palindrome }}" == "kayak is a palindrome" ]]
@@ -46,4 +46,3 @@ jobs:
         run: |
           [[ "${{ steps.not-working.outputs.palindrome }}" == "foo is not a palindrome" ]]
 
-      
