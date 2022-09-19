@@ -1,7 +1,6 @@
 name: reusable labs
 on:
   pull_request:
-  workflow_call:
 
 jobs:
   check-00-school:

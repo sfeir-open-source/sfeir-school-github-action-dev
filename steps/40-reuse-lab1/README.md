@@ -20,4 +20,3 @@ This lab work with `pull_request`
     - use a **strategie matrix** that will be use as input of the reusable workflow 
     - update the reusable workflow
         - extract the linter part (install and usage) into a composite action
-
