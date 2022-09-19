@@ -4,7 +4,7 @@
 
 ## JavaScript-based action
 
-**action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
+**action.yaml** (or **action.yml**) - [reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
 
 ```yaml [3-7]
 name: Action name
@@ -34,7 +34,7 @@ const value = core.getInput('firstInput');
 
 ## Dockerfile-based action
 
-**action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
+**action.yaml** (or **action.yml**) - [reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
 
 ```yaml [3-7]
 name: Action name
@@ -59,7 +59,7 @@ runs:
 
 ## Composite action
 
-**action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
+**action.yaml** (or **action.yml**) - [reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
 
 ```yaml [3-7|11]
 name: Action name

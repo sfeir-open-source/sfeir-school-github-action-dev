@@ -108,4 +108,4 @@ await core.summary
 
 ## Other communications
 
-- Grouping log lines ([Reference](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#grouping-log-lines))
+- Grouping log lines - [reference](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#grouping-log-lines)

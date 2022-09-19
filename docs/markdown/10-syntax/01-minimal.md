@@ -4,7 +4,7 @@
 
 ## JavaScript-based action
 
-**action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
+**action.yaml** (or **action.yml**) - [reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
 
 ```yaml
 name: Action name
@@ -30,7 +30,7 @@ console.log(`Doing stuff...`);
 
 ## Dockerfile-based action
 
-**action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
+**action.yaml** (or **action.yml**) - [reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
 
 ```yaml
 name: Action name
@@ -40,7 +40,7 @@ runs:
   image: 'Dockerfile'
 ```
 
-[Dockerfile](https://docs.github.com/en/actions/creating-actions/dockerfile-support-for-github-actions)
+Dockerfile
 
 ```Dockefile
 FROM debian
@@ -54,6 +54,9 @@ ADD main.sh /usr/local/bin/main.sh
 echo "Doing stuff..."
 ```
 
+[Dockerfile support for GitHub Action](https://docs.github.com/en/actions/creating-actions/dockerfile-support-for-github-actions)
+<!-- .element: class="credits" -->
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -62,7 +65,7 @@ echo "Doing stuff..."
 
 ## Composite action
 
-**action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
+**action.yaml** (or **action.yml**) - [reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
 
 ```yaml
 name: Action name

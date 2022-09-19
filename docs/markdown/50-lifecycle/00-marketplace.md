@@ -2,7 +2,7 @@
 
 # Marketplace setup
 
-**action.yaml** (or **action.yml**) 👉 [Go to reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#branding)
+**action.yaml** (or **action.yml**) - [reference](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#branding)
 
 ```yaml [1|2|3-5]
 name: Action name                               # Must be unique on Marketplace
