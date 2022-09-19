@@ -1,0 +1,20 @@
+name: reusable lab - global call
+on:
+  pull_request:
+
+jobs:
+  call-workflow:
+    strategy:
+      matrix:
+        dir:
+          - docs/markdown/00-school
+          - docs/markdown/10-syntax
+          - docs/markdown/20-interactions
+          - docs/markdown/30-testing
+          - docs/markdown/40-reuse
+          - docs/markdown/50-lifecycle
+          - docs/markdown/60-conclusion
+
+    uses: ./.github/workflows/reuse-lab-reusableworkflow.yaml
+    with:
+      directory: ${{ matrix.dir }}

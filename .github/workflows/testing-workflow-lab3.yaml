@@ -45,4 +45,3 @@ jobs:
       - name: Validate // palindrome test
         run: |
           [[ "${{ steps.not-working.outputs.palindrome }}" == "foo is not a palindrome" ]]
-

@@ -1,0 +1,47 @@
+name: reusable lab reusable workflow
+on:
+  workflow_call:
+    inputs:
+          directory:
+            required: true
+            type: string
+
+jobs:
+  reusable_workflow_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+  
+      - name: call linter
+        id: lint
+        uses: ./steps/40-reuse-lab1-solution
+        with:
+          directory: ${{ inputs.directory }}
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: ${{ env.DIRECTORY }}
+            
+      - name: Create comment
+        if: steps.fc.outputs.comment-id == ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ${{ inputs.DIRECTORY }}
+            ${{ steps.lint.outputs.summary }}
+ 
+      - name: Update comment
+        if: steps.fc.outputs.comment-id != ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          body: |
+            ${{ inputs.DIRECTORY }}
+            ${{ steps.lint.outputs.summary }}
+          edit-mode: replace
