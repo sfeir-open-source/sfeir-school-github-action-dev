@@ -10,7 +10,7 @@ async function run() {
     const files = await globber.glob();
     files.forEach(file => {
       try {
-        accessSync(path.join(path.dirname(file), 'package-lock.json'));
+        fs.accessSync(path.join(path.dirname(file), 'package-lock.json'));
       } catch (err) {
         core.warning("Consider to generate it and commit it", {
           title: "Missing package-lock.json",
