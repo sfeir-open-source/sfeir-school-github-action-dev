@@ -11,6 +11,6 @@ jobs:
         with:
           text: GitHub Action Rocks
 
-      # See the action summary to see the notice message
+      # Check the Job summary to see the notice message
       - run: |
           echo "::notice ::${{ steps.upper_action.outputs.upper_text }}"
