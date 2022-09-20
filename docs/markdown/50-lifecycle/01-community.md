@@ -2,9 +2,9 @@
 
 # Community
 
-GitHub provides you some recommandations and help to improve the community side of your project : [https://github.com/you/your-action/community](https://github.com/rlespinasse/github-slug-action/community)
+GitHub provides you some recommandations and help to improve the community side of your project : [https://github.com/you/your-action/community](https://github.com/rlespinasse/github-slug-action/community).
 
-Not mandatory but recommanded
+Not mandatory but recommanded :
 
 |                                        | Tell                                                                           |
 | -------------------------------------- | ------------------------------------------------------------------------------ |
@@ -22,11 +22,11 @@ As you keep a maximum of 2 major versions up-to-date, you need to document it.
 
 This fall on the **Security** part (Advisories, Vulnerabilities Alerts) of your repository.
 
-See [Security Policy](https://github.com/rlespinasse/github-slug-action/blob/v4.x/SECURITY.md) example
+See [Security Policy](https://github.com/rlespinasse/github-slug-action/blob/v4.x/SECURITY.md) example : 
 
 - Tell when the branch **will not be maintained anymore for security issues**
 - Tell when the branch **will be deleted forever**
 
 ⚠️ This kind of documentation is important since a branch reference can be used to run an Action.
 
-⚠️ Avoid classic branch naming `master` or `main`
+⚠️ Avoid classic branch naming `master` or `main`.

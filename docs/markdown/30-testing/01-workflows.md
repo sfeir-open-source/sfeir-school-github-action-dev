@@ -4,7 +4,7 @@
 
 In addition of testing the code, you can test the whole action from the user point of view in a GitHub Action workflow.
 
-One test from [rlespinasse/slugify-value](https://github.com/rlespinasse/slugify-value/blob/v1.x/.github/workflows/slugify-value.yaml) action tests
+One test from [rlespinasse/slugify-value](https://github.com/rlespinasse/slugify-value/blob/v1.x/.github/workflows/slugify-value.yaml) action tests :
 
 ```yaml [1-5|6-13]
 - name: Slugify key/value
@@ -30,8 +30,8 @@ One test from [rlespinasse/slugify-value](https://github.com/rlespinasse/slugify
 
 ## In the testing workflow
 
-- A test suite can be seen as a job with the same workspace to work with.
-- A test is composed of the **run of the action**, and the **step to test the output of the action**.
+- A test suite can be seen as a job with the same workspace to work with
+- A test is composed of the **run of the action**, and the **step to test the output of the action**
 
 ```yaml [7-19]
 jobs:
@@ -90,7 +90,7 @@ Use
 
 # Testing Workflows
 
-Your action is valid for multiple OS runners, run your tests suite on all OS
+Your action is valid for multiple OS runners, run your tests suite on all OS :
 
 ```yaml [3-7]
 jobs:

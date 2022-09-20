@@ -16,13 +16,13 @@
 ## Strucuture
 
 - **A composite action**
-  - need a folder with the `action.yaml` file
-  - can have multiple steps
+  - Need a folder with the `action.yaml` file
+  - Can have multiple steps
 <!-- .element: class="list-fragment" -->
 
 - **A reusable workflow**
-  - is stored inside the `workflows` folder in one and only file
-  - can have multiple jobs
+  - Stored inside the `workflows` folder in one and only file
+  - Can have multiple jobs
 <!-- .element: class="list-fragment" -->
 
 ##--##

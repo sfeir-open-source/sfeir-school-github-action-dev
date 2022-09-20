@@ -2,13 +2,13 @@
 
 # Actions toolkit
 
-GitHub provides a set of packages to make creating actions easier with [@actions/toolkit](https://github.com/actions/toolkit)
+GitHub provides a set of packages to make creating actions easier with [@actions/toolkit](https://github.com/actions/toolkit).
 
-And it can be used by any action type
+It can be used by any action type
 
-- directly in JavaScript action
-- using node-based dockerfile in Docker action
-- using [github-script](https://github.com/actions/github-script) for Composite action
+- Directly in JavaScript action
+- Using node-based dockerfile in Docker action
+- Using [github-script](https://github.com/actions/github-script) for Composite action
 
 ##--##
 

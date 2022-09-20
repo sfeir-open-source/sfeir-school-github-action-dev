@@ -12,7 +12,7 @@ branding:                                       # Mandatory to be publish on the
   color: 'green'
 ```
 
-The action will be available on [GitHub Marketplace](https://github.com/marketplace?type=actions)
+The action will be available on [GitHub Marketplace](https://github.com/marketplace?type=actions).
 
 ##--##
 

@@ -67,7 +67,7 @@ A wrapper around that : [rlespinasse/release-that](https://github.com/rlespinass
 
 ## JavaScript action
 
-When action **generate dist files**, we need to take the produced files in account during the release
+When action **generate dist files**, we need to take the produced files in account during the release.
 
 **.releaserc**
 

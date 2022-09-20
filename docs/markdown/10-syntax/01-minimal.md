@@ -40,7 +40,7 @@ runs:
   image: 'Dockerfile'
 ```
 
-Dockerfile
+**Dockerfile**
 
 ```Dockefile
 FROM debian

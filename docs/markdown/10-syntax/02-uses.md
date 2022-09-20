@@ -9,7 +9,7 @@
 * As an action in the same repository as the workflow
 * As an action inside a different private repository than the workflow
 
-- [reference](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
+[reference](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
 <!-- .element: class="credits" -->
 
 ##--##

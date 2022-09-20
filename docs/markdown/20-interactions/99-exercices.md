@@ -6,7 +6,7 @@
 
 ![float-left](./assets/images/interactions-lab1-missing-lock.png)
 
-**Declare a warning** if a package-lock.json is missing
+**Declare a warning** if a package-lock.json is missing.
 
 ### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/20-interactions-lab1-warning)
 
@@ -20,6 +20,6 @@
 
 ![float-left](./assets/images/interactions-lab2-summary.jpeg)
 
-Set **Job summary** with the stats about missing package-lock.json analysis
+Set **Job summary** with the stats about missing package-lock.json analysis.
 
 ### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/20-interactions-lab2-summary)
