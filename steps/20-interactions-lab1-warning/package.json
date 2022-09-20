@@ -6,6 +6,9 @@
   "scripts": {
     "prepare": "ncc build index.js -o dist --source-map"
   },
+  "dependencies": {
+    "@actions/core": "^1.2.5"
+  },
   "devDependencies": {
     "@vercel/ncc": "^0.31.1"
   }
