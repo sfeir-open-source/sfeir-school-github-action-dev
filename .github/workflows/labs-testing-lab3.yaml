@@ -1,6 +1,5 @@
 name: Test the Lab 3 of Testing
 on:
-  push:
   workflow_call:
 jobs:
   test-testing-lab3:
