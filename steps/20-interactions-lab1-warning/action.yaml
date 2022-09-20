@@ -1,5 +1,5 @@
-name: 'Interactions:Lab1'
-description: 'Action of Lab1 in Interactions section'
+name: "Interactions:Lab1"
+description: "Action of Lab1 in Interactions section"
 runs:
-  using: 'node16'
-  image: 'dist/index.js'
+  using: "node16"
+  main: "dist/index.js"
