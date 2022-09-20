@@ -1,6 +1,5 @@
 name: Test the Lab 1 of Testing
 on:
-  push:
   workflow_call:
 jobs:
   test-testing-lab1:
@@ -12,5 +11,5 @@ jobs:
 
       - name: bats test
         run: |
-          ${GITHUB_WORKSPACE}/test/bats/bin/bats ${GITHUB_WORKSPACE}/steps/30-testing-lab1-action-shell-testing-solution/test-labs.bats
+          ${GITHUB_WORKSPACE}/tests/bats/bin/bats ${GITHUB_WORKSPACE}/steps/30-testing-lab1-action-shell-testing-solution/tests/lab-tests.bats
         shell: bash

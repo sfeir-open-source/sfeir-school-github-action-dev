@@ -28,10 +28,10 @@ jobs:
           echo "::notice ::${{ steps.upper_action.outputs.upper_text }}"
 
   testing-lab1:
-    uses: ./.github/workflows/testing-workflow-lab1.yaml
+    uses: ./.github/workflows/labs-testing-lab1.yaml
 
   testing-lab3:
-    uses: ./.github/workflows/testing-workflow-lab3.yaml
+    uses: ./.github/workflows/labs-testing-lab3.yaml
 
   lifecycle:
     runs-on: ubuntu-latest

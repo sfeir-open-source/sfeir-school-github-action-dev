@@ -42,5 +42,5 @@ jobs:
       - name: bats usecase
         id: test-3
         run: |
-          ${GITHUB_WORKSPACE}/test/bats/bin/bats ${GITHUB_WORKSPACE}/test/test.bats
+          ${GITHUB_WORKSPACE}/tests/bats/bin/bats ${GITHUB_WORKSPACE}/tests/test.bats
         shell: bash
