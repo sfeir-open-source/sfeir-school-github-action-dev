@@ -49,7 +49,7 @@ runs:
   image: 'Dockerfile'
 ```
 
-`firstInput` is available under environment variable `$INPUT_FIRSTINPUT`
+`firstInput` is available under environment variable `$INPUT_FIRSTINPUT`.
 
 ##--##
 
@@ -76,9 +76,9 @@ runs:
     shell: bash
 ```
 
-`firstInput` is **NOT** available under environment variable `$INPUT_FIRSTINPUT`
+`firstInput` is **NOT** available under environment variable `$INPUT_FIRSTINPUT`.
 
-And you need to use the `inputs` context field to access it : `${{ inputs.firstInput }}`.
+You need to use the `inputs` context field to access it : `${{ inputs.firstInput }}`.
 
 ##--##
 

@@ -45,7 +45,7 @@ runs:
   image: 'Dockerfile'
 ```
 
-To define an output value, you need to print the `set-output` command
+To define an output value, you need to print the `set-output` command.
 
 **main.sh**
 

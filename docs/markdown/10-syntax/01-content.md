@@ -16,5 +16,5 @@ Can contains
 - JS/TS files
 - Dockerfile
 - Shell scripts
-- any relevant file
+- Any relevant file
 <!-- .element: class="list-fragment" -->

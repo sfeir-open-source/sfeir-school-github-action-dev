@@ -44,4 +44,4 @@ test("mock return value", () => {
 });
 ```
 
-Test can be made with multiple node version using the matrix strategy
+Test can be made with multiple node version using the matrix strategy.

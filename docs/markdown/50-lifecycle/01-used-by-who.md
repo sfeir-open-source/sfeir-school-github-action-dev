@@ -2,9 +2,9 @@
 
 # Used by who
 
-You are curious by nature, and when to know if anybody already use your Action
+You are curious by nature, and when to know if anybody already use your Action.
 
-For that GitHub expose all the repositories which use your action
+For that GitHub expose all the repositories which use your action.
 
 > **Insights** > **Dependency graph** > **Dependents**
 
@@ -12,5 +12,5 @@ For that GitHub expose all the repositories which use your action
 - [rlespinasse/github-slug-action](https://github.com/rlespinasse/github-slug-action/network/dependents)
 - [rlespinasse/drawio-export-action](https://github.com/rlespinasse/drawio-export-action/network/dependents)
 
-⚠️ Only for public actions
+⚠️ Only for public actions.
 <!-- .element: class="credits" -->
