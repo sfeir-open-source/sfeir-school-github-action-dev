@@ -6,11 +6,11 @@
 
 ```sh [1-8|2-3|5-6|7|10-13,15-18,20-23|25-27]
 setup() {
-    load 'test_helper/bats-support/load'
-    load 'test_helper/bats-assert/load'
+    DIR="$(cd "$(dirname "$BATS_TEST_FILENAME")" >/dev/null 2>&1 && pwd)"
+    PATH="$DIR/..:$PATH"
 
-    DIR="$( cd "$( dirname "$BATS_TEST_FILENAME" )" >/dev/null 2>&1 && pwd )"
-    PATH="$DIR/../.:$PATH"
+    load "$DIR/test_helper/bats-support/load"
+    load "$DIR/test_helper/bats-assert/load"
     export KEY=bar
 }
 
@@ -54,7 +54,7 @@ Notes:
 ```yaml
 - name: bats usecase
   run: |
-    ${GITHUB_WORKSPACE}/test/bats/bin/bats ${GITHUB_WORKSPACE}/test/test.bats
+    ${GITHUB_WORKSPACE}/tests/bats/bin/bats ${GITHUB_WORKSPACE}/tests/tests.bats
   shell: bash
 ```
 
