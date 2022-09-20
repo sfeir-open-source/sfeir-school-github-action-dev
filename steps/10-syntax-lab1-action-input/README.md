@@ -17,9 +17,9 @@ Create a repository with the content of this folder.
 
 ## Remove the warnings
 
-- Add a required input to tell the cow what to say,
-- Add an optional input to set the eyes of the cow (default to `oo`),
-- Pass them as args to the docker image.
+- Add a required input to tell the cow what to say
+- Add an optional input to set the eyes of the cow (default to `oo`)
+- Pass them as args to the docker image
 
 ## Finish
 
