@@ -7,14 +7,13 @@ Set **Job summary** with the stats about missing package-lock.json analysis (bas
 - [Add an heading](https://github.com/actions/toolkit/blob/main/packages/core/src/summary.ts#L298-L305) to Job summary
 - [Add a line](https://github.com/actions/toolkit/blob/main/packages/core/src/summary.ts#L177-L180) to Job summary
 
-## Steps
+## Setup
 
-- Create a repository
-- Add the file `testing-workflow.yml` which will serve you to test the action
-- Add JavaScript action file to start the lab
-  - index.js
-  - package.json
-  - action.yaml
+Create a repository with the content of this folder.
+
+`testing-workflow.yaml` will run and do **NOT** set any Job summary, only the warning from the previous lab.
+
+![setup result](../assets/interactions-lab1-finish-result.png)
 
 ### Get some stats
 
@@ -50,3 +49,11 @@ In the `index.js` file, use the stats to display in the Job summary the followin
   ```text
   Missing ${missingPackageLockJsonCount} package-lock.json files based on ${analysedPackageJsonCount} package.json files analysed
   ```
+
+## Finish
+
+`testing-workflow.yaml` will run and display the following Job summary in addition with the warning from the previous lab.
+
+![finish result](../assets/interactions-lab2-finish-result.png)
+
+Use the `index.js` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/20-interactions-lab2-summary-solution) to compare it with your solution.
