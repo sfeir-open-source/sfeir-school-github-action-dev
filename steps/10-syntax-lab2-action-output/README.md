@@ -25,8 +25,8 @@ Create a repository with the content of this folder.
 
 On the action
 
-- In the `upper_step` step, set the uppercase value as output of the step,
-- Add `upper_text` as action output the uppercase value from the step `upper_step`.
+- In the `upper_step` step, set the uppercase value as output of the step
+- Add `upper_text` as action output the uppercase value from the step `upper_step`
 
 ## Finish
 
