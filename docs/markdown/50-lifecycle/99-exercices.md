@@ -8,7 +8,7 @@
 
 Create a new repository and **release it**, then **publish it** to the marketplace.
 
-### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/50-lifecycle-lab1-marketplace)
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/50-lifecycle-lab1-marketplace)
 
 Notes:
 
@@ -26,4 +26,4 @@ Notes:
 
 Manage the **compiled files** on an JavaScript Action
 
-### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/50-lifecycle-lab2-dist)
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/50-lifecycle-lab2-dist)

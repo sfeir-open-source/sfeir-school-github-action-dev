@@ -8,7 +8,7 @@
 
 **Declare a warning** if a package-lock.json is missing
 
-### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/20-interactions-lab1-warning)
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/20-interactions-lab1-warning)
 
 ##--##
 
@@ -22,4 +22,4 @@
 
 Set **Job summary** with the stats about missing package-lock.json analysis
 
-### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/20-interactions-lab2-summary)
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/20-interactions-lab2-summary)

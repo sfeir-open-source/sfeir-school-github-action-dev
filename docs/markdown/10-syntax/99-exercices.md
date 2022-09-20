@@ -8,7 +8,7 @@
 
 Create an Action using Docker container taking inputs to serve as **cowsay** arguments
 
-### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/10-syntax-lab1-action-input)
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/10-syntax-lab1-action-input)
 
 ##--##
 
@@ -21,4 +21,4 @@ Create an Action using Docker container taking inputs to serve as **cowsay** arg
 
 Create a Composite Action to output the input text as **Uppercase** value
 
-### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/10-syntax-lab2-action-output)
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/10-syntax-lab2-action-output)

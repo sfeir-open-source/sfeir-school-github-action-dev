@@ -8,7 +8,7 @@
 
 Create an Composite Action that will test our shell script.
 
-### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/30-testing-lab1-action-shell-testing)
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/30-testing-lab1-action-shell-testing)
 
 ##--##
 
@@ -22,7 +22,7 @@ Create an Composite Action that will test our shell script.
 
 Create a workflow that will test our javascript using Jest.
 
-### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/30-testing-lab2-action-js-testing)
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/30-testing-lab2-action-js-testing)
 
 ##--##
 
@@ -36,4 +36,4 @@ Create a workflow that will test our javascript using Jest.
 
 Test a action using a workflow.
 
-### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/30-testing-lab3-action-workflow-testing)
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/30-testing-lab3-action-workflow-testing)

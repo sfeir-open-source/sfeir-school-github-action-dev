@@ -8,4 +8,4 @@
 
 Description
 
-### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/40-reuse-lab1)
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/40-reuse-lab1)
