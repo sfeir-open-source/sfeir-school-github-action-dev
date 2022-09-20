@@ -9,8 +9,13 @@ jobs:
       - name: default run
         uses: ./.
 
-      - name: custom run
+      - name: custom run with mandatory input
         uses: ./.
         with:
           say: GitHub Action Rocks
-          eyes: oo
+
+      - name: custom run with all inputs
+        uses: ./.
+        with:
+          say: GitHub Action Rocks
+          eyes: o-
