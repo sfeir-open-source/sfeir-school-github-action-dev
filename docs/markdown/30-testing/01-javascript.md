@@ -115,7 +115,7 @@ Speaker **Thibauld**
 
 # Testing an action with Jest
 
-**Mock** some methods and test their usage
+**Mock** some methods and test their usage.
 
 ```js
 test('make sure it returns something', async () => {
