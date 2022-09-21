@@ -1,0 +1,30 @@
+name: Runs Using Composite
+description: Example of composite action
+runs:
+  using: 'composite'
+  steps:
+    # Using 'shell: bash' enable the actions to be available for all OS even windows.
+    # But the script will still need to manage the OS compliance
+    - run: $GITHUB_ACTION_PATH/setup.sh
+      shell: bash
+      if: runner.os == 'windows'
+
+    # Composite action can run another action (composite or note)
+    - name: Use another action
+      uses: rlespinasse/github-slug-action@v4
+      with:
+        prefix: CI_
+
+    # Result of an previous step are directly available (like $CI_GITHUB_REF_SLUG from github-slug-action)
+    - run: $GITHUB_ACTION_PATH/main.sh
+      shell: bash
+      env:
+        SLUG_REF: $CI_GITHUB_REF_SLUG
+
+    - run: ls
+      shell: bash
+      working-directory: .
+
+    - run: $GITHUB_ACTION_PATH/cleanup.sh
+      shell: bash
+      if: failure()

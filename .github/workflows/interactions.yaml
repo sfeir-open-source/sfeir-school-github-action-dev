@@ -1,0 +1,44 @@
+name: Run Actions / Interactions section
+on:
+  push:
+jobs:
+  contexts-access-from-action:
+    strategy:
+      matrix:
+        value:
+          - some
+      fail-fast: true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/contexts-access
+        with:
+          value: ${{ matrix.value }}
+
+  summary-actions:
+    runs-on: ubuntu-latest
+    steps:
+      # The summary is fill per step
+      - run: echo "## Summary from a simple run step" >> $GITHUB_STEP_SUMMARY
+        shell: bash
+
+      # An action can contribute to its own step summary
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/summary-composite
+
+  message-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "::debug::a debug message"
+          echo "::notice::a notice message"
+          echo "::warning::a warning message"
+          echo "::error::an error message"
+
+  message-file-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "::notice file=LICENCE,line=1,endLine=2,title=Notice Title::a notice message"
+          echo "::warning file=LICENCE,line=1,endLine=2,title=Warning Title::a warning message"
+          echo "::error file=LICENCE,line=1,endLine=2,title=Error Title::an error message"

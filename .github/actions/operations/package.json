@@ -1,0 +1,17 @@
+{
+  "name": "operations",
+  "version": "1.0.0",
+  "description": "Perform operations",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "ncc build index.js -o dist --source-map",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.5"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.31.1",
+    "jest": "^27.3.1"
+  }
+}

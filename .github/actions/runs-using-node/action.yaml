@@ -1,0 +1,10 @@
+name: Runs Using Node
+description: Example of JavaScript action
+runs:
+  using: 'node16'
+  main: 'main.js'
+  # pre/post features will not run if the action is run locally, it's only print a warning
+  pre: 'setup.js'
+  pre-if: runner.os == 'Windows'
+  post: 'cleanup.js'
+  post-if: failure()

@@ -1,0 +1,21 @@
+name: Test the Lab 1 of Code
+on: push
+jobs:
+  test-syntax-lab1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: default run
+        uses: ./.
+
+      - name: custom run with mandatory input
+        uses: ./.
+        with:
+          say: GitHub Action Rocks
+
+      - name: custom run with all inputs
+        uses: ./.
+        with:
+          say: GitHub Action Rocks
+          eyes: o-

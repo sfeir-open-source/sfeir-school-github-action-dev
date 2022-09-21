@@ -1,0 +1,15 @@
+{
+  "name": "lifecycle-lab2",
+  "version": "1.0.0",
+  "description": "Action for lab2 of Lifecycle section",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "ncc build index.js -o dist --source-map"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.5"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.31.1"
+  }
+}

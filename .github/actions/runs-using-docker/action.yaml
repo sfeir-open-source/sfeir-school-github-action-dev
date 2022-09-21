@@ -1,0 +1,14 @@
+name: Runs Using Docker
+description: Example of Dockerfile action
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  # pre/post features will not run if the action is run locally, it's only print a warning
+  pre-entrypoint: 'setup.sh'
+  entrypoint: 'main.sh'
+  post-entrypoint: 'cleanup.sh'
+  env:
+    KEY: 'Value'
+  args:
+    - 'firstArg'
+    - 'secondArg'

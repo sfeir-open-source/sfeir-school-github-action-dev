@@ -1,0 +1,36 @@
+name: "markdown-linter"
+description: "Linter for markdown files"
+inputs:
+  dir:
+    description: "directory to lint"
+    required: true
+outputs:
+  report:
+    description: report
+    value: ${{ steps.get-report.outputs.result }}
+runs:
+  using: "composite"
+  steps:
+    - name: Linter installation
+      run: |
+        npm install -g markdownlint-cli
+      shell: bash
+    - name: Print markdownlint version
+      run: |
+        echo $(markdownlint -V)
+      shell: bash
+    - name: Lint the section markdown
+      continue-on-error: true
+      run: |
+        markdownlint ${{ inputs.dir }}/*.md -o tmp.txt
+      shell: bash
+    - name: Get report
+      id: get-report
+      uses: actions/github-script@v6
+      with:
+        github-token: $GITHUB_TOKEN
+        result-encoding: string
+        script: |
+          const fs = require('fs').promises;
+          var reportBulk = (await fs.readFile("tmp.txt")).toString();
+          return reportBulk;

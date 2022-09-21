@@ -1,0 +1,14 @@
+name: Test the Lab 1 of Testing
+on: push
+jobs:
+  test-testing-lab1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: bats test
+        run: |
+          ${GITHUB_WORKSPACE}/tests/bats/bin/bats ${GITHUB_WORKSPACE}/tests/lab-tests.bats
+        shell: bash

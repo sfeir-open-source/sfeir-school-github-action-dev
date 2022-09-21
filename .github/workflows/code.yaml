@@ -1,0 +1,23 @@
+name: Run Actions / Code section
+on:
+  push:
+  workflow_call: # this trigger enable the workflow to be reusable from another workflow, see reuse.yaml file
+jobs:
+  runs-using-actions:
+    runs-on: ubuntu-latest
+    steps:
+      # Run action using the public access {repo}/{path}@{ref}
+      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-node@main
+      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-docker@main
+      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-composite@main
+
+  runs-using-actions-local:
+    runs-on: ubuntu-latest
+    steps:
+      # Run local action by checkout the source and uses it
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/runs-using-composite
+
+      # For node and docker action, the pre/post features will not run if the action is run locally, it's only print a warning
+      - uses: ./.github/actions/runs-using-node
+      - uses: ./.github/actions/runs-using-docker

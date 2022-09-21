@@ -1,0 +1,5 @@
+name: 'Syntax:Lab1'
+description: 'Action of Lab1 in Syntax section'
+runs:
+  using: 'docker'
+  image: 'docker://rancher/cowsay:latest'

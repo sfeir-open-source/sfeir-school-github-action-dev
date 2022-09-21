@@ -1,0 +1,15 @@
+name: 'Syntax:Lab2'
+description: 'Action of Lab2 in Syntax section'
+inputs:
+  text:
+    description: text
+    required: true
+runs:
+  using: 'composite'
+  steps:
+    - id: upper_step
+      run: |
+        echo "${INPUT_TEXT^^}"
+      env:
+        INPUT_TEXT: ${{ inputs.text }}
+      shell: bash
