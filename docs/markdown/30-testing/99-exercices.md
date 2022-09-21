@@ -14,7 +14,7 @@ Test **shell** scripts using **bats**.
 
 <!-- .slide: class="exercice" -->
 
-# using Workflow
+# Using Workflow
 
 ## Lab 2
 
