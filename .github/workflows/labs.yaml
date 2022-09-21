@@ -36,6 +36,9 @@ jobs:
 
       # Lab1 solution => steps/30-testing-lab1-action-shell-testing/testing-workflow.yaml
       - run: |
+          ln -s tests steps/30-testing-lab1-action-shell-testing-solution/tests
+        shell: bash
+      - run: |
           ${GITHUB_WORKSPACE}/tests/bats/bin/bats ${GITHUB_WORKSPACE}/steps/30-testing-lab1-action-shell-testing-solution/tests/lab-tests.bats
         shell: bash
 
