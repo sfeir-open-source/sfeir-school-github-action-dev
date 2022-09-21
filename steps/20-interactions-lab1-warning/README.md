@@ -13,7 +13,7 @@
 
 Create a repository with the content of this folder.
 
-`testing-workflow.yaml` will run and do **NOT** print any warning (on the `tests/package.json` file)
+`testing-workflow.yaml` will run and do **NOT** print any warning (on the `tests/package.json` file).
 
 ![setup result](../assets/images/interactions-lab1-setup-result.png)
 
