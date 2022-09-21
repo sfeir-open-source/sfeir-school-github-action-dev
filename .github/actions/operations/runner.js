@@ -6,13 +6,13 @@ function runner(core, add, subtract, multiply) {
         const start = new Date();
         core.debug('Starting at : ' + start.toTimeString());
 
-        core.info(`Performin addition of : ${input1} & ${input2} ...`);
+        core.info(`Performing addition of : ${input1} & ${input2} ...`);
         const addResult = add(input1, input2);
 
-        core.info(`Performin subtraction of : ${input1} & ${input2} ...`);
+        core.info(`Performing subtraction of : ${input1} & ${input2} ...`);
         const subtractResult = subtract(input1, input2);
 
-        core.info(`Performin multiplication of : ${input1} & ${input2} ...`);
+        core.info(`Performing multiplication of : ${input1} & ${input2} ...`);
         const multiplyResult = multiply(input1, input2);
 
         const end = new Date();
