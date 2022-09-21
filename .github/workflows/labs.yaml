@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Lab1 => steps/10-syntax-lab1-action-input/testing-workflow.yml
+      # Lab1 => steps/10-syntax-lab1-action-input/testing-workflow.yaml
       - name: Lab1 - default run
         uses: ./steps/10-syntax-lab1-action-input-solution
       - name: Lab1 - custom run
@@ -17,7 +17,7 @@ jobs:
           say: GitHub Action Rocks
           eyes: oo
 
-      # Lab2 => steps/10-syntax-lab2-action-output/testing-workflow.yml
+      # Lab2 => steps/10-syntax-lab2-action-output/testing-workflow.yaml
       - name: Lab2 - run
         id: upper_action
         uses: ./steps/10-syntax-lab2-action-output-solution
@@ -27,8 +27,17 @@ jobs:
         run: |
           echo "::notice ::${{ steps.upper_action.outputs.upper_text }}"
 
-  testing-lab1:
-    uses: ./.github/workflows/labs-testing-lab1.yaml
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      # Lab1 solution => steps/30-testing-lab1-action-shell-testing/testing-workflow.yaml
+      - run: |
+          ${GITHUB_WORKSPACE}/tests/bats/bin/bats ${GITHUB_WORKSPACE}/steps/30-testing-lab1-action-shell-testing-solution/tests/lab-tests.bats
+        shell: bash
 
   testing-lab3:
     uses: ./.github/workflows/labs-testing-lab3.yaml
