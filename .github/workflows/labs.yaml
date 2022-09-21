@@ -36,9 +36,10 @@ jobs:
 
       # Lab1 solution => steps/30-testing-lab1-action-shell-testing/testing-workflow.yaml
       - run: |
-          ln -s tests/bats steps/30-testing-lab1-action-shell-testing-solution/tests/bats
-          ln -s tests/test_helper steps/30-testing-lab1-action-shell-testing-solution/tests/test_helper
           ln -s steps/30-testing-lab1-action-shell-testing/scripts steps/30-testing-lab1-action-shell-testing-solution/scripts
+          git submodule add https://github.com/bats-core/bats-core.git steps/30-testing-lab1-action-shell-testing-solution/tests/bats
+          git submodule add https://github.com/bats-core/bats-assert.git steps/30-testing-lab1-action-shell-testing-solution/tests/test_helper/bats-assert
+          git submodule add https://github.com/bats-core/bats-support.git steps/30-testing-lab1-action-shell-testing-solution/tests/test_helper/bats-support
         shell: bash
       - run: |
           ${GITHUB_WORKSPACE}/tests/bats/bin/bats ${GITHUB_WORKSPACE}/steps/30-testing-lab1-action-shell-testing-solution/tests/lab-tests.bats
