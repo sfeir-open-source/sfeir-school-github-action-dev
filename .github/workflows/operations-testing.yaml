@@ -30,7 +30,7 @@ jobs:
         run: |
           [[ "${{ steps.test.outputs.addition }}" -eq 14 ]]
 
-      - name: Validate // Test Subtraction
+      - name: Validate // Test subtraction
         run: |
           [[ "${{ steps.test.outputs.subtraction }}" -eq -4 ]]
 
