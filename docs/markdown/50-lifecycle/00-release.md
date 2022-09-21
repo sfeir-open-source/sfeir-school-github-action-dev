@@ -5,6 +5,10 @@
 Once your action is created, we recommand you to **start a release cycle** to better manage new features or bugfixes.
 Without it, the use of your action will only be throught branches.
 
+Notes:
+
+Speaker **Romain**
+
 ## Release cycle practices
 
 - Use Semantic Versionning : [MAJOR.MINOR.PATCH](https://semver.org/spec/v2.0.0.html#summary)
@@ -13,6 +17,10 @@ Without it, the use of your action will only be throught branches.
   - You can also do the same for **MINOR** version
 - Keep maximum 2 major versions in parallel to ease the maintenance
 <!-- .element: class="list-fragment" -->
+
+Notes:
+
+Speaker **Romain**
 
 ##--##
 
@@ -36,6 +44,10 @@ we recommand you [Semantic Release](https://github.com/semantic-release/semantic
   ]
 }
 ```
+
+Notes:
+
+Speaker **Romain**
 
 ##--##
 
@@ -61,6 +73,10 @@ we recommand you [Semantic Release](https://github.com/semantic-release/semantic
 A wrapper around that : [rlespinasse/release-that](https://github.com/rlespinasse/release-that)
 <!-- .element: class="credits" -->
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -84,6 +100,10 @@ When action **generate dist files**, we need to take the produced files in accou
 }
 ```
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -105,3 +125,7 @@ When action **generate dist files**, we need to take the produced files in accou
   env:
     GITHUB_TOKEN: ${{ github.token }}
 ```
+
+Notes:
+
+Speaker **Romain**

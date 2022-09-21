@@ -3,3 +3,7 @@
 # Exercices
 
 ## Testing
+
+Notes:
+
+Speaker **Romain**

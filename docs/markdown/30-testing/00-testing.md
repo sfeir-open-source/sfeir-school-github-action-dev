@@ -7,6 +7,10 @@
 Author : [Osman Rana / Unsplash](https://unsplash.com/photos/swACMn-yCn8)
 <!-- .element: class="credits" -->
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 # Testing Application
@@ -18,6 +22,10 @@ Author : [Osman Rana / Unsplash](https://unsplash.com/photos/swACMn-yCn8)
 - ⚠️ **Act** have limitations (some steps need the GitHub Actions ecosystem to run)
 <!-- .element: class="list-fragment" -->
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 # Testing possibilities
@@ -27,3 +35,7 @@ But this will **not test the integration within the GitHub Action system**.
 
 For that you need to see a **Workflow as Integration Tests suite**
 or to mock **action/toolkit** function with a JavaScript testing library.
+
+Notes:
+
+Speaker **Romain**

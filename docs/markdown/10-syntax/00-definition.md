@@ -11,6 +11,10 @@
 [Definition](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#actions)
 <!-- .element: class="credits" -->
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -60,6 +64,10 @@ jobs:
             --level critical
 ```
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: -->
@@ -80,6 +88,10 @@ jobs:
 - **your pick**
 <!-- .element: class="list-fragment" -->
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 # Type of actions
@@ -89,3 +101,7 @@ jobs:
 - Composite actions
 
 Each one have specificities and limitations. We will see them during this training.
+
+Notes:
+
+Speaker **Romain**

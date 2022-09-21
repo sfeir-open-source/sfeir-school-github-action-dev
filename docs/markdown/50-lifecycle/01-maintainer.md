@@ -14,6 +14,10 @@
 - Don't support all releases of your project all the time, **you can depreciate version series**
 <!-- .element: class="list-fragment" -->
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 # Inner source Gouvernance
@@ -27,3 +31,7 @@ Focus point will be to build a repository gouvernance to have a maintainence sys
 - **Document the gouvernance process** so nobody ask for it
 - Maintains it
 <!-- .element: class="list-fragment" -->
+
+Notes:
+
+Speaker **Romain**

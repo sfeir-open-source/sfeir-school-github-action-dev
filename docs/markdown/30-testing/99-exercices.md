@@ -10,6 +10,10 @@ Test **shell** scripts using **bats**.
 
 ### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/30-testing-lab1-action-shell-testing)
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="exercice" -->
@@ -23,3 +27,7 @@ Test **shell** scripts using **bats**.
 Test an **Action** using a GitHub Action **workflow**.
 
 ### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/30-testing-lab2-action-workflow-testing)
+
+Notes:
+
+Speaker **Romain**

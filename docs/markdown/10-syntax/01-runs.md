@@ -22,6 +22,10 @@ runs:
 - The `setup.js` file will run before the `main.js` file only on Windows.
 - The `cleanup.js` file will run only if `main.js` file fail to run.
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -50,6 +54,10 @@ runs:
 ```
 
 `env` and `args` value are available on `pre-entrypoint`, `entrypoint`, and `post-entrypoint`.
+
+Notes:
+
+Speaker **Romain**
 
 ##--##
 
@@ -90,6 +98,10 @@ runs:
 The steps are run under `$GITHUB_WORKSPACE` folder same as steps from a workflow.
 To access any file in the action, you must use `$GITHUB_ACTION_PATH`.
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 # Runs
@@ -103,3 +115,7 @@ To access any file in the action, you must use `$GITHUB_ACTION_PATH`.
 | Docker container | can't use condition to run nor the pre and post entrypoint.                                                 |
 | Composite        | No pre or post features, need to be implemented as step.                                                    |
 | Composite        | the pre/post-like step will be executed during the action execution, not before or after any other actions. |
+
+Notes:
+
+Speaker **Romain**

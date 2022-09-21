@@ -11,6 +11,10 @@ Your action can display logs and set annotations using the `message` commands
 - [warning](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-a-warning-message)
 - [error](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-error-message)
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 # Communicate
 
@@ -23,6 +27,10 @@ A log will be display directly inside the log message of your action run.
 An annotation will be attach to the summary of the workflow.
 
 ![annotations](./assets/images/interations-communicate-annotations.png)
+
+Notes:
+
+Speaker **Romain**
 
 ##--##
 
@@ -44,6 +52,10 @@ In JavaScript
 const core = require('@actions/core');
 core.debug('{message}');
 ```
+
+Notes:
+
+Speaker **Romain**
 
 ##--##
 
@@ -77,6 +89,10 @@ On Job Summary
 
 ![message file](./assets/images/interactions-communicate-message-file.png)
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -102,6 +118,10 @@ await core.summary
 
 ⚠️ You can't use it more than once in a `composite` action.
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 # Communicate
@@ -109,3 +129,7 @@ await core.summary
 ## Other communications
 
 - Grouping log lines - [reference](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#grouping-log-lines)
+
+Notes:
+
+Speaker **Romain**

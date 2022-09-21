@@ -22,6 +22,10 @@ One test from [rlespinasse/slugify-value](https://github.com/rlespinasse/slugify
   shell: bash
 ```
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -55,6 +59,10 @@ jobs:
         shell: bash
 ```
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -78,9 +86,15 @@ Use
     var2: Some Value
   continue-on-error: true # Don't stop on error
 - name: Validate // Test name
-  run: |                                                                                                                                                                                                                                                                           é
+  run: |
+    [[ "${{ steps.test-id.outcome }}" == "failure" ]]
+    [[ "${{ steps.test-id.conclusion }}" == "success" ]]
   shell: bash
 ```
+
+Notes:
+
+Speaker **Romain**
 
 ##--##
 
@@ -109,5 +123,7 @@ jobs:
 <!-- .element: class="credits" -->
 
 Notes:
+
+Speaker **Romain**
 
 Windows and MacOS cost more than Linux. If Open-source, it's free.

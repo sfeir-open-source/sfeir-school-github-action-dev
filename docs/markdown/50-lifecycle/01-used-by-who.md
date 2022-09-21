@@ -14,3 +14,7 @@ For that GitHub expose all the repositories which use your action.
 
 ⚠️ Only for public actions.
 <!-- .element: class="credits" -->
+
+Notes:
+
+Speaker **Romain**

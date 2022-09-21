@@ -9,6 +9,10 @@
 - Job is only composed of one reusable workflow or a set of steps
 <!-- .element: class="list-fragment" -->
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 # Action or Reusable Workflow
@@ -25,6 +29,10 @@
   - Can have multiple jobs
 <!-- .element: class="list-fragment" -->
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 # Action or Reusable Workflow
@@ -38,3 +46,7 @@
   - **CAN** be called from a reusable workflow
   - **CAN'T** be called from a composite action
 <!-- .element: class="list-fragment" -->
+
+Notes:
+
+Speaker **Romain**

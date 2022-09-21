@@ -8,3 +8,7 @@ The interations can be
 
 - To access information
 - To write data
+
+Notes:
+
+Speaker **Romain**

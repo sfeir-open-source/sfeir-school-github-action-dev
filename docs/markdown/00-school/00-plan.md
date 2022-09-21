@@ -8,3 +8,7 @@
 * Reusable workflow and GitHub action
 * Lifecycle - Maintenance and Release
 <!-- .element: class="list-fragment" -->
+
+Notes:
+
+Speaker **Romain**

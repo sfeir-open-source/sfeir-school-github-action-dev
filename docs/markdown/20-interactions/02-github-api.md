@@ -8,6 +8,10 @@ From your action, you can interact with the GitHub API using
   - Expose the official [GitHub Oktokit library](https://octokit.github.io/rest.js/v18) in JavaScript
 - Any other [GitHub Oktokit libraries](https://docs.github.com/en/rest/overview/libraries)
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -40,6 +44,10 @@ jobs:
             })
 ```
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -71,3 +79,7 @@ jobs:
               labels: ['Triage']
             })
 ```
+
+Notes:
+
+Speaker **Romain**

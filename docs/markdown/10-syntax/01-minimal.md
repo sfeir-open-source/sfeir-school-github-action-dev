@@ -22,6 +22,10 @@ console.log(`Doing stuff...`);
 
 ℹ️ Use the library [@actions/toolkit](https://github.com/actions/toolkit) to develop your action.
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -57,6 +61,10 @@ echo "Doing stuff..."
 [Dockerfile support for GitHub Action](https://docs.github.com/en/actions/creating-actions/dockerfile-support-for-github-actions)
 <!-- .element: class="credits" -->
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -76,3 +84,7 @@ runs:
   - run: echo "Doing stuff..."
     shell: bash
 ```
+
+Notes:
+
+Speaker **Romain**

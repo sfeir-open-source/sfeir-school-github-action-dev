@@ -8,6 +8,10 @@ The **composite actions** extract **orchestration patterns** to be used by workf
 
 **What the difference between them?**
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -39,6 +43,8 @@ runs:
 ```
 
 Notes:
+
+Speaker **Romain**
 
 Declaration and use of
 
@@ -89,6 +95,8 @@ jobs:
 ```
 
 Notes:
+
+Speaker **Romain**
 
 Declaration and use of
 

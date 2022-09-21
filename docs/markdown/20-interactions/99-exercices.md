@@ -10,6 +10,10 @@
 
 ### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/20-interactions-lab1-warning)
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 <!-- .slide: class="exercice" -->
@@ -23,3 +27,7 @@
 Set **Job summary** with the stats about missing package-lock.json analysis.
 
 ### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/20-interactions-lab2-summary)
+
+Notes:
+
+Speaker **Romain**

@@ -14,3 +14,7 @@
 - Files/Toolchain
 - Logs
 - Using GitHub API
+
+Notes:
+
+Speaker **Romain**

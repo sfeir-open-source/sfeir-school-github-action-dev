@@ -4,6 +4,10 @@
 
 ## **GitHub Actions Dev**
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 # Planning
@@ -14,3 +18,7 @@
 **Timesheet (Mandatory)** <!-- .element: class="center" -->
 
 https://bit.ly/sfeir-xxx <!-- .element: class="center" -->
+
+Notes:
+
+Speaker **Romain**

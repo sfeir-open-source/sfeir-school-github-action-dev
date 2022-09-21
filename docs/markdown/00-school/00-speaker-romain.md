@@ -18,3 +18,7 @@
 
 ### lespinasse.r@sfeir.com
 <!-- .element: class="icon-third" -->
+
+Notes:
+
+Speaker **Romain**

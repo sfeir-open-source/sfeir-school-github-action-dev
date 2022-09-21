@@ -3,3 +3,7 @@
 # Exercices
 
 ## GitHub Action
+
+Notes:
+
+Speaker **Romain**

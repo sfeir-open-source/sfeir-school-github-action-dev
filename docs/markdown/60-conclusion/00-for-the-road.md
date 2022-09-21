@@ -14,6 +14,10 @@ To keep you inform
 - [GitHub Changelog blog](https://github.blog/changelog/)
 - [GitHub Roadmap](https://github.com/orgs/github/projects/4247) (use label filter)
 
+Notes:
+
+Speaker **Romain**
+
 ##--##
 
 # What's next
@@ -22,3 +26,7 @@ To keep you inform
 - [Visual Studio Code extension for linting](https://github.com/github/roadmap/issues/564)
 - [Build Performance Insights](https://github.com/github/roadmap/issues/561)
 - [Reusable workflows work with private repositories](https://github.com/github/roadmap/issues/51)
+
+Notes:
+
+Speaker **Romain**
