@@ -50,4 +50,4 @@ Create a repository with the content of this folder.
 
 ![finish result](../assets/images/testing-lab1-finish-result.png)
 
-Use the `testing-workflow.yaml` and the `lab-tests.bats` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/30-testing-lab1-action-shell-testing-solution) to compare it with your solution.
+Use the `testing-workflow.yaml` and the `lab-tests.bats` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/30-testing-lab1-action-shell-testing-solution) to compare it with your solution.

@@ -56,4 +56,4 @@ In the `index.js` file, use the stats to display in the Job summary the followin
 
 ![finish result](../assets/images/interactions-lab2-finish-result.png)
 
-Use the `index.js` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/20-interactions-lab2-summary-solution) to compare it with your solution.
+Use the `index.js` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/20-interactions-lab2-summary-solution) to compare it with your solution.

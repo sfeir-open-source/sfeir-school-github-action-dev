@@ -34,7 +34,7 @@ runs:
   using: composite
   steps:
     - id: step1
-      uses: some/action@v1
+      uses: some/action@main
       with:
         action_input1: ${{ inputs.action_input }}
         action_input2: ${{ inputs.action_secret }}
@@ -86,7 +86,7 @@ jobs:
       job_output: ${{ steps.step1.outputs.action_output }}
     steps:
       - id: step1
-        uses: some/action@v1
+        uses: some/action@main
         with:
           action_input1: ${{ inputs.workflow_input }}
           action_input2: ${{ secrets.workflow_secret }}

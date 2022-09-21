@@ -51,4 +51,4 @@ If the file don't exists, then define a [Warning annotation](https://github.com/
 
 ![finish result](../assets/images/interactions-lab1-finish-result.png)
 
-Use the `index.js` and the `package.json` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/20-interactions-lab1-warning-solution) to compare it with your solution.
+Use the `index.js` and the `package.json` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/20-interactions-lab1-warning-solution) to compare it with your solution.

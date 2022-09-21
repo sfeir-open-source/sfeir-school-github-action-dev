@@ -35,8 +35,8 @@ jobs:
       - uses: rlespinasse/github-slug-action@v4
 
       # Remote action in a subdirectory
-      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-node@v1
-      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-docker@v1
+      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-node@main
+      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-docker@main
 
       # Local action
       - uses: actions/checkout@v3 # Need to be checkout first

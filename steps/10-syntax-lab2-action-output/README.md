@@ -34,4 +34,4 @@ On the action
 
 ![finish result](../assets/images/syntax-lab2-finish-result.png)
 
-Use the `action.yaml` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/10-syntax-lab2-action-output-solution) to compare it with your solution.
+Use the `action.yaml` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/10-syntax-lab2-action-output-solution) to compare it with your solution.

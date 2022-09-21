@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Run action using the public access {repo}/{path}@{ref}
-      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-node@v1
-      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-docker@v1
-      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-composite@v1
+      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-node@main
+      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-docker@main
+      - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-composite@main
 
   runs-using-actions-local:
     runs-on: ubuntu-latest

@@ -62,7 +62,7 @@ In order to improve [security](https://docs.github.com/en/actions/security-guide
 ⚠️ Risky practice
 
 ```yaml
-- uses: you/action-at-risk@v1 # which use 'github.event.pull_request.title' directly
+- uses: you/action-at-risk@main # which use 'github.event.pull_request.title' directly
 ```
 
 👍 Preferred practice
@@ -76,11 +76,11 @@ inputs:
 ```
 
 ```yaml
-- uses: you/action-at-peace@v1
+- uses: you/action-at-peace@main
   with:
     title: 'some title'
 # Or
-- uses: you/action-at-peace@v1 # Input with default value to ${{ github.event.pull_request.title }}
+- uses: you/action-at-peace@main # Input with default value to ${{ github.event.pull_request.title }}
 ```
 
 Notes:

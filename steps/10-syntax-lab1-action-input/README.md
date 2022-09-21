@@ -27,4 +27,4 @@ Create a repository with the content of this folder.
 
 ![finish result](../assets/images/syntax-lab1-finish-result.png)
 
-Use the `action.yaml` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/10-syntax-lab1-action-input-solution) to compare it with your solution.
+Use the `action.yaml` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/10-syntax-lab1-action-input-solution) to compare it with your solution.

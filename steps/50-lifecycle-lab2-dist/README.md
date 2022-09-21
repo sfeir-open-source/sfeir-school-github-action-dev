@@ -54,4 +54,4 @@ Create a new workflow `testing-workflow.yaml` to test your action from an user p
 
 ![finish result](../assets/images/lifecycle-lab2-finish-result.png)
 
-Use the `release-workflow.yaml` and the `.releaserc` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/50-lifecycle-lab2-dist-solution) to compare it with your solution.
+Use the `release-workflow.yaml` and the `.releaserc` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/50-lifecycle-lab2-dist-solution) to compare it with your solution.

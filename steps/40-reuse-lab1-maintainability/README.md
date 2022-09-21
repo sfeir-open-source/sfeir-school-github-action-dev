@@ -61,4 +61,4 @@ This way, any team can check markdown file and act on it in theirs own way.
 - `reusable-workflow.yaml` will be reusable by other teams with the same process.
 - `markdown-linter` action will be usable by other teams with a different process.
 
-Use the `workflow.yaml`, the `reusable-workflow.yaml`, and the `action.yaml` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/40-reuse-lab1-maintainability-solution) to compare it with your solution.
+Use the `workflow.yaml`, the `reusable-workflow.yaml`, and the `action.yaml` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/main/steps/40-reuse-lab1-maintainability-solution) to compare it with your solution.
