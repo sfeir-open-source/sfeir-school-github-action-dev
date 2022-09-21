@@ -36,7 +36,8 @@ jobs:
 
       # Lab1 solution => steps/30-testing-lab1-action-shell-testing/testing-workflow.yaml
       - run: |
-          ln -s tests steps/30-testing-lab1-action-shell-testing-solution/tests
+          ln -s tests/bats steps/30-testing-lab1-action-shell-testing-solution/tests/bats
+          ln -s tests/test_helper steps/30-testing-lab1-action-shell-testing-solution/tests/test_helper
           ln -s steps/30-testing-lab1-action-shell-testing/scripts steps/30-testing-lab1-action-shell-testing-solution/scripts
         shell: bash
       - run: |
