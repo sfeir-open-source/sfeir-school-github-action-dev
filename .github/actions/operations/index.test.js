@@ -7,7 +7,7 @@ const path = require('path');
 
 test('make sure it returns something', async () => {
   const core = {
-    getInput: jest.fn().mockResolvedValue(parseInt(43)),
+    getInput: jest.fn().mockResolvedValue(parseInt(42)),
     debug: jest.fn(),
     info: jest.fn(),
     warning: jest.fn(),
