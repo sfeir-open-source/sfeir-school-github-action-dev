@@ -1,0 +1,19 @@
+name: 'Operations'
+description: 'Perform operations'
+inputs:
+  input1:
+    description: 'value that will be use to do math'
+    required: true
+  input2:
+    description: 'value that will be use to do math'
+    required: true
+outputs:
+  addition:  
+    description: 'The current addition result'
+  subtraction:
+    description: 'The current subtraction result'
+  multiplication:
+    description: 'The current multiplication result'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
