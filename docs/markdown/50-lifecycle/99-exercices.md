@@ -12,6 +12,8 @@ Create a new repository and **release it**, then **publish it** to the marketpla
 
 Notes:
 
+Speaker **Thibauld**
+
 **Unpublish the test action** to avoid garbage in the Marketplace
 
 ##--##
@@ -27,3 +29,7 @@ Notes:
 Manage the **compiled files** on an JavaScript Action
 
 ### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/50-lifecycle-lab2-dist)
+
+Notes:
+
+Speaker **Thibauld**

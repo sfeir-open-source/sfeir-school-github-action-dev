@@ -17,6 +17,10 @@ const core = require('@actions/core');
 core.exportVariable('{environment_variable_name}', '{value}');
 ```
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -40,6 +44,10 @@ const core = require('@actions/core');
 core.exportVariable('{environment_variable_name}', var_with_multiline_content);
 ```
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -61,6 +69,10 @@ const core = require('@actions/core');
 core.addPath('{path}');
 ```
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 # Configure
@@ -71,3 +83,7 @@ core.addPath('{path}');
 - Stopping and starting workflow commands - [reference](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#stopping-and-starting-workflow-commands)
 - Masking a value in log - [reference](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#masking-a-value-in-log)
 - Echoing command outputs - [reference](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#echoing-command-outputs)
+
+Notes:
+
+Speaker **Thibauld**

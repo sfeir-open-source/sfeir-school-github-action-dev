@@ -26,6 +26,10 @@ const core = require('@actions/core');
 const value = core.getInput('firstInput');
 ```
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -50,6 +54,10 @@ runs:
 ```
 
 `firstInput` is available under environment variable `$INPUT_FIRSTINPUT`.
+
+Notes:
+
+Speaker **Thibauld**
 
 ##--##
 
@@ -80,6 +88,10 @@ runs:
 
 You need to use the `inputs` context field to access it : `${{ inputs.firstInput }}`.
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -104,3 +116,7 @@ inputs:
     required: true
     default: "Default value"
 ```
+
+Notes:
+
+Speaker **Thibauld**

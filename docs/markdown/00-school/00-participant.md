@@ -8,3 +8,9 @@
 
 ### Your job
 <!-- .element: class="icon-rule icon-first" -->
+
+Notes:
+
+Speaker **Thibauld**
+
+Ask the group to present itself

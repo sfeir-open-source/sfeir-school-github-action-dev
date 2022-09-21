@@ -3,3 +3,7 @@
 # Write
 
 ## Interactions
+
+Notes:
+
+Speaker **Thibauld**

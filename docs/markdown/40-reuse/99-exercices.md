@@ -9,3 +9,7 @@
 Use **reusable workflow** and **action** to improve **maintainability** of a workflow.
 
 ### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/40-reuse-lab1-maintainability)
+
+Notes:
+
+Speaker **Thibauld**

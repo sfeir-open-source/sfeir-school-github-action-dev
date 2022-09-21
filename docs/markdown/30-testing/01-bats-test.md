@@ -36,6 +36,8 @@ teardown() {
 
 Notes:
 
+Speaker **Thibauld**
+
 - `setup` step that prepare the test environment to run specific use case
   - load library eg. bats-support and bats-assert that provide error reporting, test assertions etc.
   - setup path
@@ -68,3 +70,7 @@ test.bats
 
 3 tests, 0 failures
 ```
+
+Notes:
+
+Speaker **Thibauld**

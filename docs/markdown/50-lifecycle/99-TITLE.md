@@ -3,3 +3,7 @@
 # Exercices
 
 ## Action Lifecycle
+
+Notes:
+
+Speaker **Thibauld**

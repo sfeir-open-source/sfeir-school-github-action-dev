@@ -9,6 +9,8 @@ You may ask youself the following questions
 
 Notes:
 
+Speaker **Thibauld**
+
 - A job is a series of unitary steps (Action or shell commands)
 - An Action is a series of tasks to achieve unitary steps or linked steps
 
@@ -26,6 +28,10 @@ Notes:
 | Is the extraction of steps improve the readability ?    | Action           |
 | Is the extraction of steps improve the maintenability ? | Action           |
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 # Create an action
@@ -36,3 +42,7 @@ Notes:
 | ---------------------------------- | -------------------- |
 | Strictly related to the repository | Local                |
 | Generic and usable by others       | Global               |
+
+Notes:
+
+Speaker **Thibauld**

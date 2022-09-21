@@ -8,3 +8,7 @@
 2. Add the `action.yaml` file and any relevant file
 3. That it, you have your GitHub Action available to be used
 <!-- .element: class="list-fragment" -->
+
+Notes:
+
+Speaker **Thibauld**

@@ -7,6 +7,10 @@ Must contains
 - action.yaml
 <!-- .element: class="list-fragment" -->
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 # Structure of an action repository
@@ -18,3 +22,7 @@ Can contains
 - Shell scripts
 - Any relevant file
 <!-- .element: class="list-fragment" -->
+
+Notes:
+
+Speaker **Thibauld**

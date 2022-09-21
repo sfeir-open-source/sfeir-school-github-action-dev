@@ -3,3 +3,7 @@
 # Exercices
 
 ## Reuse it
+
+Notes:
+
+Speaker **Thibauld**

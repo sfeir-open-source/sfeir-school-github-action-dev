@@ -12,6 +12,10 @@
 [reference](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
 <!-- .element: class="credits" -->
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -48,6 +52,10 @@ jobs:
       - uses: ./.github/actions/my-private-repo/my-action
 ```
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -72,3 +80,7 @@ jobs:
       # Reference a branch
       - uses: actions/checkout@main
 ```
+
+Notes:
+
+Speaker **Thibauld**

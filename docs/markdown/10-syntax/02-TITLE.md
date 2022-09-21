@@ -3,3 +3,7 @@
 # Action usage
 
 ## GitHub Action
+
+Notes:
+
+Speaker **Thibauld**

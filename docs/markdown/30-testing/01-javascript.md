@@ -6,6 +6,10 @@ Every testing framework can be used to make JavaScript tests.
 
 For example, you can use [Jest](https://jestjs.io/).
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 # Why using a javascript test framework ?
@@ -14,6 +18,10 @@ For example, you can use [Jest](https://jestjs.io/).
 - Isolated tests
 - Run with `npm run test`
 - Easy mocking
+
+Notes:
+
+Speaker **Thibauld**
 
 ##--##
 
@@ -45,3 +53,7 @@ test("mock return value", () => {
 ```
 
 Test can be made with multiple node version using the matrix strategy.
+
+Notes:
+
+Speaker **Thibauld**

@@ -24,6 +24,10 @@ const core = require('@actions/core');
 core.setOutput('someOutput', 'Some Value');
 ```
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -53,6 +57,10 @@ To define an output value, you need to print the `set-output` command.
 echo "::set-output name=someOutput::Some Value"
 ```
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 <!-- .slide: class="with-code-bg-dark" -->
@@ -79,3 +87,7 @@ runs:
 ```
 
 To define an output value, a step need to print the `set-output` command and you need to map it as value of the output.
+
+Notes:
+
+Speaker **Thibauld**

@@ -3,3 +3,7 @@
 # Testing Methods
 
 ## Testing
+
+Notes:
+
+Speaker **Thibauld**

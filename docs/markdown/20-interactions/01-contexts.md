@@ -19,6 +19,8 @@ Your action will be run inside a workflow and having access to its contexts.
 
 Notes:
 
+Speaker **Thibauld**
+
 Some contexts are inaccessibles inside an action
 
 - jobs
@@ -42,6 +44,10 @@ inputs:
     required: true
     default: "${{ github.sha }}"
 ```
+
+Notes:
+
+Speaker **Thibauld**
 
 ##--##
 
@@ -76,3 +82,7 @@ inputs:
 # Or
 - uses: you/action-at-peace@v1 # Input with default value to ${{ github.event.pull_request.title }}
 ```
+
+Notes:
+
+Speaker **Thibauld**

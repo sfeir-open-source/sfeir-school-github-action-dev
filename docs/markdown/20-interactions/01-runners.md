@@ -14,6 +14,10 @@ To run GitHub Actions workflows, GitHub have a [serie of shared runners](https:/
   - macos-lastest
   - macos-xx
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 # Runners
@@ -30,6 +34,10 @@ Your action must take in account the environment upon which it can run.
 
 ⚠️ The used runner can also be a **custom one**.
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 # Runners
@@ -44,3 +52,7 @@ Your action must take in account the environment upon which it can run.
 
 [Available Shells](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsshell)
 <!-- .element: class="credits" -->
+
+Notes:
+
+Speaker **Thibauld**
