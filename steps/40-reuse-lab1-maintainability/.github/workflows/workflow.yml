@@ -1,0 +1,294 @@
+name: Test the Lab 1 of Reuse
+on: pull_request
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set directory
+        env:
+          DIR: docs/section1
+        run: |
+          echo "DIRECTORY=${DIR}" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Linter installation
+        run: |
+          npm install -g markdownlint-cli
+        shell: bash
+
+      - name: Print markdownlint version
+        run: |
+          echo $(markdownlint -V)
+        shell: bash
+
+      - name: Lint the section markdown
+        continue-on-error: true
+        run: |
+          markdownlint ${{ env.DIRECTORY }}/*.md -o tmp.txt
+        shell: bash
+
+      - name: Format result
+        id: format-result
+        uses: actions/github-script@v6
+        with:
+          github-token: $GITHUB_TOKEN
+          result-encoding: string
+          script: |
+            const fs = require('fs').promises;
+            var reportBulk = (await fs.readFile("tmp.txt")).toString();
+            const output = `### Lint 📖
+            <details>
+            \`\`\`
+            `+reportBulk+`
+            \`\`\`
+            </details>`
+            return output;
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: ${{ env.DIRECTORY }}
+
+      - name: Create comment
+        if: steps.fc.outputs.comment-id == ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## ${{ env.DIRECTORY }}
+            ${{ steps.format-result.outputs.result }}
+
+      - name: Update comment
+        if: steps.fc.outputs.comment-id != ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          body: |
+            ## ${{ env.DIRECTORY }}
+            ${{ steps.format-result.outputs.result }}
+          edit-mode: replace
+  check-section2:
+    needs: check-section1
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set directory
+        env:
+          DIR: docs/section2
+        run: |
+          echo "DIRECTORY=${DIR}" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Linter installation
+        run: |
+          npm install -g markdownlint-cli
+        shell: bash
+
+      - name: Print markdownlint version
+        run: |
+          echo $(markdownlint -V)
+        shell: bash
+
+      - name: Lint the section markdown
+        continue-on-error: true
+        run: |
+          markdownlint ${{ env.DIRECTORY }}/*.md -o tmp.txt
+        shell: bash
+
+      - name: Format result
+        id: format-result
+        uses: actions/github-script@v6
+        with:
+          github-token: $GITHUB_TOKEN
+          result-encoding: string
+          script: |
+            const fs = require('fs').promises;
+            var reportBulk = (await fs.readFile("tmp.txt")).toString();
+            const output = `### Lint 📖
+            <details>
+            \`\`\`
+            `+reportBulk+`
+            \`\`\`
+            </details>`
+            return output;
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: ${{ env.DIRECTORY }}
+
+      - name: Create comment
+        if: steps.fc.outputs.comment-id == ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## ${{ env.DIRECTORY }}
+            ${{ steps.format-result.outputs.result }}
+
+      - name: Update comment
+        if: steps.fc.outputs.comment-id != ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          body: |
+            ## ${{ env.DIRECTORY }}
+            ${{ steps.format-result.outputs.result }}
+          edit-mode: replace
+  check-section3:
+    needs: check-section2
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set directory
+        env:
+          DIR: docs/section3
+        run: |
+          echo "DIRECTORY=${DIR}" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Linter installation
+        run: |
+          npm install -g markdownlint-cli
+        shell: bash
+
+      - name: Print markdownlint version
+        run: |
+          echo $(markdownlint -V)
+        shell: bash
+
+      - name: Lint the section markdown
+        continue-on-error: true
+        run: |
+          markdownlint ${{ env.DIRECTORY }}/*.md -o tmp.txt
+        shell: bash
+
+      - name: Format result
+        id: format-result
+        uses: actions/github-script@v6
+        with:
+          github-token: $GITHUB_TOKEN
+          result-encoding: string
+          script: |
+            const fs = require('fs').promises;
+            var reportBulk = (await fs.readFile("tmp.txt")).toString();
+            const output = `### Lint 📖
+            <details>
+            \`\`\`
+            `+reportBulk+`
+            \`\`\`
+            </details>`
+            return output;
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: ${{ env.DIRECTORY }}
+
+      - name: Create comment
+        if: steps.fc.outputs.comment-id == ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## ${{ env.DIRECTORY }}
+            ${{ steps.format-result.outputs.result }}
+
+      - name: Update comment
+        if: steps.fc.outputs.comment-id != ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          body: |
+            ## ${{ env.DIRECTORY }}
+            ${{ steps.format-result.outputs.result }}
+          edit-mode: replace
+  check-section4:
+    needs: check-section3
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set directory
+        env:
+          DIR: docs/section4
+        run: |
+          echo "DIRECTORY=${DIR}" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Linter installation
+        run: |
+          npm install -g markdownlint-cli
+        shell: bash
+
+      - name: Print markdownlint version
+        run: |
+          echo $(markdownlint -V)
+        shell: bash
+
+      - name: Lint the section markdown
+        continue-on-error: true
+        run: |
+          markdownlint ${{ env.DIRECTORY }}/*.md -o tmp.txt
+        shell: bash
+
+      - name: Format result
+        id: format-result
+        uses: actions/github-script@v6
+        with:
+          github-token: $GITHUB_TOKEN
+          result-encoding: string
+          script: |
+            const fs = require('fs').promises;
+            var reportBulk = (await fs.readFile("tmp.txt")).toString();
+            const output = `### Lint 📖
+            <details>
+            \`\`\`
+            `+reportBulk+`
+            \`\`\`
+            </details>`
+            return output;
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: ${{ env.DIRECTORY }}
+
+      - name: Create comment
+        if: steps.fc.outputs.comment-id == ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## ${{ env.DIRECTORY }}
+            ${{ steps.format-result.outputs.result }}
+
+      - name: Update comment
+        if: steps.fc.outputs.comment-id != ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          body: |
+            ## ${{ env.DIRECTORY }}
+            ${{ steps.format-result.outputs.result }}
+          edit-mode: replace

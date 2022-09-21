@@ -1,0 +1,14 @@
+name: Test the Lab 1 of Reuse
+on: pull_request
+jobs:
+  check-section1:
+    strategy:
+      matrix:
+        dir:
+          - docs/section1
+          - docs/section2
+          - docs/section3
+          - docs/section4
+    uses: ./.github/workflows/reusable-workflow.yaml
+    with:
+      dir: ${{ matrix.dir }}
