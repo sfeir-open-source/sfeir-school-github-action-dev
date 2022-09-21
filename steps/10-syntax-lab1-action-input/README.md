@@ -13,7 +13,7 @@ Create a repository with the content of this folder.
 
 `testing-workflow.yaml` will run but display some warnings.
 
-![setup result](../assets/syntax-lab1-setup-result.png)
+![setup result](../assets/images/syntax-lab1-setup-result.png)
 
 ## Remove the warnings
 
@@ -25,6 +25,6 @@ Create a repository with the content of this folder.
 
 `testing-workflow.yaml` will run without warning and the step will display the cow saying what you set up.
 
-![finish result](../assets/syntax-lab1-finish-result.png)
+![finish result](../assets/images/syntax-lab1-finish-result.png)
 
 Use the `action.yaml` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/10-syntax-lab1-action-input-solution) to compare it with your solution.

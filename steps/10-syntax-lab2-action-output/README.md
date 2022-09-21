@@ -19,7 +19,7 @@ Create a repository with the content of this folder.
 
 `testing-workflow.yaml` will run but **NOT** display any notice message since the message is empty.
 
-![setup result](../assets/syntax-lab2-setup-result.png)
+![setup result](../assets/images/syntax-lab2-setup-result.png)
 
 ## Remove the warnings
 
@@ -32,6 +32,6 @@ On the action
 
 `testing-workflow.yaml` will run and display the notice message as expected.
 
-![finish result](../assets/syntax-lab2-finish-result.png)
+![finish result](../assets/images/syntax-lab2-finish-result.png)
 
 Use the `action.yaml` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/10-syntax-lab2-action-output-solution) to compare it with your solution.

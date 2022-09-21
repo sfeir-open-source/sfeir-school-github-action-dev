@@ -1,12 +1,12 @@
 <!-- .slide: class="exercice" -->
 
-# Bats
+# using Bats
 
 ## Lab 1
 
 ![float-left](./assets/images/testing-lab1-shell-bats.png)
 
-Create an Composite Action that will test our shell script.
+Test **shell** scripts using **bats**.
 
 ### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/30-testing-lab1-action-shell-testing)
 
@@ -14,26 +14,12 @@ Create an Composite Action that will test our shell script.
 
 <!-- .slide: class="exercice" -->
 
-# Jest
+# using Workflow
 
 ## Lab 2
 
-![float-left](./assets/images/testing-lab2-jest.jpeg)
+![float-left](./assets/images/testing-lab2-workflow.jpg)
 
-Create a workflow that will test our javascript using Jest.
+Test an **Action** using a GitHub Action **workflow**.
 
-### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/30-testing-lab2-action-js-testing)
-
-##--##
-
-<!-- .slide: class="exercice" -->
-
-# Workflow
-
-## Lab 3
-
-![float-left](./assets/images/testing-lab3-workflow.jpg)
-
-Test a action using a workflow.
-
-### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/30-testing-lab3-action-workflow-testing)
+### [Start](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/30-testing-lab2-action-workflow-testing)

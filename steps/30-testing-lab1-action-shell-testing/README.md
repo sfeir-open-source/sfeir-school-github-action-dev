@@ -1,6 +1,6 @@
 # Lab 1
 
-Test **shell** scripts using **bats**
+Test **shell** scripts using **bats**.
 
 ## Tips
 
@@ -14,7 +14,7 @@ Create a repository with the content of this folder.
 
 `testing-workflow.yaml` will run and do **nothing** (yet).
 
-![setup result](../assets/testing-lab1-setup-result.png)
+![setup result](../assets/images/testing-lab1-setup-result.png)
 
 ## Run the tests
 
@@ -31,23 +31,23 @@ Create a repository with the content of this folder.
 
 ## Test the addition script
 
-- add a test that check if `addition.sh` is working : 5 + 5 eq 10
-- add a test that check if `addition.sh` is working : missing arg throw an error
-- add a test that check if `addition.sh` is working : returned exit code is `3`
+- Add a test that check if `addition.sh` is working : 5 + 5 eq 10
+- Add a test that check if `addition.sh` is working : missing arg throw an error
+- Add a test that check if `addition.sh` is working : returned exit code is `3`
 
 ## Test the hello-world script
 
-- add a test that check if `hello-world.sh` print at least `Hello` and not `Hola`
+- Add a test that check if `hello-world.sh` print at least `Hello` and not `Hola`
 
 ## Test the palindrome script
 
-- add a test that check if `palindrome.sh` is not error with the word `kayak` and the output contains : `is a palindrome`
-- add a test that check if `palindrome.sh` end with the word `palindrome` with a regex
+- Add a test that check if `palindrome.sh` is not error with the word `kayak` and the output contains : `is a palindrome`
+- Add a test that check if `palindrome.sh` end with the word `palindrome` with a regex
 
 ## Finish
 
 `testing-workflow.yaml` will run the 6 tests without failure.
 
-![finish result](../assets/testing-lab1-finish-result.png)
+![finish result](../assets/images/testing-lab1-finish-result.png)
 
 Use the `testing-workflow.yaml` and the `lab-tests.bats` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/30-testing-lab1-action-shell-testing-solution) to compare it with your solution.

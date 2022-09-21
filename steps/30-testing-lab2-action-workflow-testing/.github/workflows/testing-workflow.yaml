@@ -1,0 +1,19 @@
+name: Test the Lab 2 of Testing
+on: push
+jobs:
+  test-testing-lab2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - id: simple-run
+        uses: ./.
+        with:
+          addition-input-1: 4
+          addition-input-2: 5
+          palindrome-input: "kayak"
+
+      - run: |
+          echo "addition: ${{ steps.simple-run.outputs.addition }}"
+          echo "helloWorld: ${{ steps.simple-run.outputs.helloWorld }}"
+          echo "palindrome: ${{ steps.simple-run.outputs.palindrome }}"

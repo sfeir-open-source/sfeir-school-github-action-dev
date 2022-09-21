@@ -13,7 +13,7 @@ Create a repository with the content of this folder.
 
 `testing-workflow.yaml` will run and do **NOT** set any Job summary, only the warning from the previous lab.
 
-![setup result](../assets/interactions-lab1-finish-result.png)
+![setup result](../assets/images/interactions-lab1-finish-result.png)
 
 ### Get some stats
 
@@ -54,6 +54,6 @@ In the `index.js` file, use the stats to display in the Job summary the followin
 
 `testing-workflow.yaml` will run and display the following Job summary in addition with the warning from the previous lab.
 
-![finish result](../assets/interactions-lab2-finish-result.png)
+![finish result](../assets/images/interactions-lab2-finish-result.png)
 
 Use the `index.js` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/20-interactions-lab2-summary-solution) to compare it with your solution.

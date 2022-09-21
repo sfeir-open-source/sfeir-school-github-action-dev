@@ -1,0 +1,59 @@
+name: Test the Lab 2 of Testing
+on: push
+jobs:
+  test-testing-lab2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # Test 1
+      - name: Test addition
+        id: addition
+        uses: ./.
+        with:
+          addition-input-1: 4
+          addition-input-2: 5
+      - name: Validate // Test addition
+        run: |
+          [[ "${{ steps.addition.outputs.addition }}" -eq 9 ]]
+
+      # Test 2
+      - name: Test failed addition
+        id: failed-addition
+        uses: ./.
+        with:
+          addition-input-1: ab
+          addition-input-2: cd
+        continue-on-error: true
+      - name: Validate // Test failed addition
+        run: |
+          [[ "${{ steps.failed-addition.outcome }}" == "failure" ]]
+          [[ "${{ steps.failed-addition.conclusion }}" == "success" ]]
+
+      # Test 3
+      - name: Test hello world
+        id: helloworld
+        uses: ./.
+      - name: Validate // Test hello world
+        run: |
+          [[ "${{ steps.helloworld.outputs.helloWorld }}" == "Hello World!" ]]
+
+      # Test 4
+      - name: Test a palindrome
+        id: palindrome
+        uses: ./.
+        with:
+          palindrome-input: kayak
+      - name: Validate // Test a palindrome
+        run: |
+          [[ "${{ steps.palindrome.outputs.palindrome }}" == "kayak is a palindrome" ]]
+
+      # Test 5
+      - name: Test a wrong palindrome
+        id: wrong-palindrome
+        uses: ./.
+        with:
+          palindrome-input: wrong
+      - name: Validate // Test a wrong palindrome
+        run: |
+          [[ "${{ steps.wrong-palindrome.outputs.palindrome }}" == "wrong is not a palindrome" ]]

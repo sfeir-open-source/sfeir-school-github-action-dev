@@ -78,9 +78,7 @@ Use
     var2: Some Value
   continue-on-error: true # Don't stop on error
 - name: Validate // Test name
-  run: |
-    [[ "${{ steps.test-id.outcome }}" == "failure" ]]
-    [[ "${{ steps.test-id.conclusion }}" == "success" ]]
+  run: |                                                                                                                                                                                                                                                                           é
   shell: bash
 ```
 

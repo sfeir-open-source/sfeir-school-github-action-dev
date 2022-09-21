@@ -15,7 +15,7 @@ Create a repository with the content of this folder.
 
 `testing-workflow.yaml` will run and do **NOT** print any warning (on the `tests/package.json` file)
 
-![setup result](../assets/interactions-lab1-setup-result.png)
+![setup result](../assets/images/interactions-lab1-setup-result.png)
 
 ### Find all package.json
 
@@ -49,6 +49,6 @@ If the file don't exists, then define a [Warning annotation](https://github.com/
 
 `testing-workflow.yaml` will run and produce a warning on the `tests/package.json` since the `package-lock.json` file is missing.
 
-![finish result](../assets/interactions-lab1-finish-result.png)
+![finish result](../assets/images/interactions-lab1-finish-result.png)
 
 Use the `index.js` and the `package.json` from the [solution](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/tree/v1/steps/20-interactions-lab1-warning-solution) to compare it with your solution.
