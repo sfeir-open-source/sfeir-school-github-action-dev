@@ -1,0 +1,39 @@
+name: Operations testing
+on: push
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          npm install
+          npm test
+        working-directory: ./.github/actions/operations
+        shell: bash
+
+  test-as-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          npm install
+          npm run prepare
+        working-directory: ./.github/actions/operations
+        shell: bash
+      - uses: ./.github/actions/operations
+        id: test
+        with:
+          input1: 5
+          input2: 9
+
+      - name: Validate // Test addition
+        run: |
+          [[ "${{ steps.test.outputs.addition }}" -eq 14 ]]
+
+      - name: Validate // Test Subtraction
+        run: |
+          [[ "${{ steps.test.outputs.subtraction }}" -eq -4 ]]
+
+      - name: Validate // Test multiplication
+        run: |
+          [[ "${{ steps.test.outputs.multiplication }}" -eq 45 ]]
