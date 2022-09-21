@@ -45,9 +45,6 @@ jobs:
           ${GITHUB_WORKSPACE}/tests/bats/bin/bats ${GITHUB_WORKSPACE}/steps/30-testing-lab1-action-shell-testing-solution/tests/lab-tests.bats
         shell: bash
 
-  testing-lab3:
-    uses: ./.github/workflows/labs-testing-lab3.yaml
-
   lifecycle:
     runs-on: ubuntu-latest
     steps:
