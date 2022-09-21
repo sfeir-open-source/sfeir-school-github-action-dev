@@ -5,24 +5,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm install
-      - run: npm run prepare
       - uses: ./.
         with:
           who: Somebody
 
   release:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
     needs: testing
     steps:
       - uses: actions/checkout@v3
-      - run: npm install
-      - run: npm run prepare
       - uses: cycjimmy/semantic-release-action@v3
         with:
           extra_plugins: |
             @semantic-release/changelog
-            @semantic-release/exec
             @semantic-release/git
         env:
           GITHUB_TOKEN: ${{ github.token }}
