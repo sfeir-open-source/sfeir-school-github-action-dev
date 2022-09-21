@@ -80,7 +80,7 @@ Notes:
 
 Speaker **Thibauld**
 
-For the operations **math.js** file, we can test its exposed function
+For the operations **math.js** file, we can test its exposed function.
 
 ##--##
 
