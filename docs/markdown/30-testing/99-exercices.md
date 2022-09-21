@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-# using Bats
+# Using Bats
 
 ## Lab 1
 
