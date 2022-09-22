@@ -14,7 +14,7 @@ Create a repository with the content of this folder.
 
 `workflow.yaml` will run and validate the markdown of the documentation sections sequentially.
 
-![setup result](../assets/images/reuse-lab1-maintainability.png)
+![setup result](../assets/images/reuse-lab1-setup-result.png)
 
 ## Initiate a pull request
 
@@ -56,7 +56,7 @@ This way, any team can check markdown file and act on it in theirs own way.
 
 - `workflow.yaml` will run and validate the markdown of the documentation sections in parallel.
 
-  ![finish result](../assets/images/testing-lab1-finish-result.png)
+  ![finish result](../assets/images/reuse-lab1-finish-result.png)
 
 - `reusable-workflow.yaml` will be reusable by other teams with the same process.
 - `markdown-linter` action will be usable by other teams with a different process.
