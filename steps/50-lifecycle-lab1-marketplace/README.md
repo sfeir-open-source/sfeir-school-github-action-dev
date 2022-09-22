@@ -14,7 +14,7 @@ Create a repository with the content of this folder.
 
 `release-workflow.yaml` will run but do **NOT** generate a release.
 
-![setup result](../assets/images/lifecycle-lab1-setup-result.png)
+![setup result](../assets/images/lifecycle-lab1-marketplace.png)
 
 ## Release it
 
