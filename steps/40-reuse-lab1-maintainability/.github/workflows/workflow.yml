@@ -1,7 +1,7 @@
 name: Test the Lab 1 of Reuse
 on: pull_request
 jobs:
-  check:
+  check-section1:
     runs-on: ubuntu-latest
 
     steps:
