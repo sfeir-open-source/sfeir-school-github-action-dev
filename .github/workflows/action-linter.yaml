@@ -1,0 +1,66 @@
+name: Run Actions / ActionLint
+on: pull_request
+jobs:
+  lint-a-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - id: install
+        name: install actionlint
+        uses: ./.github/actions/actionlint
+
+      - name: run ActionLint
+        continue-on-error: true
+        env:
+          LINTER: ${{ steps.install.outputs.executable }}
+        run: 
+          $LINTER  -format '{{range $err := .}}### Error at line {{$err.Line}}, col {{$err.Column}} of {{$err.Filepath}}\n\n{{$err.Message}}\n\n \n{{$err.Snippet}}\n \n\n{{end}}' > report.txt
+
+      - name: Get report
+        id: get-report
+        uses: actions/github-script@v6
+        with:
+          result-encoding: string
+          script: |
+            const fs = require('fs').promises;
+            var reportBulk = (await fs.readFile("report.txt")).toString();
+            return reportBulk;
+
+      - name: Format comment message
+        id: format-comment
+        uses: actions/github-script@v6
+        with:
+          github-token: $GITHUB_TOKEN
+          result-encoding: string
+          script: |
+            const output = `#### Lint 📖
+ 
+            ${{ steps.get-report.outputs.result }}            
+            `
+            return output;
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: Lint
+
+      - name: Create comment
+        if: steps.fc.outputs.comment-id == ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ${{ steps.format-comment.outputs.result }}
+
+      - name: Update comment
+        if: steps.fc.outputs.comment-id != ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          body: |
+            ${{ steps.format-comment.outputs.result }}
+          edit-mode: replace
