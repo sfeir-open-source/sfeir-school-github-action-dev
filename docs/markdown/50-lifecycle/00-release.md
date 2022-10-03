@@ -9,6 +9,8 @@ Notes:
 
 Speaker **Romain**
 
+##--##
+
 ## Release cycle practices
 
 - Use Semantic Versionning : [MAJOR.MINOR.PATCH](https://semver.org/spec/v2.0.0.html#summary)

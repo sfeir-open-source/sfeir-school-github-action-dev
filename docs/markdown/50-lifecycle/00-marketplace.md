@@ -8,11 +8,15 @@
 name: Action name                               # Must be unique on Marketplace
 description: Short description of the action    # Used on the marketplace
 branding:                                       # Mandatory to be publish on the Marketplace
-  icon: 'award'  
+  icon: 'award'
   color: 'green'
 ```
 
 The action will be available on [GitHub Marketplace](https://github.com/marketplace?type=actions).
+
+Notes:
+
+Speaker **Thibauld**
 
 ##--##
 
@@ -30,6 +34,10 @@ GitHub recommand to [have a README file containing](https://docs.github.com/en/a
 - An example of how to use your action in a workflow
 <!-- .element: class="list-fragment" -->
 
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 # Publish a release to the Marketplace
@@ -40,3 +48,7 @@ You can create the GitHub release automatically, but the publication to the mark
 
 ⚠️ This step is currently only manual.
 <!-- .element: class="credits" -->
+
+Notes:
+
+Speaker **Thibauld**
