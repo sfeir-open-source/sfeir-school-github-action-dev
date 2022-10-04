@@ -5,10 +5,6 @@
 Once your action is created, we recommand you to **start a release cycle** to better manage new features or bugfixes.
 Without it, the use of your action will only be throught branches.
 
-Notes:
-
-Speaker **Romain**
-
 ## Release cycle practices
 
 - Use Semantic Versionning : [MAJOR.MINOR.PATCH](https://semver.org/spec/v2.0.0.html#summary)
