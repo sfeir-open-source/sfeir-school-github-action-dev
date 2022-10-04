@@ -26,6 +26,6 @@ test/
 
 Notes:
 
-Easy way to use TDD method during development
-
 Speaker **Thibauld**
+
+Easy way to use TDD method during development
