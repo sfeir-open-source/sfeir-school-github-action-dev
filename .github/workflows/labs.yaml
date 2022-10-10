@@ -42,5 +42,5 @@ jobs:
           git submodule add https://github.com/bats-core/bats-support.git steps/30-testing-lab1-action-shell-testing-solution/tests/test_helper/bats-support
         shell: bash
       - run: |
-          ${GITHUB_WORKSPACE}/tests/bats/bin/bats ${GITHUB_WORKSPACE}/steps/30-testing-lab1-action-shell-testing-solution/tests/lab-tests.bats
+          "${GITHUB_WORKSPACE}/tests/bats/bin/bats" "${GITHUB_WORKSPACE}/steps/30-testing-lab1-action-shell-testing-solution/tests/lab-tests.bats"
         shell: bash

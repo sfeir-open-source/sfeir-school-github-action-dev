@@ -9,13 +9,19 @@ jobs:
       - id: install
         name: install actionlint
         uses: ./.github/actions/actionlint
-
+        
+      # SC2016 incorect because of the markdown format & SC2086 incorect when setting git a env variable 
       - name: run ActionLint
         continue-on-error: true
         env:
           LINTER: ${{ steps.install.outputs.executable }}
-        run: 
-          $LINTER  -format '{{range $err := .}}### Error at line {{$err.Line}}, col {{$err.Column}} of {{$err.Filepath}}\n\n{{$err.Message}}\n\n \n{{$err.Snippet}}\n \n\n{{end}}' > report.txt
+        run: |
+          touch report.txt
+          "$LINTER" \
+          -ignore 'missing input "say"' \
+          -ignore 'SC2016' \ 
+          -ignore 'SC2086' \
+          -format '{{range $err := .}}### Error at line {{$err.Line}}, col {{$err.Column}} of {{$err.Filepath}}\n\n{{$err.Message}}\n\n \n{{$err.Snippet}}\n \n\n{{end}}' > report.txt
 
       - name: Get report
         id: get-report
