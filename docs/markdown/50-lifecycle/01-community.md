@@ -14,6 +14,11 @@ Not mandatory but recommanded :
 | Code of Conduct                        | ... your community what is or not acceptable to do during social interactions. |
 | Contributing                           | ... newcomers how to contribute to this repository.                            |
 
+
+Notes:
+
+Speaker **Thibauld**
+
 ##--##
 
 ## Rule of 2 major versions maximum
@@ -30,3 +35,7 @@ See [Security Policy](https://github.com/rlespinasse/github-slug-action/blob/v4.
 ⚠️ This kind of documentation is important since a branch reference can be used to run an Action.
 
 ⚠️ Avoid classic branch naming `master` or `main`.
+
+Notes:
+
+Speaker **Thibauld**
