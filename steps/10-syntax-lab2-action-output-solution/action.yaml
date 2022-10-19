@@ -13,7 +13,8 @@ runs:
   steps:
     - id: upper_step
       run: |
-        echo "::set-output name=upper_text::${INPUT_TEXT^^}"
+        echo "upper_text=${INPUT_TEXT^^}" >> $GITHUB_OUTPUT
+
       env:
         INPUT_TEXT: ${{ inputs.text }}
       shell: bash

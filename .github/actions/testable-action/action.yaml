@@ -23,5 +23,7 @@ runs:
       if: ${{ inputs.value == '' }}
 
     - id: final-output-value
-      run: echo "::set-output name=outputValue::${{ env.OUTPUT_VALUE }}"
+      run: echo "outputValue=${{ env.OUTPUT_VALUE }}" >> $GITHUB_OUTPUT
       shell: bash
+
+

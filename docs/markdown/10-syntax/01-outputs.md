@@ -49,12 +49,12 @@ runs:
   image: 'Dockerfile'
 ```
 
-To define an output value, you need to print the `set-output` command.
+To define an output value, you need to `echo` a key=value into the variable  `$GITHUB_OUTPUT`.
 
 **main.sh**
 
 ```sh
-echo "::set-output name=someOutput::Some Value"
+echo "<output name>=<value>" >> $GITHUB_OUTPUT
 ```
 
 Notes:
@@ -82,11 +82,11 @@ runs:
   using: 'composite'
   steps:
   - id: some-output-step
-    run: echo "::set-output name=someOutput::Some Value"
+    run: echo "someOutput=Some Value" >> $GITHUB_OUTPUT
     shell: bash
 ```
 
-To define an output value, a step need to print the `set-output` command and you need to map it as value of the output.
+To define an output value, a step need to `echo` your key=value output into `$GITHUB_OUTPUT`.
 
 Notes:
 
