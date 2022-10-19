@@ -49,12 +49,12 @@ runs:
   image: 'Dockerfile'
 ```
 
-To define an output value, you need to print the `set-output` command.
+To define an output value, you can use the [GITHUB_OUTPUT](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-output-parameter) environment file.
 
 **main.sh**
 
 ```sh
-echo "::set-output name=someOutput::Some Value"
+echo "someOutput=Some Value" >> $GITHUB_ENV
 ```
 
 Notes:
@@ -82,11 +82,11 @@ runs:
   using: 'composite'
   steps:
   - id: some-output-step
-    run: echo "::set-output name=someOutput::Some Value"
+    run: echo "someOutput=Some Value" >> $GITHUB_ENV
     shell: bash
 ```
 
-To define an output value, a step need to print the `set-output` command and you need to map it as value of the output.
+To define an output value, a step need to use the [GITHUB_OUTPUT](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-output-parameter) environment file and then map it as value of the output of the action.
 
 Notes:
 

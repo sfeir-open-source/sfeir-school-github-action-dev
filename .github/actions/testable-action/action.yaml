@@ -7,9 +7,9 @@ inputs:
 outputs:
   value:
     description: output value
-    value: '${{ steps.final-output-value.outputs.outputValue }}'
+    value: "${{ steps.final-output-value.outputs.outputValue }}"
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
     - run: |
         echo "OUTPUT_VALUE=output-${{ inputs.value }}" >> $GITHUB_ENV
@@ -23,5 +23,6 @@ runs:
       if: ${{ inputs.value == '' }}
 
     - id: final-output-value
-      run: echo "::set-output name=outputValue::${{ env.OUTPUT_VALUE }}"
+      run: |
+        echo "outputValue=${{ env.OUTPUT_VALUE }}" >> $GITHUB_OUTPUT
       shell: bash

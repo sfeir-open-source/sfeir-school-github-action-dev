@@ -37,14 +37,14 @@ runs:
         ADD2: ${{ inputs.addition-input-2 }}
       run: |
         OUTPUT_VALUE=$(sh scripts/addition.sh $ADD1 $ADD2)
-        echo "::set-output name=outputAdditionValue::$OUTPUT_VALUE"
+        echo "outputAdditionValue=$OUTPUT_VALUE" >> $GITHUB_OUTPUT
       shell: bash
 
     - name: run hello-world
       id: hello-world
       run: |
         OUTPUT_VALUE=$(sh scripts/hello-world.sh)
-        echo "::set-output name=outputHelloWorldValue::$OUTPUT_VALUE"
+        echo "outputHelloWorldValue=$OUTPUT_VALUE" >> $GITHUB_OUTPUT
       shell: bash
 
     - name: run palindrome
@@ -53,5 +53,5 @@ runs:
         PAL: ${{ inputs.palindrome-input }}
       run: |
         OUTPUT_VALUE=$(sh scripts/palindrome.sh $PAL)
-        echo "::set-output name=outputPalindromeValue::$OUTPUT_VALUE"
+        echo "outputPalindromeValue=$OUTPUT_VALUE" >> $GITHUB_OUTPUT
       shell: bash
