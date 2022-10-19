@@ -1,7 +1,8 @@
-version: 1
-update_configs:
+version: 2
+updates:
   # Keep package.json (& lockfiles) up to date as soon as
   # new versions are published to the npm registry
-  - package_manager: "javascript"
+  - package-ecosystem: "npm"
     directory: "/docs"
-    update_schedule: "daily"
+    schedule:
+      interval: "daily"
