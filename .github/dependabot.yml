@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Keep package.json (& lockfiles) up to date as soon as
+  # new versions are published to the npm registry
+  - package-ecosystem: "npm"
+    directory: "/docs"
+    schedule:
+      interval: "daily"
+
+  # Keep github actions up todate
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
