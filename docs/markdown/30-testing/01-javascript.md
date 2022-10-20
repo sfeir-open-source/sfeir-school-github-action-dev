@@ -54,7 +54,7 @@ Speaker **Thibauld**
 
 **Test suite**
 
-```js
+```js [1,19|2-6|8-12|14-18]
 describe("simple arithmetic", () => {
   describe("addition", () => {
     test("expect 9 + 5 = 14", () => {
@@ -90,7 +90,7 @@ For the operations **math.js** file, we can test its exposed function.
 
 **Run** the main file
 
-```js
+```js [9-10|6-7|3-4|12-19]
 describe("simple test", () => {
   it('test runs', () => {
     const filePath = path.join(__dirname, `test_outputs.log`)
@@ -126,7 +126,7 @@ Speaker **Thibauld**
 
 **Mock** some methods and test their usage.
 
-```js
+```js [13|2-9|10-12|14-20]
 test('make sure it returns something', async () => {
   const core = {
     getInput: jest.fn().mockResolvedValue(parseInt(43)),
