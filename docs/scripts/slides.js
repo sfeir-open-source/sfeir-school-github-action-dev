@@ -22,6 +22,7 @@ function syntaxSlides() {
     '10-syntax/01-inputs.md',
     '10-syntax/01-outputs.md',
     '10-syntax/01-runs.md',
+    '10-syntax/01-quality.md',
     '10-syntax/02-TITLE.md',
     '10-syntax/02-uses.md',
     '10-syntax/99-TITLE.md',

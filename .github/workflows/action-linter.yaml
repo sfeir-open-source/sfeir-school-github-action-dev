@@ -1,4 +1,4 @@
-name: Run Actions / ActionLint
+name: GitHub Actions Linter
 on: pull_request
 jobs:
   lint-a-action:
@@ -6,15 +6,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - id: install
-        name: install actionlint
+      - id: setup-actionlint
+        name: setup actionlint
         uses: ./.github/actions/actionlint
         
       # SC2016 incorect because of the markdown format & SC2086 incorect when setting git a env variable 
       - name: run ActionLint
         continue-on-error: true
         env:
-          LINTER: ${{ steps.install.outputs.executable }}
+          LINTER: ${{ steps.setup-actionlint.outputs.executable }}
         run: |
           touch report.txt
           "$LINTER" \
@@ -42,7 +42,7 @@ jobs:
           script: |
             const output = `#### Lint 📖
  
-            ${{ steps.get-report.outputs.result }}            
+            ${{ steps.get-report.outputs.result }}
             `
             return output;
 
