@@ -1,5 +1,5 @@
-name: 'Syntax:Lab2'
-description: 'Action of Lab2 in Syntax section'
+name: "Syntax:Lab2"
+description: "Action of Lab2 in Syntax section"
 inputs:
   text:
     description: text
@@ -9,11 +9,11 @@ outputs:
     description: text in UPPER CASE
     value: ${{ steps.upper_step.outputs.upper_text }}
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
     - id: upper_step
       run: |
-        echo "::set-output name=upper_text::${INPUT_TEXT^^}"
+        echo "upper_text=${INPUT_TEXT^^}" >> $GITHUB_OUTPUT
       env:
         INPUT_TEXT: ${{ inputs.text }}
       shell: bash

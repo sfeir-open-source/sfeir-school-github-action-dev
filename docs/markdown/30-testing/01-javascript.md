@@ -54,7 +54,7 @@ Speaker **Thibauld**
 
 **Test suite**
 
-```js
+```js [1,19|2-6|8-12|14-18]
 describe("simple arithmetic", () => {
   describe("addition", () => {
     test("expect 9 + 5 = 14", () => {
@@ -90,17 +90,26 @@ For the operations **math.js** file, we can test its exposed function.
 
 **Run** the main file
 
-```js
+```js [9-10|6-7|3-4|12-19]
 describe("simple test", () => {
   it('test runs', () => {
+    const filePath = path.join(__dirname, `test_outputs.log`)
+    setupGitHubOutput(process, filePath);
+
     process.env['INPUT_INPUT1'] = 9;
     process.env['INPUT_INPUT2'] = 5;
 
     const ip = path.join(__dirname, 'index.js');
-    const result = cp.execSync(`node ${ip}`, { env: process.env }).toString();
-    expect(result).toContain("::set-output name=addition::14");
-    expect(result).toContain("::set-output name=subtraction::4");
-    expect(result).toContain("::set-output name=multiplication::45");
+    cp.execSync(`node ${ip}`, { env: process.env });
+
+    const contents = fs.readFileSync(filePath, 'utf8')
+    try {
+      verifyGitHubOutput(contents, "addition", "14");
+      verifyGitHubOutput(contents, "subtraction", "4");
+      verifyGitHubOutput(contents, "multiplication", "45");
+    } finally {
+      fs.unlinkSync(filePath)
+    }
   })
 });
 ```
@@ -117,7 +126,7 @@ Speaker **Thibauld**
 
 **Mock** some methods and test their usage.
 
-```js
+```js [13|2-9|10-12|14-20]
 test('make sure it returns something', async () => {
   const core = {
     getInput: jest.fn().mockResolvedValue(parseInt(43)),

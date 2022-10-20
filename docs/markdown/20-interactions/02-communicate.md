@@ -16,6 +16,7 @@ Notes:
 Speaker **Romain**
 
 ##--##
+
 # Communicate
 
 ## Logging and annotations
