@@ -93,14 +93,23 @@ For the operations **math.js** file, we can test its exposed function.
 ```js
 describe("simple test", () => {
   it('test runs', () => {
+    const filePath = path.join(__dirname, `test_outputs.log`)
+    setupGitHubOutput(process, filePath);
+
     process.env['INPUT_INPUT1'] = 9;
     process.env['INPUT_INPUT2'] = 5;
 
     const ip = path.join(__dirname, 'index.js');
-    const result = cp.execSync(`node ${ip}`, { env: process.env }).toString();
-    expect(result).toContain("::set-output name=addition::14");
-    expect(result).toContain("::set-output name=subtraction::4");
-    expect(result).toContain("::set-output name=multiplication::45");
+    cp.execSync(`node ${ip}`, { env: process.env });
+
+    const contents = fs.readFileSync(filePath, 'utf8')
+    try {
+      verifyGitHubOutput(contents, "addition", "14");
+      verifyGitHubOutput(contents, "subtraction", "4");
+      verifyGitHubOutput(contents, "multiplication", "45");
+    } finally {
+      fs.unlinkSync(filePath)
+    }
   })
 });
 ```

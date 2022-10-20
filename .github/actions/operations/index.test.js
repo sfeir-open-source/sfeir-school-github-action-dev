@@ -4,6 +4,8 @@ const { add, subtract, multiply } = require("./math");
 const process = require('process');
 const cp = require('child_process');
 const path = require('path');
+const fs = require('fs');
+const os = require('os');
 
 test('make sure it returns something', async () => {
   const core = {
@@ -29,16 +31,38 @@ test('make sure it returns something', async () => {
 
 describe("simple test", () => {
   it('test runs', () => {
+    const filePath = path.join(__dirname, `test_outputs.log`)
+    setupGitHubOutput(process, filePath);
+
     process.env['INPUT_INPUT1'] = 9;
     process.env['INPUT_INPUT2'] = 5;
 
     const ip = path.join(__dirname, 'index.js');
-    const result = cp.execSync(`node ${ip}`, { env: process.env }).toString();
-    expect(result).toContain("::set-output name=addition::14");
-    expect(result).toContain("::set-output name=subtraction::4");
-    expect(result).toContain("::set-output name=multiplication::45");
+    cp.execSync(`node ${ip}`, { env: process.env });
+
+    const contents = fs.readFileSync(filePath, 'utf8')
+    try {
+      verifyGitHubOutput(contents, "addition", "14");
+      verifyGitHubOutput(contents, "subtraction", "4");
+      verifyGitHubOutput(contents, "multiplication", "45");
+    } finally {
+      fs.unlinkSync(filePath)
+    }
   })
 });
+
+
+function setupGitHubOutput(process, filePath) {
+  process.env['GITHUB_OUTPUT'] = filePath;
+  fs.appendFileSync(filePath, '', {
+    encoding: 'utf8'
+  })
+}
+
+function verifyGitHubOutput(contents, expectedKey, expectedValue) {
+  const regex = `${expectedKey}<<ghadelimiter_.*${os.EOL}${expectedValue}${os.EOL}ghadelimiter_.*${os.EOL}`
+  expect(contents).toMatch(new RegExp(regex));
+}
 
 describe("simple arithmetic", () => {
   describe("addition", () => {
