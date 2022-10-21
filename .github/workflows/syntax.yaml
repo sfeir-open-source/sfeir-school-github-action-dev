@@ -1,4 +1,4 @@
-name: Run Actions / Code section
+name: Run Actions / Syntax section
 on:
   push:
   workflow_call: # this trigger enable the workflow to be reusable from another workflow, see reuse.yaml file

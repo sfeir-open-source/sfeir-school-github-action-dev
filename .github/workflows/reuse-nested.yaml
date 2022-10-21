@@ -2,4 +2,4 @@ name: Run Actions / Reuse section / Nested reusable workflow
 on: workflow_call
 jobs:
   code:
-    uses: ./.github/workflows/code.yaml
+    uses: ./.github/workflows/syntax.yaml

@@ -54,6 +54,9 @@ const core = require('@actions/core');
 core.debug('{message}');
 ```
 
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/interactions.yaml)
+<!-- .element: class="credits" -->
+
 Notes:
 
 Speaker **Romain**
@@ -90,6 +93,9 @@ On Job Summary
 
 ![message file](./assets/images/interactions-communicate-message-file.png)
 
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/interactions.yaml)
+<!-- .element: class="credits" -->
+
 Notes:
 
 Speaker **Romain**
@@ -118,6 +124,9 @@ await core.summary
 ```
 
 ⚠️ You can't use it more than once in a `composite` action.
+
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/interactions.yaml)
+<!-- .element: class="credits" -->
 
 Notes:
 

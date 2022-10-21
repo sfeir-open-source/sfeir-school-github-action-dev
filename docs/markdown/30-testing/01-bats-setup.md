@@ -24,6 +24,9 @@ test/
     ...
 ```
 
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/tests)
+<!-- .element: class="credits" -->
+
 Notes:
 
 Speaker **Thibauld**
