@@ -10,7 +10,8 @@ jobs:
         name: setup actionlint
         uses: ./.github/actions/actionlint
         
-      # SC2016 incorect because of the markdown format & SC2086 incorect when setting git a env variable 
+      # SC2016 incorrect because of the markdown format
+      # SC2086 incorrect when setting git a env variable 
       - name: run ActionLint
         continue-on-error: true
         env:
