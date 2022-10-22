@@ -6,7 +6,7 @@
 
 Notes:
 
-Speaker **Someone**
+Speaker **Thibauld**
 
 ##--##
 
@@ -28,16 +28,14 @@ Speaker **Someone**
 <!-- .element: class="list-fragment" -->
 
 Notes:
-
+Speaker **Thibauld**
 - check unexpected or missing keys following workflow syntax
-- catch several semantic errors like access to not existing property, type mismatches, ...
-- check that inputs at with: and outputs in steps.{id}.outputs are correct
+- catch several semantic errors like access to a not existing property, type mismatches, ...
+- check that inputs at with: and outputs in `steps.{id}.outputs` are correct
 - inputs/outputs/secrets of reusable workflows and workflow calls
-- shellcheck and pyflakes integrations for scripts at run:
+- shellcheck and pyflakes integrations for scripts at `run:`
 - script injection by untrusted inputs, hard-coded credentials
 - glob syntax validation, dependencies check for `needs:`, runner label validation, cron syntax validation, ...
-
-Speaker **Someone**
 
 ##--##
 
@@ -67,7 +65,7 @@ jobs:
 
 Notes:
 
-Speaker **Someone**
+Speaker **Thibauld**
 
 ##--##
 
@@ -86,4 +84,4 @@ Speaker **Someone**
 
 Notes:
 
-Speaker **Someone**
+Speaker **Thibauld**
