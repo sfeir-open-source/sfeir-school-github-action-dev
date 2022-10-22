@@ -28,7 +28,9 @@ Speaker **Thibauld**
 <!-- .element: class="list-fragment" -->
 
 Notes:
+
 Speaker **Thibauld**
+
 - check unexpected or missing keys following workflow syntax
 - catch several semantic errors like access to a not existing property, type mismatches, ...
 - check that inputs at with: and outputs in `steps.{id}.outputs` are correct

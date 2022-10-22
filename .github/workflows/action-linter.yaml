@@ -7,8 +7,8 @@ jobs:
       - uses: actions/checkout@v3
 
       - id: setup-actionlint
-        name: setup actionlint
-        uses: ./.github/actions/actionlint
+        name: setup-actionlint
+        uses: ./.github/actions/setup-actionlint
         
       # SC2016 incorrect because of the use of `$VAR` in the `-format` parameter. The `$err` are interpreted by the linter as shell variable
       # SC2086 incorrect when setting git a env variable 
@@ -20,7 +20,7 @@ jobs:
           touch report.txt
           "$LINTER" \
           -ignore 'missing input "say"' \
-          -ignore 'SC2016' \ 
+          -ignore 'SC2016' \
           -ignore 'SC2086' \
           -format '{{range $err := .}}### Error at line {{$err.Line}}, col {{$err.Column}} of {{$err.Filepath}}\n\n{{$err.Message}}\n\n \n{{$err.Snippet}}\n \n\n{{end}}' > report.txt
 
@@ -41,11 +41,9 @@ jobs:
           github-token: $GITHUB_TOKEN
           result-encoding: string
           script: |
-            const output = `#### Lint 📖
- 
-            ${{ steps.get-report.outputs.result }}
-            `
-            return output;
+            const output = `${{ steps.get-report.outputs.result }}`
+            return output != `` ? `#### Lint 📖\n` + output : ``
+
 
       - name: Find Comment
         uses: peter-evans/find-comment@v2
@@ -64,7 +62,7 @@ jobs:
             ${{ steps.format-comment.outputs.result }}
 
       - name: Update comment
-        if: steps.fc.outputs.comment-id != '' && && steps.get-report.outputs.result != ''
+        if: steps.fc.outputs.comment-id != '' && steps.get-report.outputs.result != ''
         uses: peter-evans/create-or-update-comment@v2
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
@@ -73,7 +71,7 @@ jobs:
           edit-mode: replace
 
       - name: Delete comment
-        if: steps.fc.outputs.comment-id != '' && && steps.get-report.outputs.result == ''
+        if: steps.fc.outputs.comment-id != '' && steps.get-report.outputs.result == ''
         uses: detomarco/delete-comment@850734dd44d8b15fef55b45252613b903ceb06f0
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}

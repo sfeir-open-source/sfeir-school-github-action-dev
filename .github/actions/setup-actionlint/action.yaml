@@ -1,5 +1,5 @@
-name: ActionLint
-description: Execute ActionLint
+name: setup-actionlint
+description: setup Actionlint
 outputs:
   executable:
     description: output value of the download-actionlint.bash
