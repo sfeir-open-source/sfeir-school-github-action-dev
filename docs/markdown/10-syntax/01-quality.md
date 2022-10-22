@@ -2,7 +2,7 @@
 
 # Quality
 
-> How can we always provide quality on a Github action ?
+> How can we always maintain the quality of a GitHub Action or Workflow?
 
 Notes:
 
@@ -16,7 +16,7 @@ Speaker **Someone**
 
 ## Lint tool
 
-[Action lint](https://rhysd.github.io/actionlint/) is a open source linter for Github Action.
+[Action lint](https://rhysd.github.io/actionlint/) is an open-source linter for GitHub Action or Workflow.
 
 - Syntax  
 - Strong type check for `${{ }}` expressions
@@ -24,7 +24,7 @@ Speaker **Someone**
 - Reusable workflow check
 - shellcheck and pyflakes
 - Security checks
-- ...
+- and more
 <!-- .element: class="list-fragment" -->
 
 Notes:
@@ -78,10 +78,10 @@ Speaker **Someone**
 ## Lint tool - Customize
 
 - Make a commentary for each pull request
-- Change the format to markdown with `-format` option 
-- Ignore false positive with `-ignore` option 
+- Change the format to markdown with the `-format` option 
+- Ignore false positives with the `-ignore` option 
 - Manage exit status 
-- ...
+- and more
 <!-- .element: class="list-fragment" -->
 
 Notes:
