@@ -10,7 +10,7 @@ jobs:
         name: setup actionlint
         uses: ./.github/actions/actionlint
         
-      # SC2016 incorrect because of the markdown format
+      # SC2016 incorrect because of the use of `$VAR` in the `-format` parameter. The `$err` are interpreted by the linter as shell variable
       # SC2086 incorrect when setting git a env variable 
       - name: run ActionLint
         continue-on-error: true
@@ -56,7 +56,7 @@ jobs:
           body-includes: Lint
 
       - name: Create comment
-        if: steps.fc.outputs.comment-id == ''
+        if: steps.fc.outputs.comment-id == '' && steps.get-report.outputs.result != ''
         uses: peter-evans/create-or-update-comment@v2
         with:
           issue-number: ${{ github.event.pull_request.number }}
@@ -64,10 +64,18 @@ jobs:
             ${{ steps.format-comment.outputs.result }}
 
       - name: Update comment
-        if: steps.fc.outputs.comment-id != ''
+        if: steps.fc.outputs.comment-id != '' && && steps.get-report.outputs.result != ''
         uses: peter-evans/create-or-update-comment@v2
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           body: |
             ${{ steps.format-comment.outputs.result }}
           edit-mode: replace
+
+      - name: Delete comment
+        if: steps.fc.outputs.comment-id != '' && && steps.get-report.outputs.result == ''
+        uses: detomarco/delete-comment@850734dd44d8b15fef55b45252613b903ceb06f0
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+
+ 
