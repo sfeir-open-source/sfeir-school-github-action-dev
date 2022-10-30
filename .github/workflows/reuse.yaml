@@ -2,7 +2,7 @@ name: Run Actions / Reuse section
 on: push
 jobs:
   runs-code-workflow:
-    uses: ./.github/workflows/code.yaml
+    uses: ./.github/workflows/syntax.yaml
 
   runs-nested-reusable-workflow:
     uses: ./.github/workflows/reuse-nested.yaml

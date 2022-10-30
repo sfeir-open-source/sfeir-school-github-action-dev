@@ -59,6 +59,9 @@ jobs:
         shell: bash
 ```
 
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/testing.yaml)
+<!-- .element: class="credits" -->
+
 Notes:
 
 Speaker **Romain**

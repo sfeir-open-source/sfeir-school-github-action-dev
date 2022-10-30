@@ -22,6 +22,9 @@ runs:
 - The `setup.js` file will run before the `main.js` file only on Windows.
 - The `cleanup.js` file will run only if `main.js` file fail to run.
 
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/syntax.yaml)
+<!-- .element: class="credits" -->
+
 Notes:
 
 Speaker **Romain**
@@ -54,6 +57,9 @@ runs:
 ```
 
 `env` and `args` value are available on `pre-entrypoint`, `entrypoint`, and `post-entrypoint`.
+
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/syntax.yaml)
+<!-- .element: class="credits" -->
 
 Notes:
 
@@ -97,6 +103,9 @@ runs:
 
 The steps are run under `$GITHUB_WORKSPACE` folder same as steps from a workflow.
 To access any file in the action, you must use `$GITHUB_ACTION_PATH`.
+
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/syntax.yaml)
+<!-- .element: class="credits" -->
 
 Notes:
 

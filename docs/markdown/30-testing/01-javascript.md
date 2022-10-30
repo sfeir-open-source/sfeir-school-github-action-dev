@@ -42,6 +42,9 @@ Will output
 - `subtraction` equals to `4`
 - `multiplication` equals to `45`
 
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/operations-testing.yaml)
+<!-- .element: class="credits" -->
+
 Notes:
 
 Speaker **Thibauld**
@@ -75,6 +78,9 @@ describe("simple arithmetic", () => {
   });
 });
 ```
+
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/operations-testing.yaml)
+<!-- .element: class="credits" -->
 
 Notes:
 
@@ -114,6 +120,9 @@ describe("simple test", () => {
 });
 ```
 
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/operations-testing.yaml)
+<!-- .element: class="credits" -->
+
 Notes:
 
 Speaker **Thibauld**
@@ -149,6 +158,9 @@ test('make sure it returns something', async () => {
   expect(math.add).toHaveBeenCalledTimes(1);
 });
 ```
+
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/operations-testing.yaml)
+<!-- .element: class="credits" -->
 
 Notes:
 

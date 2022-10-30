@@ -34,6 +34,9 @@ teardown() {
 }
 ```
 
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/tests/tests.bats)
+<!-- .element: class="credits" -->
+
 Notes:
 
 Speaker **Thibauld**
@@ -70,6 +73,9 @@ test.bats
 
 3 tests, 0 failures
 ```
+
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/testing.yaml)
+<!-- .element: class="credits" -->
 
 Notes:
 

@@ -52,6 +52,9 @@ jobs:
       - uses: ./.github/actions/my-private-repo/my-action
 ```
 
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/syntax.yaml)
+<!-- .element: class="credits" -->
+
 Notes:
 
 Speaker **Thibauld**

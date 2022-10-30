@@ -15,6 +15,8 @@ Your action will be run inside a workflow and having access to its contexts.
 <!-- .element: class="list-fragment" -->
 
 [Contexts Reference](https://docs.github.com/en/actions/learn-github-actions/contexts)
+/
+[Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/interactions.yaml)
 <!-- .element: class="credits" -->
 
 Notes:
