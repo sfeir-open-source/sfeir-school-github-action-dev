@@ -1,0 +1,13 @@
+name: setup-actionlint
+description: setup Actionlint
+outputs:
+  executable:
+    description: output value of the download-actionlint.bash
+    value: '${{ steps.installActionlint.outputs.executable }}'
+runs:
+  using: 'composite'
+  steps:
+    - id: installActionlint
+      run: |
+        bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
+      shell: bash
