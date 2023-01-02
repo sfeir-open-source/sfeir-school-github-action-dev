@@ -72,7 +72,7 @@ jobs:
 
       - name: Delete comment
         if: steps.fc.outputs.comment-id != '' && steps.get-report.outputs.result == ''
-        uses: detomarco/delete-comment@1816e35c9e7c13cde5a67d992c57257a2264c8d1
+        uses: detomarco/delete-comment@a3553968b6b4accfdc8a08790674fcab4451a3e3
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
 
