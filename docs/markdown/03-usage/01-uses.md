@@ -37,11 +37,11 @@ jobs:
       - uses: sfeir-open-source/sfeir-school-github-action-dev/.github/actions/runs-using-docker@main
 
       # Local action
-      - uses: actions/checkout@v3 # Need to be checkout first
+      - uses: actions/checkout@v4 # Need to be checkout first
       - uses: ./.github/actions/runs-using-composite
 
       # Private action (as exemple)
-      - name: actions/checkout@v3
+      - name: actions/checkout@v4
         with:
           repository: you/my-private-repo
           ref: v1.0.0
@@ -73,9 +73,9 @@ jobs:
       # Reference a specific commit
       - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675
       # Reference the major version of a release
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # Reference a specific version
-      - uses: actions/checkout@v3.2.0
+      - uses: actions/checkout@v4.2.2
       # Reference a branch
       - uses: actions/checkout@main
 ```

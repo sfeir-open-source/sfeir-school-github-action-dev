@@ -4,7 +4,7 @@ jobs:
   test-testing-lab1:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: bats test
         run: |

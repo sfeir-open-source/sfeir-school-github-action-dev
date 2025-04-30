@@ -4,14 +4,14 @@ jobs:
   lint-a-action:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - id: setup-actionlint
         name: setup-actionlint
         uses: ./.github/actions/setup-actionlint
-        
+
       # SC2016 incorrect because of the use of `$VAR` in the `-format` parameter. The `$err` are interpreted by the linter as shell variable
-      # SC2086 incorrect when setting git a env variable 
+      # SC2086 incorrect when setting git a env variable
       - name: run ActionLint
         continue-on-error: true
         env:
@@ -76,4 +76,3 @@ jobs:
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
 
- 
