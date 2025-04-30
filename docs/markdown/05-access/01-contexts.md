@@ -29,7 +29,7 @@ Some contexts are inaccessibles inside an action
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 # Contexts
 
@@ -50,7 +50,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 # Contexts
 

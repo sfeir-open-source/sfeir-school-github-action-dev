@@ -21,7 +21,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 # Testing an action with Jest
 
@@ -46,7 +46,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 # Testing an action with Jest
 
@@ -83,7 +83,7 @@ For the operations **math.js** file, we can test its exposed function.
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 # Testing an action with Jest
 
@@ -121,7 +121,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 # Testing an action with Jest
 

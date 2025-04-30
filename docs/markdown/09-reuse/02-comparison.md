@@ -12,7 +12,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 # Action
 
@@ -51,7 +51,7 @@ Declaration and use of
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 # or Reusable Workflow
 

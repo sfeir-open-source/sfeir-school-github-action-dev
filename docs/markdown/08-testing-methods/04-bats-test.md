@@ -1,4 +1,4 @@
-<!-- .slide: class="two-column with-code-bg-dark" -->
+<!-- .slide: class="two-column with-code" -->
 
 # Testing Shell script with Bats
 

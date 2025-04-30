@@ -12,7 +12,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 # GitHub API
 
@@ -46,7 +46,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 # GitHub API
 

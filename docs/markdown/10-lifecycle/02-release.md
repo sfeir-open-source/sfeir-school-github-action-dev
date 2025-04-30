@@ -18,7 +18,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 ## Semantic Release
 
@@ -44,7 +44,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 ## Semantic Release
 
@@ -71,7 +71,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 ## JavaScript action
 
@@ -97,7 +97,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code-bg-dark" -->
+<!-- .slide: class="with-code" -->
 
 ## JavaScript action
 
