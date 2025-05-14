@@ -14,7 +14,7 @@ jobs:
 
       - name: Call markdown linter
         id: lint
-        uses: ./.github/actions/markdown-linter
+        uses: ./.github/actions/linter
         with:
           dir: ${{ inputs.dir }}
 
@@ -34,7 +34,7 @@ jobs:
             return output;
 
       - name: Find Comment
-        uses: peter-evans/find-comment@v2
+        uses: peter-evans/find-comment@v3
         id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}

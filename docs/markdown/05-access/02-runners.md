@@ -43,8 +43,8 @@ Notes:
 ## Limitations
 
 | Actions          | Limitations                                                             |
-| ---------------- | ----------------------------------------------------------------------- |
-| JavaScript       | Run on Node **12 or 16**.                                               |
+| ---------------- |-------------------------------------------------------------------------|
+| JavaScript       | Run on Node **16 or 20**.                                               |
 | Docker container | Run only on **Linux**.                                                  |
 | Composite        | Use shell **bash** (or **python**) to have the same behavior across OS. |
 

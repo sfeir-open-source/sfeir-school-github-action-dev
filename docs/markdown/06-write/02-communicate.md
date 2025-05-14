@@ -115,8 +115,6 @@ await core.summary
   .write()
 ```
 
-⚠️ You can't use it more than once in a `composite` action.
-
 [Code in action](https://github.com/sfeir-open-source/sfeir-school-github-action-dev/blob/main/.github/workflows/interactions.yaml)
 <!-- .element: class="credits" -->
 
