@@ -4,7 +4,7 @@
   "description": "Action for lab2 of Lifecycle section",
   "main": "index.js",
   "scripts": {
-    "prepare": "ncc build index.js -o dist --source-map"
+    "prepare": "NODE_OPTIONS=--openssl-legacy-provider ncc build index.js -o dist --source-map"
   },
   "dependencies": {
     "@actions/core": "^1.10.0"

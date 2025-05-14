@@ -54,7 +54,7 @@ Notes:
 - name: Checkout sources
   uses: actions/checkout@v4
 - name: Semantic Release
-  uses: cycjimmy/semantic-release-action@v3
+  uses: cycjimmy/semantic-release-action@v4
   with:
     extra_plugins: |
       @semantic-release/changelog
@@ -107,7 +107,7 @@ Notes:
 - uses: actions/checkout@v4
 - run: npm install
 - run: npm run prepare
-- uses: cycjimmy/semantic-release-action@v3
+- uses: cycjimmy/semantic-release-action@v4
   with:
     extra_plugins: |
       @semantic-release/changelog
