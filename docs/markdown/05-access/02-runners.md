@@ -44,7 +44,7 @@ Notes:
 
 | Actions          | Limitations                                                             |
 | ---------------- |-------------------------------------------------------------------------|
-| JavaScript       | Run on Node **16 or 20**.                                               |
+| JavaScript       | Run on Node **20**.                                               |
 | Docker container | Run only on **Linux**.                                                  |
 | Composite        | Use shell **bash** (or **python**) to have the same behavior across OS. |
 
