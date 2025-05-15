@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Run local action by checkout the source and uses it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/runs-using-composite
 
       # For node and docker action, the pre/post features will not run if the action is run locally, it's only print a warning

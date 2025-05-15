@@ -10,17 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Call markdown linter
         id: lint
-        uses: ./.github/actions/markdown-linter
+        uses: ./.github/actions/linter
         with:
           dir: ${{ inputs.dir }}
 
       - name: Format comment message
         id: format-comment
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           github-token: $GITHUB_TOKEN
           result-encoding: string
@@ -34,7 +34,7 @@ jobs:
             return output;
 
       - name: Find Comment
-        uses: peter-evans/find-comment@v2
+        uses: peter-evans/find-comment@v3
         id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}

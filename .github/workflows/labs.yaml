@@ -6,7 +6,7 @@ jobs:
   syntax:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Lab1 => steps/10-syntax-lab1-action-input/testing-workflow.yaml
       - name: Lab1 - default run
@@ -30,7 +30,7 @@ jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
 

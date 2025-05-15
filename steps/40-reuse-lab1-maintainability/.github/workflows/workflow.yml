@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set directory
         env:
@@ -32,7 +32,7 @@ jobs:
 
       - name: Format result
         id: format-result
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           github-token: $GITHUB_TOKEN
           result-encoding: string
@@ -78,7 +78,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set directory
         env:
@@ -105,7 +105,7 @@ jobs:
 
       - name: Format result
         id: format-result
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           github-token: $GITHUB_TOKEN
           result-encoding: string
@@ -151,7 +151,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set directory
         env:
@@ -178,7 +178,7 @@ jobs:
 
       - name: Format result
         id: format-result
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           github-token: $GITHUB_TOKEN
           result-encoding: string
@@ -224,7 +224,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set directory
         env:
@@ -251,7 +251,7 @@ jobs:
 
       - name: Format result
         id: format-result
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           github-token: $GITHUB_TOKEN
           result-encoding: string

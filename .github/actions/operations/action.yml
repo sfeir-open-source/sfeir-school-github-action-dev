@@ -8,12 +8,12 @@ inputs:
     description: 'value that will be use to do math'
     required: true
 outputs:
-  addition:  
+  addition:
     description: 'The current addition result'
   subtraction:
     description: 'The current subtraction result'
   multiplication:
     description: 'The current multiplication result'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
