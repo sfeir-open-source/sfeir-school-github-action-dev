@@ -121,7 +121,8 @@ function conclusionSlides() {
   return [
     '12-conclusion/00-TITLE.md',
     '12-conclusion/01-for-the-road.md',
-    '12-conclusion/02-TITLE.md'
+    '12-conclusion/02-TITLE.md',
+    '12-conclusion/03-institute.md'
   ];
 }
 
