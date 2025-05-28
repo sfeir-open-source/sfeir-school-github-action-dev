@@ -37,6 +37,6 @@ Notes:
 
 <br><br>
 
-<p style="text-align: center;font-size:48px;font-weight:bold">https://github.com/sfeir-open-source/sfeir-school-github-actions</p>
+<p style="text-align: center;font-size:48px;font-weight:bold">https://github.com/sfeir-open-source/sfeir-school-github-action-dev</p>
 
 Notes:
