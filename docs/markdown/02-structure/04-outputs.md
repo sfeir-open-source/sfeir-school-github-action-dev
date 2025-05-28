@@ -52,7 +52,7 @@ To define an output value, you can use the [GITHUB_OUTPUT](https://docs.github.c
 **main.sh**
 
 ```sh
-echo "someOutput=Some Value" >> $GITHUB_ENV
+echo "someOutput=Some Value" >> $GITHUB_OUTPUT
 ```
 
 Notes:
@@ -78,7 +78,7 @@ runs:
   using: 'composite'
   steps:
   - id: some-output-step
-    run: echo "someOutput=Some Value" >> $GITHUB_ENV
+    run: echo "someOutput=Some Value" >> $GITHUB_OUTPUT
     shell: bash
 ```
 
