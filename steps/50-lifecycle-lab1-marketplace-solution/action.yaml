@@ -4,5 +4,5 @@ branding:
   icon: circle
   color: blue
 runs:
-  using: node16
+  using: node20
   main: index.js

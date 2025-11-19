@@ -4,7 +4,7 @@ jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: npm install
       - run: npm run prepare
       - uses: ./.
@@ -17,10 +17,10 @@ jobs:
     needs: testing
     permissions: write-all
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: npm install
       - run: npm run prepare
-      - uses: cycjimmy/semantic-release-action@v4
+      - uses: cycjimmy/semantic-release-action@v5
         with:
           extra_plugins: |
             @semantic-release/changelog

@@ -26,7 +26,7 @@ runs:
       shell: bash
     - name: Get report
       id: get-report
-      uses: actions/github-script@v7
+      uses: actions/github-script@v8
       with:
         github-token: $GITHUB_TOKEN
         result-encoding: string

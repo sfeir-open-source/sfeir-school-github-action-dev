@@ -10,7 +10,7 @@ jobs:
       fail-fast: true
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: ./.github/actions/contexts-access
         with:
           value: ${{ matrix.value }}
@@ -23,7 +23,7 @@ jobs:
         shell: bash
 
       # An action can contribute to its own step summary
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: ./.github/actions/summary-composite
 
   message-commands:

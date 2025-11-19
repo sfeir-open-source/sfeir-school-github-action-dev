@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set directory
         env:
@@ -32,7 +32,7 @@ jobs:
 
       - name: Format result
         id: format-result
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: $GITHUB_TOKEN
           result-encoding: string
@@ -48,7 +48,7 @@ jobs:
             return output;
 
       - name: Find Comment
-        uses: peter-evans/find-comment@v2
+        uses: peter-evans/find-comment@v3
         id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}
@@ -57,7 +57,7 @@ jobs:
 
       - name: Create comment
         if: steps.fc.outputs.comment-id == ''
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v5
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
@@ -66,7 +66,7 @@ jobs:
 
       - name: Update comment
         if: steps.fc.outputs.comment-id != ''
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v5
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           body: |
@@ -78,7 +78,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set directory
         env:
@@ -105,7 +105,7 @@ jobs:
 
       - name: Format result
         id: format-result
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: $GITHUB_TOKEN
           result-encoding: string
@@ -121,7 +121,7 @@ jobs:
             return output;
 
       - name: Find Comment
-        uses: peter-evans/find-comment@v2
+        uses: peter-evans/find-comment@v3
         id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}
@@ -130,7 +130,7 @@ jobs:
 
       - name: Create comment
         if: steps.fc.outputs.comment-id == ''
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v5
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
@@ -139,7 +139,7 @@ jobs:
 
       - name: Update comment
         if: steps.fc.outputs.comment-id != ''
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v5
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           body: |
@@ -151,7 +151,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set directory
         env:
@@ -178,7 +178,7 @@ jobs:
 
       - name: Format result
         id: format-result
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: $GITHUB_TOKEN
           result-encoding: string
@@ -194,7 +194,7 @@ jobs:
             return output;
 
       - name: Find Comment
-        uses: peter-evans/find-comment@v2
+        uses: peter-evans/find-comment@v3
         id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}
@@ -203,7 +203,7 @@ jobs:
 
       - name: Create comment
         if: steps.fc.outputs.comment-id == ''
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v5
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
@@ -212,7 +212,7 @@ jobs:
 
       - name: Update comment
         if: steps.fc.outputs.comment-id != ''
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v5
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           body: |
@@ -224,7 +224,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set directory
         env:
@@ -251,7 +251,7 @@ jobs:
 
       - name: Format result
         id: format-result
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: $GITHUB_TOKEN
           result-encoding: string
@@ -267,7 +267,7 @@ jobs:
             return output;
 
       - name: Find Comment
-        uses: peter-evans/find-comment@v2
+        uses: peter-evans/find-comment@v3
         id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}
@@ -276,7 +276,7 @@ jobs:
 
       - name: Create comment
         if: steps.fc.outputs.comment-id == ''
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v5
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
@@ -285,7 +285,7 @@ jobs:
 
       - name: Update comment
         if: steps.fc.outputs.comment-id != ''
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v5
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           body: |

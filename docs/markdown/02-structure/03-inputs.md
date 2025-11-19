@@ -15,7 +15,7 @@ inputs:
     required: true
     default: "Default value"
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/main.js'
 ```
 

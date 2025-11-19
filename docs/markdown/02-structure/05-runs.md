@@ -10,7 +10,7 @@
 name: Action name
 description: Short description of the action
 runs:
-  using: 'node16'                       # or node12
+  using: 'node20'                       # or node16
   main: 'main.js'                       # your entrypoint file
   # Optional configurations
   pre: 'setup.js'                       # will not run if used as the action is locally run

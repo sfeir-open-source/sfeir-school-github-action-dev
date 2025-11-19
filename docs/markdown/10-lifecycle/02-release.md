@@ -52,9 +52,9 @@ Notes:
 
 ```yaml [3-10]
 - name: Checkout sources
-  uses: actions/checkout@v4
+  uses: actions/checkout@v5
 - name: Semantic Release
-  uses: cycjimmy/semantic-release-action@v4
+  uses: cycjimmy/semantic-release-action@v5
   with:
     extra_plugins: |
       @semantic-release/changelog
@@ -104,10 +104,10 @@ Notes:
 **release-workflow.yaml**
 
 ```yaml [2-3|8]
-- uses: actions/checkout@v4
+- uses: actions/checkout@v5
 - run: npm install
 - run: npm run prepare
-- uses: cycjimmy/semantic-release-action@v4
+- uses: cycjimmy/semantic-release-action@v5
   with:
     extra_plugins: |
       @semantic-release/changelog
