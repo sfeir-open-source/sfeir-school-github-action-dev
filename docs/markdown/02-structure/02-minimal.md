@@ -10,7 +10,7 @@
 name: Action name
 description: Short description of the action
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'main.js'
 ```
 

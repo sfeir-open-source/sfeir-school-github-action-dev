@@ -25,9 +25,9 @@ Notes:
 
 See runner pre-install softwares to have an idea of what you can use in your actions.
 
-- [ubuntu-lastest](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md)
-- [windows-lastest](https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md)
-- [macos-lastest](https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md)
+- [ubuntu-lastest](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md)
+- [windows-lastest](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md)
+- [macos-lastest](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-arm64-Readme.md)
 
 Your action must take in account the environment upon which it can run.
 

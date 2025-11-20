@@ -4,7 +4,7 @@ runs:
   using: 'composite'
   steps:
     # the summary can be fill using the actions toolkit
-    - uses: actions/github-script@v7
+    - uses: actions/github-script@v8
       with:
         script: |
           await core.summary

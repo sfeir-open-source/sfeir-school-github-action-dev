@@ -13,7 +13,7 @@ outputs:
   someOutput:
     description: "Some Output"
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/main.js'
 ```
 
