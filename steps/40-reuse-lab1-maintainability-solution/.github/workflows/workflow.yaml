@@ -2,6 +2,7 @@ name: Test the Lab 1 of Reuse
 on: pull_request
 jobs:
   check-section1:
+    permissions: write-all
     strategy:
       matrix:
         dir:

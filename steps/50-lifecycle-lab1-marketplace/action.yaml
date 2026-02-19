@@ -1,5 +1,5 @@
 name: Lifecycle Lab1
 description: Action for lab1 of Lifecycle section
 runs:
-  using: node16
+  using: node20
   main: index.js
